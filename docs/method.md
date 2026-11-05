@@ -22,7 +22,12 @@ An action is listed when an AI developer, or an AI system's training, outputs
 or deployment, is central to it (the same rule fedcourtsai's AI watchlist
 uses), and one or more state AG offices took part. The 50 states and the
 District of Columbia are covered. An action is added by a PR that cites the
-rule, on a dated `added` line; nothing is added automatically.
+rule, on a dated `added` line; nothing merges without the maintainer. A weekly
+newsroom scan has an AI model (Anthropic's Claude) search each office's
+newsroom for announcements since the last scan and draft each action it finds;
+drafts that fail the registry's checks, or repeat an action or source already
+listed, are set aside, and the rest arrive as one PR for the maintainer to read
+against the rule. The model drafts; it never decides what is listed.
 
 Each action has one **kind**, and each kind feeds one **track**:
 

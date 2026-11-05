@@ -32,8 +32,12 @@ fedcourtsai's `config/ai-watchlist.yaml`, so every case link resolves.
 ## Changing the registry
 
 Every addition is a PR that cites the rule in `docs/method.md` and the AG
-office's own announcement, on a dated `added` line. Nothing is added
-automatically. A tier is an ordinal ranking of what an office has announced in
+office's own announcement, on a dated `added` line. Nothing merges
+automatically: the weekly newsroom scan (`.github/workflows/scan.yml`) has a
+model search each office's newsroom (`data/newsrooms.yaml`) and opens a PR with
+the drafts that pass the registry's checks, and the maintainer decides what
+stays. `python -m stateags scan` runs it locally with an Anthropic API key in
+the environment; `python -m stateags apply-scan` appends its drafts. A tier is an ordinal ranking of what an office has announced in
 public, not a measure of merit, outcome or intent.
 
 ## License
