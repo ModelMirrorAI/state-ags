@@ -28,10 +28,10 @@
           "title": "Court"
         },
         "developers": {
+          "description": "The AI developers the action is aimed at; empty only for advocacy.",
           "items": {
             "type": "string"
           },
-          "minItems": 1,
           "title": "Developers",
           "type": "array"
         },
