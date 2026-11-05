@@ -447,21 +447,21 @@
           "title": "Selection",
           "type": "string"
         },
-        "solicitor_general": {
+        "state": {
+          "description": "The two-letter postal code (DC for the District).",
+          "title": "State",
+          "type": "string"
+        },
+        "tech_unit": {
           "anyOf": [
             {
-              "$ref": "#/$defs/StateAgSolicitorGeneralRow"
+              "$ref": "#/$defs/StateAgTechUnitRow"
             },
             {
               "type": "null"
             }
           ],
-          "description": "The office's dedicated solicitor general post; none when the registry records none. Context beside the tier, never part of it."
-        },
-        "state": {
-          "description": "The two-letter postal code (DC for the District).",
-          "title": "State",
-          "type": "string"
+          "description": "The office's standing technology or privacy enforcement unit; none when the registry records none. Context beside the tier, never part of it."
         },
         "tier": {
           "description": "The office's ag-ai-ambition-v1 tier on the day.",
@@ -519,7 +519,7 @@
         "window_counts",
         "action_ids",
         "data_center_ids",
-        "solicitor_general"
+        "tech_unit"
       ],
       "title": "StateAgOfficeRow",
       "type": "object"
@@ -602,43 +602,43 @@
       "title": "StateAgPivot",
       "type": "object"
     },
-    "StateAgSolicitorGeneralRow": {
+    "StateAgTechUnitRow": {
       "additionalProperties": false,
-      "description": "An office's dedicated solicitor general post, as the registry records it.",
+      "description": "An office's standing technology or privacy enforcement unit, as the registry records it.",
       "properties": {
-        "holder": {
+        "established": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "integer"
             },
             {
               "type": "null"
             }
           ],
-          "description": "Who holds it, where a source names them.",
-          "title": "Holder"
+          "description": "The year it was created, where a source says.",
+          "title": "Established"
+        },
+        "name": {
+          "description": "The unit's name in the office.",
+          "title": "Name",
+          "type": "string"
         },
         "sources": {
-          "description": "Where the post is evidenced.",
+          "description": "Where the unit is evidenced.",
           "items": {
             "type": "string"
           },
           "minItems": 1,
           "title": "Sources",
           "type": "array"
-        },
-        "title": {
-          "description": "The post's title in the office (Solicitor General, ...).",
-          "title": "Title",
-          "type": "string"
         }
       },
       "required": [
-        "title",
-        "holder",
+        "name",
+        "established",
         "sources"
       ],
-      "title": "StateAgSolicitorGeneralRow",
+      "title": "StateAgTechUnitRow",
       "type": "object"
     }
   },

@@ -43,7 +43,7 @@ from stateags.board import (
     StateAgPair,
     StateAgPivot,
     StateAgsBoard,
-    StateAgSolicitorGeneralRow,
+    StateAgTechUnitRow,
 )
 
 #: The registered name of the ambition measure the registry feeds.
@@ -249,18 +249,19 @@ class Holder(BaseModel):
         return self
 
 
-class SolicitorGeneral(BaseModel):
-    """An office's dedicated solicitor general post: context beside the tier, never part of it.
+class TechUnit(BaseModel):
+    """An office's standing civil technology or privacy enforcement unit.
 
-    The post counts when the office names a position titled Solicitor General or
-    State Solicitor (General) that leads its appellate and constitutional
-    litigation; an appeals division under another title does not.
+    Context beside the tier, never part of it. The unit counts when the office
+    names a unit, section, bureau or team whose remit is privacy, data or
+    technology enforcement; a general consumer protection division, a single
+    designated attorney, or a criminal cybercrime unit does not.
     """
 
     model_config = ConfigDict(extra="forbid", frozen=True)
 
-    title: str
-    holder: str | None = None
+    name: str
+    established: int | None = Field(default=None, ge=1900, le=2100)
     sources: list[str] = Field(min_length=1)
 
 
@@ -272,7 +273,7 @@ class Office(BaseModel):
     state: str
     selection: Selection
     holders: list[Holder] = Field(min_length=1)
-    solicitor_general: SolicitorGeneral | None = None
+    tech_unit: TechUnit | None = None
 
     @field_validator("state")
     @classmethod
@@ -606,7 +607,7 @@ def build_board(
                 window_counts={k.value: sum(1 for a in window if a.kind is k) for k in Kind},
                 action_ids=[a.id for a in mine],
                 data_center_ids=[c.id for c in centers if c.state == state and c.marked],
-                solicitor_general=_solicitor_general(office.solicitor_general),
+                tech_unit=_tech_unit(office.tech_unit),
             )
         )
     actions = [
@@ -663,10 +664,10 @@ def build_board(
     )
 
 
-def _solicitor_general(post: SolicitorGeneral | None) -> StateAgSolicitorGeneralRow | None:
-    if post is None:
+def _tech_unit(unit: TechUnit | None) -> StateAgTechUnitRow | None:
+    if unit is None:
         return None
-    return StateAgSolicitorGeneralRow(title=post.title, holder=post.holder, sources=post.sources)
+    return StateAgTechUnitRow(name=unit.name, established=unit.established, sources=unit.sources)
 
 
 def _large(action: Action) -> bool:

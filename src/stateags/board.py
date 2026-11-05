@@ -32,12 +32,12 @@ class StateAgHolderRow(_Strict):
     sources: list[str] = Field(min_length=1, description="Where the roster's facts come from.")
 
 
-class StateAgSolicitorGeneralRow(_Strict):
-    """An office's dedicated solicitor general post, as the registry records it."""
+class StateAgTechUnitRow(_Strict):
+    """An office's standing technology or privacy enforcement unit, as the registry records it."""
 
-    title: str = Field(description="The post's title in the office (Solicitor General, ...).")
-    holder: str | None = Field(description="Who holds it, where a source names them.")
-    sources: list[str] = Field(min_length=1, description="Where the post is evidenced.")
+    name: str = Field(description="The unit's name in the office.")
+    established: int | None = Field(description="The year it was created, where a source says.")
+    sources: list[str] = Field(min_length=1, description="Where the unit is evidenced.")
 
 
 class StateAgOfficeRow(_Strict):
@@ -75,9 +75,9 @@ class StateAgOfficeRow(_Strict):
         description="The state's large AI data center projects that mark it (every status but "
         "cancelled), largest first. Context beside the tier, never part of it."
     )
-    solicitor_general: StateAgSolicitorGeneralRow | None = Field(
-        description="The office's dedicated solicitor general post; none when the registry "
-        "records none. Context beside the tier, never part of it."
+    tech_unit: StateAgTechUnitRow | None = Field(
+        description="The office's standing technology or privacy enforcement unit; none when "
+        "the registry records none. Context beside the tier, never part of it."
     )
 
 

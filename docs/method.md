@@ -139,22 +139,23 @@ AI policy, never part of the tier, and a cancelled project stays on record
 unmarked. The threshold is part of the layer's definition: a change to it is a
 change to the rule, made in its own PR.
 
-## Solicitor general
+## Technology or privacy unit
 
-An office's `solicitor_general` records a dedicated solicitor general post: a
-position titled Solicitor General, State Solicitor General or State Solicitor
-that leads the office's appellate and constitutional litigation. An appeals
-division under another title does not count. Each post cites the office's own
-staff page or announcement where one exists, or else a court, bar or
-major-outlet report, and names its holder only where a source does. A state
-with no post on record is unmarked, which means none found, not none held.
-Like the data-center layer, the post is context for reading the map and never
-part of the tier.
+An office's `tech_unit` records a standing civil enforcement unit whose remit
+is privacy, data or technology: a named unit, section, bureau or team, such as
+a privacy unit or a bureau of internet and technology. A general consumer
+protection division, a single designated attorney, an identity-theft victim
+service, and a criminal cybercrime or child-exploitation unit do not count.
+Each unit cites the office's own page or announcement where one exists, or
+else a major-outlet report, and gives the year it was created where a source
+says. A state with no unit on record is unmarked, which means none found, not
+none held. Like the data-center layer, the unit is context for reading an
+office's capacity to take on technology companies, never part of the tier.
 
 ## What the site reads
 
 `python -m stateags build` writes `board.json`, carrying each office's tier,
-counts by kind in the window, small-group tier, transition, data-center projects and solicitor general post, every action
+counts by kind in the window, small-group tier, transition, data-center projects and technology or privacy unit, every action
 with each participating office's holder on its date (none before the first
 holder on record) and the rung it reaches for them and whether it is a large coalition, the pivot, and the coalition figures,
 all computed here; the site renders it and computes nothing. Its shape is
