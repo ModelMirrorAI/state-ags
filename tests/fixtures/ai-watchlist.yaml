@@ -1,0 +1,8 @@
+# A two-case stand-in for fedcourtsai's config/ai-watchlist.yaml: the build reads only cases[].name.
+cases:
+  - name: Doe v. Model Co.
+    court: txnd
+    docket_id: 1
+  - name: In re Example AI Litigation
+    court: nysd
+    docket_id: 2
