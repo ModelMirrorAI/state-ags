@@ -24,3 +24,10 @@ jobs:
       - run: uv run ruff check .
       - run: uv run mypy src tests
       - run: uv run pytest -q
+      # The same build the board workflow publishes, so a registry edit that
+      # names a case off fedcourtsai's AI watchlist fails here, before merge.
+      - name: Fetch the AI watchlist
+        run: >-
+          curl --fail --silent --show-error --retry 3 -o "$RUNNER_TEMP/ai-watchlist.yaml"
+          https://raw.githubusercontent.com/ModelMirrorAI/fedcourtsai/main/config/ai-watchlist.yaml
+      - run: uv run python -m stateags build --watchlist "$RUNNER_TEMP/ai-watchlist.yaml" --out "$RUNNER_TEMP/board.json"

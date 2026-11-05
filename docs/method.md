@@ -137,5 +137,6 @@ all computed here; the site renders it and computes nothing. Its shape is
 holder whose start day has passed is flagged overdue, so a roster that has
 fallen behind shows on the board rather than silently attributing actions to
 the wrong AG. An action that names a `watchlist_case` the AI watchlist does not
-list is refused, so every case link the site renders resolves. The roster,
-actions and data centers are not yet filled.
+list is refused, so every case link the site renders resolves. The board is
+rebuilt every day, because the window slides and successors take office on set
+days with no registry edit, and published on the `board` branch.

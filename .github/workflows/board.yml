@@ -1,0 +1,84 @@
+# Rebuild board.json every day and publish it to the `board` branch, which the
+# modelmirror.ai site fetches at build time. The board changes with no registry
+# edit because the 730-day window slides and a successor takes office on a set
+# day, so it is rebuilt on a schedule as well as on each push to main. The build
+# job runs read-only; only the publish job can push, and only to `board`.
+name: board
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: board
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      - run: uv sync --locked
+      # Every case an action names must be on fedcourtsai's AI watchlist, read
+      # from its main branch, so a case link the site renders resolves.
+      - name: Fetch the AI watchlist
+        run: >-
+          curl --fail --silent --show-error --retry 3 -o "$RUNNER_TEMP/ai-watchlist.yaml"
+          https://raw.githubusercontent.com/ModelMirrorAI/fedcourtsai/main/config/ai-watchlist.yaml
+      - name: Build the board
+        run: uv run python -m stateags build --watchlist "$RUNNER_TEMP/ai-watchlist.yaml" --out board/board.json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: board
+          path: board/board.json
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: board
+          path: out
+      # The branch holds one file and one commit per change. A board that is
+      # byte-identical to the published one is not pushed.
+      - name: Publish to the board branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          git init -q site
+          cd site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          url="https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          if git fetch -q --depth 1 "$url" board 2>/dev/null; then
+            git checkout -q -b board FETCH_HEAD
+          else
+            git checkout -q --orphan board
+          fi
+          cp ../out/board.json board.json
+          git add board.json
+          if git diff --cached --quiet; then
+            echo "Board unchanged."
+            exit 0
+          fi
+          git commit -q -m "board: rebuild from ${SOURCE_SHA}"
+          git push -q "$url" board
