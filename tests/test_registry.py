@@ -206,7 +206,7 @@ def test_uncalled_race_names_no_winner() -> None:
         (_registry(_action(states=["TX", "ZZ"])), "unknown states"),
         (_registry(_action(states=["TX", "TX"])), "listed twice"),
         (_registry(_action(lead="CA")), "is not among the states"),
-        (_registry(_action(docket_number=None)), "come together"),
+        (_registry(_action(court=None)), "needs its court"),
         (_registry(_action(court=None, docket_number=None)), "names its court"),
         (_registry(_action(states=["TX", "UT"])), "names its lead"),
         (_registry(_action(added="2026-01-01")), "added before"),
@@ -467,3 +467,18 @@ def test_bad_data_centers_are_refused(overrides: dict[str, Any], message: str) -
 def test_a_data_center_id_is_unique() -> None:
     with pytest.raises(ValidationError, match="data center id is used twice"):
         StateAgRegistry.model_validate({**_registry(), "data_centers": [_center(), _center()]})
+
+
+def test_a_filed_action_may_await_its_docket_number() -> None:
+    registry = StateAgRegistry.model_validate(_registry(_action(docket_number=None)))
+
+    assert registry.actions[0].court is not None
+    assert registry.actions[0].docket_number is None
+
+
+def test_only_advocacy_may_name_no_developer() -> None:
+    advocacy = _action(kind="advocacy", developers=[], court=None, docket_number=None)
+    assert StateAgRegistry.model_validate(_registry(advocacy)).actions[0].developers == []
+
+    with pytest.raises(ValidationError, match="names the developers"):
+        StateAgRegistry.model_validate(_registry(_action(developers=[])))

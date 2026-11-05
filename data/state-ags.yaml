@@ -6,8 +6,9 @@
 # training, outputs or deployment, is central to it, and one or more state AG
 # offices took part. Any court, and actions that never reach a court
 # (investigations, settlements, letters), count. Each action cites the AG
-# office's own announcement; a filed one also names its court and docket number,
-# and a case fedcourtsai's AI watchlist follows names that case.
+# office's own announcement; a filed one also names its court (and docket
+# number, once a source gives one), and a case fedcourtsai's AI watchlist
+# follows names that case.
 #
 # Changes. An office or action is added by a PR that cites this rule, on a dated
 # `added` line for an action. A successor is added when elected or appointed,
@@ -18,7 +19,8 @@
 # run in order of `start`, every one with a source; only the last may be
 # pending (`successor` or `uncalled`). An action's `states` are every office
 # that took part, `lead` the one that led (a single-state action is led by
-# that state), and `developers` every AI developer it is aimed at.
+# that state), and `developers` every AI developer it is aimed at (advocacy,
+# aimed at none, may list none).
 #
 # Data centers. `data_centers` lists each AI data center project of at least
 # 1,000 MW stated capacity (the layer's threshold, docs/method.md), with its
@@ -35,8 +37,1362 @@ categories:
   governance: Corporate structure, charitable assets and control of an AI developer.
   regulation: A state AI law, or federal preemption of state AI law.
 
-offices: []
+offices:
+- state: AK
+  selection: governor
+  holders:
+  - name: Stephen J. Cox
+    party: R
+    status: serving
+    start: '2025-08-29'
+    sources:
+    - https://law.alaska.gov/press/releases/2025/082125-Taylor-Resignation.html
+  - name: Cori Mills
+    party: R
+    status: serving
+    start: '2026-05-14'
+    sources:
+    - https://law.alaska.gov/department/about.html
+- state: AL
+  selection: elected
+  holders:
+  - name: Steve Marshall
+    party: R
+    status: serving
+    start: '2017-02-10'
+    sources:
+    - https://www.alabamaag.gov/about/
+- state: AR
+  selection: elected
+  holders:
+  - name: Tim Griffin
+    party: R
+    status: serving
+    start: '2023-01-10'
+    sources:
+    - https://arkansasag.gov/meet-tim/
+- state: AZ
+  selection: elected
+  holders:
+  - name: Kris Mayes
+    party: D
+    status: serving
+    start: '2023-01-02'
+    sources:
+    - https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf
+    - https://www.azag.gov/press-release/attorney-general-mayes-announces-lawsuit-against-openai-deceiving-arizonans-about
+- state: CA
+  selection: elected
+  holders:
+  - name: Rob Bonta
+    party: D
+    status: serving
+    start: '2021-04-23'
+    sources:
+    - https://oag.ca.gov/about
+- state: CO
+  selection: elected
+  holders:
+  - name: Phil Weiser
+    party: D
+    status: serving
+    start: '2019-01-08'
+    sources:
+    - https://coag.gov/resources/recursos-en-espanol/2941-2/
+- state: CT
+  selection: elected
+  holders:
+  - name: William Tong
+    party: D
+    status: serving
+    start: '2019-01-09'
+    sources:
+    - https://portal.ct.gov/-/media/DCF/GTF-CJA/pdf/2019/Connectiut-Childrens-Justice-Act-Application-Final-May-17-2019.pdf
+- state: DC
+  selection: elected
+  holders:
+  - name: Brian L. Schwalb
+    party: D
+    status: serving
+    start: '2023-01-02'
+    sources:
+    - https://oag.dc.gov/release/brian-l-schwalb-sworn-attorney-general-district
+- state: DE
+  selection: elected
+  holders:
+  - name: Kathy Jennings
+    party: D
+    status: serving
+    start: '2019-01-01'
+    sources:
+    - https://attorneygeneral.delaware.gov/executive/biography/
+- state: FL
+  selection: elected
+  holders:
+  - name: James Uthmeier
+    party: R
+    status: serving
+    start: '2025-02-17'
+    sources:
+    - https://www.myfloridalegal.com/ag-bio
+- state: GA
+  selection: elected
+  holders:
+  - name: Chris Carr
+    party: R
+    status: serving
+    start: '2016-11-01'
+    sources:
+    - https://law.georgia.gov/press-releases/2016-11-01/carr-officially-sworn-54th-attorney-general-georgia
+- state: HI
+  selection: governor
+  holders:
+  - name: Anne E. Lopez
+    party: D
+    status: serving
+    start: '2022-12-05'
+    sources:
+    - https://ag.hawaii.gov/wp-content/uploads/2023/08/HI-Attorney-General-Anne-E.-Lopez.pdf
+- state: IA
+  selection: elected
+  holders:
+  - name: Brenna Bird
+    party: R
+    status: serving
+    start: '2023-01-03'
+    sources:
+    - https://www.iowaattorneygeneral.gov/newsroom/brenna-bird-formally-sworn-in-as-iowa-attorney-general
+- state: ID
+  selection: elected
+  holders:
+  - name: Raúl Labrador
+    party: R
+    status: serving
+    start: '2023-01-02'
+    sources:
+    - https://www.ag.idaho.gov/about/
+- state: IL
+  selection: elected
+  holders:
+  - name: Kwame Raoul
+    party: D
+    status: serving
+    start: '2019-01-14'
+    sources:
+    - https://illinoisattorneygeneral.gov/dA/f76fc6b7a4/201901-14%20SWORN%20IN%20AS%20ILLINOIS%2042ND%20ATTORNEY%20GENERAL.pdf
+- state: IN
+  selection: elected
+  holders:
+  - name: Todd Rokita
+    party: R
+    status: serving
+    start: '2021-01-11'
+    sources:
+    - https://events.in.gov/event/ag_todd_rokita_sworn_in
+- state: KS
+  selection: elected
+  holders:
+  - name: Kris Kobach
+    party: R
+    status: serving
+    start: '2023-01-09'
+    sources:
+    - https://ag.ny.gov/sites/default/files/court-filings/alaska-et-al-v-characters-technologies-inc-notice-of-interest-2026.pdf
+    - https://republicanags.com/attorneys-general/
+- state: KY
+  selection: elected
+  holders:
+  - name: Russell Coleman
+    party: R
+    status: serving
+    start: '2024-01-01'
+    sources:
+    - https://www.ag.ky.gov/about/Pages/Attorney-General.aspx
+- state: LA
+  selection: elected
+  holders:
+  - name: Liz Murrill
+    party: R
+    status: serving
+    start: '2024-01-08'
+    sources:
+    - https://www.ag.state.la.us/About
+- state: MA
+  selection: elected
+  holders:
+  - name: Andrea Joy Campbell
+    party: D
+    status: serving
+    start: '2023-01-18'
+    sources:
+    - https://www.mass.gov/person/andrea-joy-campbell-attorney-general
+- state: MD
+  selection: elected
+  holders:
+  - name: Anthony G. Brown
+    party: D
+    status: serving
+    start: '2023-01-03'
+    sources:
+    - https://oag.maryland.gov/our-office/Pages/about-the-attorney-general.aspx
+- state: ME
+  selection: legislature
+  holders:
+  - name: Aaron Frey
+    party: D
+    status: serving
+    start: '2019-01-08'
+    sources:
+    - https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf
+- state: MI
+  selection: elected
+  holders:
+  - name: Dana Nessel
+    party: D
+    status: serving
+    start: '2019-01-01'
+    sources:
+    - https://www.michigan.gov/ag/team-listing-page/attorney-general-dana-nessel
+- state: MN
+  selection: elected
+  holders:
+  - name: Keith Ellison
+    party: DFL
+    status: serving
+    start: '2019-01-07'
+    sources:
+    - https://www.ag.state.mn.us/Office/AGBio.asp
+- state: MO
+  selection: elected
+  holders:
+  - name: Catherine L. Hanaway
+    party: R
+    status: serving
+    start: '2025-09-08'
+    sources:
+    - https://ago.mo.gov/about-us/about-ag-hanaway/
+- state: MS
+  selection: elected
+  holders:
+  - name: Lynn Fitch
+    party: R
+    status: serving
+    start: '2020-01-09'
+    sources:
+    - https://attorneygenerallynnfitch.com/wp-content/uploads/2025/05/AGFitch-Bio.pdf
+- state: MT
+  selection: elected
+  holders:
+  - name: Austin Knudsen
+    party: R
+    status: serving
+    start: '2021-01-04'
+    sources:
+    - https://dojmt.gov/?p=64442
+- state: NC
+  selection: elected
+  holders:
+  - name: Jeff Jackson
+    party: D
+    status: serving
+    start: '2025-01-01'
+    sources:
+    - https://ncdoj.gov/attorney-general-jeff-jackson-is-sworn-in-as-north-carolinas-attorney-general/
+- state: ND
+  selection: elected
+  holders:
+  - name: Drew H. Wrigley
+    party: R
+    status: serving
+    start: '2022-02-09'
+    sources:
+    - https://attorneygeneral.nd.gov/attorney-general-drew-h-wrigley
+- state: NE
+  selection: elected
+  holders:
+  - name: Mike Hilgers
+    party: R
+    status: serving
+    start: '2023-01-05'
+    sources:
+    - https://ago.nebraska.gov/node/2032
+- state: NH
+  selection: governor
+  holders:
+  - name: John M. Formella
+    party: R
+    status: serving
+    start: '2021-04-22'
+    sources:
+    - https://republicanags.com/attorneys-general/
+    - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+- state: NJ
+  selection: governor
+  holders:
+  - name: Jennifer Davenport
+    party: D
+    status: serving
+    start: '2026-01-20'
+    sources:
+    - https://www.njoag.gov/about/meet-attorney-general-davenport/
+- state: NM
+  selection: elected
+  holders:
+  - name: Raúl Torrez
+    party: D
+    status: serving
+    start: '2023-01-01'
+    sources:
+    - https://nmdoj.gov/?p=71
+- state: NV
+  selection: elected
+  holders:
+  - name: Aaron D. Ford
+    party: D
+    status: serving
+    start: '2019-01-07'
+    sources:
+    - https://ag.nv.gov/News/PR/2019/Attorney_General_Ford_Sworn_in_as_Nevada%E2%80%99s_34th_Attorney_General/
+- state: NY
+  selection: elected
+  holders:
+  - name: Letitia James
+    party: D
+    status: serving
+    start: '2019-01-01'
+    sources:
+    - https://ag.ny.gov/press-release/2019/letitia-james-sworn-new-york-state-attorney-general
+- state: OH
+  selection: elected
+  holders:
+  - name: Dave Yost
+    party: R
+    status: serving
+    start: '2019-01-14'
+    sources:
+    - https://www.ohioattorneygeneral.gov/Media/Newsletters/Consumer-Advocate/February-2019/Introducing-Ohio-Attorney-General-Dave-Yost
+  - name: Andy Wilson
+    party: R
+    status: serving
+    start: '2026-06-08'
+    sources:
+    - https://www.ohioattorneygeneral.gov/Media/News-Releases/June-2026/Andy-Wilson-Begins-Tenure-as-Ohio-Attorney-General
+- state: OK
+  selection: elected
+  holders:
+  - name: Gentner Drummond
+    party: R
+    status: serving
+    start: '2023-01-09'
+    sources:
+    - https://oklahoma.gov/oag/news/newsroom/2023/january/new-attorney-general-gentner-drummond-outlines-priorities-upon-t.html
+- state: OR
+  selection: elected
+  holders:
+  - name: Dan Rayfield
+    party: D
+    status: serving
+    start: '2024-12-31'
+    sources:
+    - https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/
+- state: PA
+  selection: elected
+  holders:
+  - name: Michelle A. Henry
+    party: D
+    status: serving
+    start: '2023-01-17'
+    sources:
+    - https://www.attorneygeneral.gov/the-office/history/
+  - name: David W. Sunday
+    party: R
+    status: serving
+    start: '2025-01-21'
+    sources:
+    - https://www.attorneygeneral.gov/the-office/history/
+- state: RI
+  selection: elected
+  holders:
+  - name: Peter F. Neronha
+    party: D
+    status: serving
+    start: '2019-01-01'
+    sources:
+    - https://riag.ri.gov/about-our-office/attorney-general-peter-f-neronha
+- state: SC
+  selection: elected
+  holders:
+  - name: Alan Wilson
+    party: R
+    status: serving
+    start: '2011-01-12'
+    sources:
+    - https://www.scag.gov/about-the-office/meet-the-attorney-general/
+- state: SD
+  selection: elected
+  holders:
+  - name: Marty Jackley
+    party: R
+    status: serving
+    start: '2023-01-07'
+    sources:
+    - https://atg.sd.gov/OurOffice/Media/pressreleasesdetail.aspx?id=2354
+- state: TN
+  selection: court
+  holders:
+  - name: Jonathan Skrmetti
+    party: R
+    status: serving
+    start: '2022-09-01'
+    sources:
+    - https://www.tn.gov/attorneygeneral/news/2022/9/1/pr22-32.html
+- state: TX
+  selection: elected
+  holders:
+  - name: Ken Paxton
+    party: R
+    status: serving
+    start: '2015-01-05'
+    sources:
+    - https://www.texasattorneygeneral.gov/about-office
+- state: UT
+  selection: elected
+  holders:
+  - name: Derek Brown
+    party: R
+    status: serving
+    start: '2025-01-06'
+    sources:
+    - https://republicanags.com/attorneys-general/
+    - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+- state: VA
+  selection: elected
+  holders:
+  - name: Jay Jones
+    party: D
+    status: serving
+    start: '2026-01-17'
+    sources:
+    - https://www.oag.state.va.us/our-office/about-the-attorney-general
+- state: VT
+  selection: elected
+  holders:
+  - name: Charity R. Clark
+    party: D
+    status: serving
+    start: '2023-01-05'
+    sources:
+    - https://ago.vermont.gov/about-attorney-generals-office
+- state: WA
+  selection: elected
+  holders:
+  - name: Nick Brown
+    party: D
+    status: serving
+    start: '2025-01-15'
+    sources:
+    - https://www.atg.wa.gov/news/news-releases/puppyland-pay-375-million-result-consumer-protection-lawsuit
+- state: WI
+  selection: elected
+  holders:
+  - name: Josh Kaul
+    party: D
+    status: serving
+    start: '2019-01-07'
+    sources:
+    - https://www.doj.state.wi.us/Pages/AboutUs/leadership.aspx
+- state: WV
+  selection: elected
+  holders:
+  - name: JB McCuskey
+    party: R
+    status: serving
+    start: '2025-01-13'
+    sources:
+    - https://ago.wv.gov/article/attorney-general-jb-mccuskey-takes-office-announces-leadership-team
+- state: WY
+  selection: governor
+  holders:
+  - name: Keith Kautz
+    party: R
+    status: serving
+    start: '2025-07-07'
+    sources:
+    - https://content.govdelivery.com/accounts/WYGOV/bulletins/3e7c439
 
-actions: []
+actions:
+- id: tx-character-ai-scope-act-investigation
+  title: Texas AG opens SCOPE Act/TDPSA investigation into Character.AI and 14 other companies
+  announced: '2024-12-12'
+  kind: investigation
+  category: child-safety
+  states:
+  - TX
+  lead: TX
+  developers:
+  - Character Technologies (Character.AI)
+  why: Probe of whether Character.AI (and other platforms used by minors) violate Texas children's privacy
+    and safety laws.
+  sources:
+  - https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-launches-investigations-characterai-reddit-instagram-discord-and-other
+  - https://texasscorecard.com/state/texas-launches-probe-into-15-companies-over-use-of-childrens-data
+  added: '2026-11-05'
+- id: tx-deepseek-investigation
+  title: Texas AG investigates DeepSeek under Texas privacy law; CIDs to Google and Apple
+  announced: '2025-02-14'
+  kind: investigation
+  category: privacy
+  states:
+  - TX
+  lead: TX
+  developers:
+  - DeepSeek
+  why: Investigation of whether DeepSeek's AI app violates the Texas Data Privacy and Security Act, with
+    CIDs to Google and Apple about the app.
+  sources:
+  - https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-announces-investigation-deepseek-and-notifies-chinese-ai-company-its
+  - https://texasborderbusiness.com/paxton-announces-investigation-into-chinese-ai-company-deepseek
+  - https://hunton.com/privacy-and-information-security-law/texas-ag-alleges-deepseek-violates-texas-privacy-law
+  added: '2026-11-05'
+- id: multistate-deepseek-government-devices-letter
+  title: 21 AGs urge Congress to pass the No DeepSeek on Government Devices Act
+  announced: '2025-03-06'
+  kind: advocacy
+  category: privacy
+  states:
+  - MT
+  - AL
+  - AK
+  - AR
+  - FL
+  - GA
+  - IA
+  - KY
+  - LA
+  - MO
+  - NE
+  - NH
+  - ND
+  - OH
+  - OK
+  - SC
+  - SD
+  - TN
+  - TX
+  - UT
+  - VA
+  lead: MT
+  developers:
+  - DeepSeek
+  why: Letter to congressional leaders asking Congress to ban DeepSeek's AI app on government devices
+    over data transmission to China.
+  sources:
+  - https://www.scag.gov/media/5cvhwdpv/deepseek-letter-to-congress_final.pdf
+  - https://oag.state.va.us/media-center/news-releases/2844-march-6-2025-attorney-general-miyares-joins-21-state-coalition-urging-congress-to-ban-china-based-ai-platform-on-all-government-devices
+  - https://www.alabamaag.gov/attorney-general-marshall-urges-congress-to-ban-china-based-ai-platform-deepseek-on-government-devices/
+  added: '2026-11-05'
+- id: multistate-ai-moratorium-letter-may-2025
+  title: 40 AGs urge Congress to reject 10-year moratorium on state AI laws in budget reconciliation
+  announced: '2025-05-16'
+  kind: advocacy
+  category: regulation
+  states:
+  - CO
+  - NH
+  - TN
+  - VT
+  - AZ
+  - AR
+  - CA
+  - CT
+  - DE
+  - DC
+  - HI
+  - IL
+  - IN
+  - KS
+  - LA
+  - ME
+  - MD
+  - MA
+  - MI
+  - MN
+  - MS
+  - NV
+  - NJ
+  - NM
+  - NY
+  - NC
+  - ND
+  - OH
+  - OK
+  - OR
+  - PA
+  - RI
+  - SC
+  - SD
+  - UT
+  - VA
+  - WA
+  - WI
+  lead: VT
+  developers: []
+  why: Bipartisan letter opposing the proposed federal moratorium that would bar states from enforcing
+    AI laws for ten years.
+  sources:
+  - https://ncdoj.gov/wp-content/uploads/2025/05/2025.05.15-Letter-to-Congress-re-Proposed-AI-Preemption-_FINAL-1.pdf
+  - https://coag.gov/press-releases/attorney-general-phil-weiser-bipartisan-ag-letter-congress-artificial-intelligence-regulations-5-16-25/
+  - https://coag.gov/app/uploads/2025/05/2025.05.15-Letter-to-Congress-re-Proposed-AI-Preemption-_FINAL.pdf
+  - https://ago.vermont.gov/blog/2025/05/16/attorney-general-clark-leads-bipartisan-letter-congress-opposing-budget-amendment-prohibiting-states
+  added: '2026-11-05'
+- id: al-meta-ai-role-play-letter
+  title: 28 Republican-led AGs (led by South Carolina) demand Meta halt AI chatbot sexual role-play reachable
+    by children
+  announced: '2025-05-27'
+  kind: letter
+  category: child-safety
+  states:
+  - SC
+  - GA
+  - AL
+  - ID
+  - AK
+  - IN
+  - AR
+  - IA
+  - FL
+  - KS
+  - KY
+  - ND
+  - LA
+  - OH
+  - MS
+  - OK
+  - MO
+  - PA
+  - MT
+  - SD
+  - NE
+  - TN
+  - NH
+  - TX
+  - UT
+  - WV
+  - VA
+  - WY
+  lead: SC
+  developers:
+  - Meta
+  why: Letter demanding Meta stop letting its AI chatbots engage in sexual role-play reachable by minors.
+  sources:
+  - https://www.tn.gov/content/dam/tn/attorneygeneral/documents/pr/2025/2025-5-meta.pdf
+  - https://www.alabamaag.gov/attorney-general-marshall-demands-meta-halt-ai-role-playing-feature-used-to-groom-and-exploit-children/
+  - https://content.govdelivery.com/attachments/ALAG/2025/05/28/file_attachments/3274666/2025.5.27%20Attorney%20General%20Marshall%20Demands%20Meta%20Halt%20AI%20Role-Playing%20Feature%20Used%20to%20Groom%20and%20Exploit%20Children.pdf
+  added: '2026-11-05'
+- id: mo-ai-chatbot-trump-bias-letters
+  title: Missouri AG demands records from Google, Meta, Microsoft and OpenAI over chatbot rankings of
+    Trump
+  announced: '2025-07-09'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - MO
+  lead: MO
+  developers:
+  - Google
+  - Meta
+  - Microsoft
+  - OpenAI
+  why: Demand letters claiming chatbot outputs ranking Trump last on antisemitism may be deceptive practices
+    under the Missouri Merchandising Practices Act.
+  sources:
+  - https://ago.mo.gov/wp-content/uploads/2025.07.09-Microsoft-Satya-Nadella-Letter.pdf
+  - https://forward.com/fast-forward/754543/after-ai-chatbots-rank-trump-low-on-antisemitism-missouris-top-lawyer-threatens-tech-companies/
+  added: '2026-11-05'
+- id: tx-meta-ai-studio-character-ai-investigation
+  title: Texas AG investigates Meta AI Studio and Character.AI over mental-health marketing
+  announced: '2025-08-18'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - TX
+  lead: TX
+  developers:
+  - Meta
+  - Character Technologies (Character.AI)
+  why: CIDs over chatbots allegedly marketed as therapeutic or mental-health tools, and over privacy misrepresentations.
+  sources:
+  - https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-investigates-meta-and-characterai-misleading-children-deceptive-ai
+  - https://siliconangle.com/?p=707734
+  - https://www.eweek.com/news/texas-attorney-general-investigates-meta-characterai-children-ai-mental-health/
+  added: '2026-11-05'
+- id: multistate-ai-child-safety-letter-aug-2025
+  title: 44 AGs warn AI companies to end predatory chatbot interactions with children
+  announced: '2025-08-25'
+  kind: letter
+  category: child-safety
+  states:
+  - IL
+  - NC
+  - SC
+  - TN
+  - AK
+  - AZ
+  - AR
+  - CA
+  - CO
+  - CT
+  - DE
+  - FL
+  - GA
+  - HI
+  - ID
+  - IN
+  - IA
+  - KY
+  - LA
+  - ME
+  - MA
+  - MN
+  - MO
+  - MS
+  - NE
+  - NV
+  - NH
+  - NJ
+  - NM
+  - NY
+  - ND
+  - OK
+  - OH
+  - PA
+  - RI
+  - SD
+  - UT
+  - VT
+  - VA
+  - WV
+  - WA
+  - WY
+  lead: TN
+  developers:
+  - Anthropic
+  - Apple
+  - Chai AI
+  - Character Technologies
+  - Google
+  - Luka Inc. (Replika)
+  - Meta
+  - Microsoft
+  - Nomi AI
+  - OpenAI
+  - Perplexity AI
+  - xAI
+  why: NAAG letter saying AI firms will be held accountable for chatbots that sexualize or harm children,
+    prompted by reports on Meta's chatbot policies.
+  sources:
+  - https://www.tn.gov/content/dam/tn/attorneygeneral/documents/pr/2025/pr25-43-letter.pdf
+  - https://www.tn.gov/attorneygeneral/news/2025/8/25/pr25-43.html
+  - https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-demands-companies-end-predatory-ai-interactions-with-kids
+  - https://www.scag.gov/about-the-office/news/attorney-general-alan-wilson-leads-44-ags-demanding-big-tech-end-predatory-ai-targeting-of-kids/
+  - https://www.illinoisattorneygeneral.gov/news/story/attorney-general-raoul-leads-44-states-in-demanding-companies-end-predatory-ai-interactions-with-kids
+  added: '2026-11-05'
+- id: multistate-deepfake-ncii-letters-aug-2025
+  title: 47 AGs urge search engines and payment platforms to curb deepfake nonconsensual intimate imagery
+  announced: '2025-08-26'
+  kind: letter
+  category: deepfakes
+  states:
+  - VT
+  - KY
+  - MA
+  - NJ
+  - PA
+  - UT
+  - AK
+  - AZ
+  - AR
+  - CA
+  - CO
+  - CT
+  - DE
+  - GA
+  - HI
+  - ID
+  - IL
+  - IA
+  - LA
+  - ME
+  - MD
+  - MI
+  - MN
+  - MS
+  - MO
+  - NE
+  - NV
+  - NH
+  - NM
+  - NY
+  - NC
+  - ND
+  - OH
+  - OK
+  - OR
+  - RI
+  - SC
+  - SD
+  - TN
+  - VA
+  - WA
+  - WV
+  - WI
+  - WY
+  lead: VT
+  developers:
+  - Google
+  - Microsoft
+  why: Letters asking search engines and payment processors to stop surfacing and monetizing AI-generated
+    deepfake intimate images and nudify tools.
+  sources:
+  - https://ago.vermont.gov/blog/2025/08/26/attorney-general-clark-leads-bipartisan-coalition-urging-tech-companies-stop-spread-deepfake-non
+  - https://www.mass.gov/news/ag-campbell-urges-tech-companies-to-stop-the-spread-of-deepfake-nonconsensual-intimate-imagery
+  - https://www.ag.idaho.gov/newsroom/attorney-general-labrador-joins-bipartisan-coalition-urging-tech-companies-to-stop-the-spread-of-deepfake-nonconsensual-intimate-imagery/
+  - https://www.route-fifty.com/artificial-intelligence/2025/08/state-ag-calls-search-engines-payment-platforms-do-more-fight-deepfake-pornography/407711/
+  added: '2026-11-05'
+- id: ca-de-openai-child-safety-letter
+  title: California and Delaware AGs warn OpenAI board that harm to children will not be tolerated
+  announced: '2025-09-05'
+  kind: letter
+  category: child-safety
+  states:
+  - CA
+  - DE
+  lead: CA
+  developers:
+  - OpenAI
+  why: Joint letter citing a teen suicide and a murder-suicide linked to ChatGPT, tied to the AGs' review
+    of OpenAI's restructuring.
+  sources:
+  - https://oag.ca.gov/news/press-releases/attorney-general-bonta-openai-harm-children-will-not-be-tolerated
+  - https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-openai-harm-children-will-not-be-tolerated
+  - https://techcrunch.com/2025/09/05/attorneys-general-warn-openai-harm-to-children-will-not-be-tolerated
+  added: '2026-11-05'
+- id: ca-de-openai-recapitalization-commitments
+  title: California MOU and Delaware statement of no objection on OpenAI recapitalization, with safety
+    commitments
+  announced: '2025-10-28'
+  kind: settlement
+  category: governance
+  states:
+  - CA
+  - DE
+  lead: DE
+  developers:
+  - OpenAI
+  why: The AGs agreed not to oppose OpenAI's for-profit restructuring in exchange for binding commitments
+    on nonprofit control and safety oversight.
+  sources:
+  - https://oag.ca.gov/news/press-releases/attorney-general-bonta-issues-statement-openai%E2%80%99s-recapitalization-plan
+  - https://news.delaware.gov/2025/10/28/ag-jennings-completes-review-of-openai-recapitalization/
+  added: '2026-11-05'
+- id: multistate-ai-preemption-letter-nov-2025
+  title: 36 AGs urge Congress not to preempt state AI laws (NDAA / moratorium push)
+  announced: '2025-11-25'
+  kind: advocacy
+  category: regulation
+  states:
+  - NC
+  - UT
+  - NH
+  - NY
+  - AZ
+  - CA
+  - CT
+  - DE
+  - DC
+  - HI
+  - ID
+  - IL
+  - IN
+  - KS
+  - LA
+  - ME
+  - MD
+  - MA
+  - MI
+  - MN
+  - MS
+  - NV
+  - NJ
+  - NM
+  - OH
+  - OR
+  - PA
+  - RI
+  - SC
+  - TN
+  - VT
+  - WA
+  - WI
+  lead: NC
+  developers: []
+  why: NAAG letter opposing a federal moratorium or preemption of state AI regulation.
+  sources:
+  - https://illinoisattorneygeneral.gov/News-Room/Current-News/Letter%20to%20Congress%20AI%20Moratorium_FINAL%20(corrected).pdf?language_id=1
+  - https://www.naag.org/policy-letter/state-attorneys-general-urge-congress-to-preserve-local-authority-on-ai-regulation/
+  - https://www.naag.org/wp-content/uploads/2025/11/Letter-to-Congress-AI-Moratorium_FINAL-corrected.pdf
+  - https://illinoisattorneygeneral.gov/news/story/attorney-general-raoul-joins-bipartisan-coalition-urging-congress-to-oppose-efforts-prohibiting-states-from-enforcing-artificial-intelligence-regulations
+  added: '2026-11-05'
+- id: multistate-sycophantic-delusional-outputs-letter
+  title: 42 AGs demand 13 AI companies curb sycophantic and delusional chatbot outputs
+  announced: '2025-12-10'
+  kind: letter
+  category: child-safety
+  states:
+  - PA
+  - NJ
+  - MA
+  - WV
+  - AL
+  - AK
+  - AR
+  - CO
+  - CT
+  - DE
+  - DC
+  - FL
+  - HI
+  - ID
+  - IL
+  - IA
+  - KY
+  - LA
+  - MD
+  - MI
+  - MN
+  - MS
+  - MO
+  - MT
+  - NV
+  - NH
+  - NM
+  - NY
+  - ND
+  - OH
+  - OK
+  - OR
+  - RI
+  - SC
+  - UT
+  - VT
+  - VA
+  - WA
+  - WY
+  lead: PA
+  developers:
+  - Anthropic
+  - Apple
+  - Chai AI
+  - Character Technologies
+  - Google
+  - Luka Inc. (Replika)
+  - Meta
+  - Microsoft
+  - Nomi AI
+  - OpenAI
+  - Perplexity AI
+  - xAI
+  why: Letter setting out 16 safeguards against harmful, sycophantic and delusional generative-AI outputs,
+    with written commitments due by January 16, 2026.
+  sources:
+  - https://ag.ny.gov/sites/default/files/letters/ai-multistate-letter-letters-2025.pdf
+  - https://www.attorneygeneral.gov/taking-action/ag-sunday-leads-coalition-of-42-attorneys-general-in-letter-to-a-i-software-companies-demanding-safeguards-to-protect-vulnerable-residents-from-harmful-interactions-with-bots/
+  - https://www.njoag.gov/ag-platkin-leads-bipartisan-coalition-demanding-that-tech-companies-put-a-stop-to-harmful-ai-chatbots/
+  - https://ago.wv.gov/article/west-virginia-sends-letter-ai-software-companies-demanding-safeguards-protect-vulnerable
+  - https://usvidoj.com/ag-gordon-c-rhea-joins-bipartisan-coalition-of-42-attorneys-general-in-letter-to-a-i-software-companies-demanding-safeguards-to-protect-vulnerable-residents-from-harmful-interactions-with-bots/
+  added: '2026-11-05'
+- id: ky-v-character-technologies
+  title: Kentucky AG sues Character Technologies and its founders over child harms
+  announced: '2026-01-08'
+  kind: suit
+  category: child-safety
+  states:
+  - KY
+  lead: KY
+  developers:
+  - Character Technologies (Character.AI)
+  court: Franklin Circuit Court (Kentucky)
+  docket_number: 26-CI-00029
+  why: First state AG suit against an AI chatbot company, alleging consumer-protection and data-privacy
+    violations and harm to minors.
+  sources:
+  - https://www.ag.ky.gov/Press%20Release%20Attachments/CTI%20Complaint%20Motion%20and%20Order%20Filed.pdf
+  - https://www.kfvs12.com/2026/01/09/ky-attorney-general-sues-ai-chatbot-company-claims-company-preys-children
+  - https://kentuckylantern.com/briefs/kentucky-attorney-generals-lawsuit-says-ai-company-preys-on-youth/
+  - https://news.bloomberglaw.com/ip-law/character-ai-hit-with-first-state-lawsuit-alleging-harm-to-kids
+  added: '2026-11-05'
+- id: ca-xai-grok-investigation
+  title: California AG opens investigation into xAI over Grok sexualized deepfakes
+  announced: '2026-01-14'
+  kind: investigation
+  category: deepfakes
+  states:
+  - CA
+  lead: CA
+  developers:
+  - xAI
+  why: Investigation into whether xAI broke California law by enabling mass generation of nonconsensual
+    intimate images, including of minors, through Grok.
+  sources:
+  - https://oag.ca.gov/news/press-releases/attorney-general-bonta-launches-investigation-xai-grok-over-undressed-sexual-ai
+  - https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-launches-investigation-xai-grok-over-undressed-sexual-ai
+  - https://www.cnbc.com/2026/01/14/elon-musk-xai-california-grok-investigation.html
+  added: '2026-11-05'
+- id: az-xai-grok-investigation
+  title: Arizona AG opens investigation into Grok over illegal and harmful images
+  announced: '2026-01-15'
+  kind: investigation
+  category: deepfakes
+  states:
+  - AZ
+  lead: AZ
+  developers:
+  - xAI
+  why: Investigation of whether Grok's generation of nonconsensual sexual and possibly CSAM imagery violated
+    Arizona law.
+  sources:
+  - https://www.azag.gov/press-release/attorney-general-mayes-announces-investigation-xs-ai-chatbot
+  - https://www.kjzz.org/politics/2026-01-15/mayes-grok-chatbot
+  added: '2026-11-05'
+- id: ca-xai-cease-and-desist
+  title: California AG sends cease-and-desist to xAI over Grok nonconsensual images
+  announced: '2026-01-16'
+  kind: letter
+  category: deepfakes
+  states:
+  - CA
+  lead: CA
+  developers:
+  - xAI
+  why: Demand that xAI immediately stop creating and distributing nonconsensual sexual images and CSAM
+    via Grok, with legal action threatened within five days.
+  sources:
+  - https://oag.ca.gov/news/press-releases/attorney-general-bonta-sends-cease-and-desist-letter-xai-demands-it-halt-illegal
+  - https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-sends-cease-and-desist-letter-xai-demands-it-halt-illegal
+  - https://www.axios.com/2026/01/16/xai-california-elon-musk-deepfakes-children-grok
+  added: '2026-11-05'
+- id: multistate-xai-grok-ncii-letter
+  title: 35 AGs demand xAI stop Grok from generating nonconsensual intimate images and CSAM
+  announced: '2026-01-23'
+  kind: letter
+  category: deepfakes
+  states:
+  - NC
+  - CT
+  - PA
+  - UT
+  - AZ
+  - CO
+  - DE
+  - HI
+  - ID
+  - IL
+  - KS
+  - KY
+  - ME
+  - MD
+  - MI
+  - MN
+  - NV
+  - NH
+  - NJ
+  - NM
+  - NY
+  - ND
+  - OK
+  - OR
+  - RI
+  - SD
+  - VT
+  - VA
+  - WA
+  - WI
+  - WY
+  - DC
+  lead: NC
+  developers:
+  - xAI
+  why: Bipartisan letter calling Grok's nonconsensual image generation 'a feature, not a bug' and demanding
+    removal, user enforcement and user control over Grok edits.
+  sources:
+  - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+  - https://ncdoj.gov/attorney-general-jeff-jackson-leads-bipartisan-coalition-demanding-xai-stop-creating-and-remove-groks-nonconsensual-sexual-images/
+  - https://oag.maryland.gov/News/Documents/pdfs/Letter%20to%20xAI_FINAL.pdf
+  - https://www.attorneygeneral.gov/taking-action/attorney-general-sunday-co-leads-letter-to-xai-demanding-change-to-groks-unchecked-creation-of-nonconsensual-sexual-content/
+  - https://www.atg.wa.gov/news/news-releases/ag-brown-joins-bipartisan-group-demanding-xai-halt-creation-nonconsensual-sexual
+  added: '2026-11-05'
+- id: xai-v-weiser-colorado-ai-act-defense
+  title: Colorado AG defends Colorado AI Act (SB 24-205) against xAI challenge
+  announced: '2026-04-09'
+  kind: defense
+  category: regulation
+  states:
+  - CO
+  lead: CO
+  developers:
+  - xAI
+  court: U.S. District Court for the District of Colorado
+  docket_number: 1:26-cv-01515
+  why: xAI sued the Colorado AG claiming the algorithmic-discrimination AI law violates the First Amendment;
+    the AG is the defendant.
+  sources:
+  - https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.1.0.pdf
+  - https://news.bloomberglaw.com/litigation/colorado-ai-safeguards-law-halted-as-musks-xai-seeks-injunction
+  - https://www.coloradopolitics.com/2026/04/28/colorados-unprecedented-ai-law-cant-be-enforced-yet-judge-rules/
+  added: '2026-11-05'
+- id: fl-openai-criminal-investigation
+  title: Florida AG opens criminal investigation into OpenAI over ChatGPT and the FSU shooting
+  announced: '2026-04-21'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - FL
+  lead: FL
+  developers:
+  - OpenAI
+  why: Statewide Prosecution subpoenas to test whether OpenAI bears criminal liability for ChatGPT's interactions
+    with the accused FSU shooter.
+  sources:
+  - https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-launches-criminal-investigation-openai-chatgpt
+  - https://www.washingtontimes.com/news/2026/apr/21/floridas-attorney-general-launches-criminal-probe-chatgpt-fsu/
+  - https://www.fox13news.com/news/florida-launches-criminal-investigation-openai-following-chatgpt-conversation-accused-fsu-shooter
+  - https://www.myfloridalegal.com/print/pdf/node/28180
+  added: '2026-11-05'
+- id: fl-v-openai-altman
+  title: Florida AG sues OpenAI and Sam Altman over ChatGPT harms
+  announced: '2026-06-01'
+  kind: suit
+  category: consumer-protection
+  states:
+  - FL
+  lead: FL
+  developers:
+  - OpenAI
+  court: Florida Circuit Court, Tenth Judicial Circuit, Highlands County
+  docket_number: 26000295GCAXMX
+  why: Ten-count civil complaint (FDUTPA, negligence, product liability, misrepresentation) alleging OpenAI
+    concealed ChatGPT's risks, including to minors, and seeking Altman's personal liability.
+  sources:
+  - https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-first-nation-state-led-lawsuit-against-openai-ceo
+  - https://www.wusf.org/courts-law/2026-06-01/florida-sues-openai-and-ceo-sam-altman-claiming-company-concealed-serious-risks-chatgpt
+  - https://www.law360.com/articles/2484098/florida-ag-sues-openai-says-chatgpt-spurs-violence
+  - https://gizmodo.com/sam-altman-sued-by-florida-ag-over-alleged-exploitation-of-chatgpt-users-for-profit-2000765849
+  added: '2026-11-05'
+- id: xai-v-ellison-nudification-ban-defense
+  title: Minnesota AG defends first-in-nation AI nudification ban against xAI challenge
+  announced: '2026-07-27'
+  kind: defense
+  category: deepfakes
+  states:
+  - MN
+  lead: MN
+  developers:
+  - xAI
+  court: U.S. District Court, D. Minn.; appeal U.S. Court of Appeals for the Eighth Circuit
+  docket_number: 0:26-cv-03425-DWF-DTS (D. Minn.)
+  why: xAI challenges Minnesota's law fining developers whose tools let users make nonconsensual nude
+    deepfakes; the AG defends it.
+  sources:
+  - https://www.ag.state.mn.us/Office/Communications/2026/09/04_xAI.asp
+  - https://ag.state.mn.us/Office/Communications/2026/08/18_xAI.asp
+  - https://ag.state.mn.us/Office/Communications/2026/09/04_xAI.asp
+  - https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html
+  - https://www.valleynewslive.com/2026/10/05/federal-appeals-court-pauses-minnesotas-ai-nudification-ban/
+  added: '2026-11-05'
+- id: multistate-openai-hugging-face-preservation-letter
+  title: 15 Republican AGs demand OpenAI preserve records on its agents' Hugging Face intrusion
+  announced: '2026-08-03'
+  kind: letter
+  category: governance
+  states:
+  - IA
+  - AL
+  - AR
+  - FL
+  - ID
+  - IN
+  - KS
+  - MO
+  - MT
+  - NE
+  - OK
+  - PA
+  - SC
+  - TX
+  - UT
+  lead: IA
+  developers:
+  - OpenAI
+  why: Pre-litigation preservation demand after an unreleased OpenAI model escaped its test environment
+    and attacked Hugging Face, also asking OpenAI to cease the evaluations.
+  sources:
+  - https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-leads-coalition-demanding-transparency-from-openai-after-ai-breach-and
+  - https://www.foxbusiness.com/technology/gop-ags-warn-openai-altman-preserve-records-ai-agent-hacking-probe
+  - https://thenextweb.com/news/openai-15-attorneys-general-preserve-evidence-hugging-face-hack
+  added: '2026-11-05'
+- id: al-openai-hugging-face-investigation
+  title: Alabama AG subpoenas OpenAI and Sam Altman over the Hugging Face AI breach
+  announced: '2026-08-24'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - AL
+  lead: AL
+  developers:
+  - OpenAI
+  why: Investigation under the Alabama Deceptive Trade Practices Act into OpenAI's oversight of a model
+    that hacked Hugging Face.
+  sources:
+  - https://www.alabamaag.gov/wp-content/uploads/2026/08/2026.8.21-Attorney-General-Marshall-Launches-Investigation-Into-OpenAI-and-Sam-Altman-for-Massive-Artificial-Intelligence-Data-Breach.pdf
+  - https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/
+  added: '2026-11-05'
+- id: multistate-congress-federal-ai-framework-letter-sep-2026
+  title: 26 AGs ask Congress for federal AI safety rules without preempting state law
+  announced: '2026-09-24'
+  kind: advocacy
+  category: regulation
+  states:
+  - NY
+  - NJ
+  - AZ
+  - CA
+  - CO
+  - CT
+  - DE
+  - DC
+  - HI
+  - IL
+  - ME
+  - MD
+  - MA
+  - MI
+  - MN
+  - NV
+  - NM
+  - NC
+  - OK
+  - OR
+  - RI
+  - VT
+  - VA
+  - WA
+  - WI
+  lead: NY
+  developers: []
+  why: Letter urging comprehensive federal AI regulation (safety testing, standards) that preserves state
+    laws and gives states enforcement authority.
+  sources:
+  - https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf
+  - https://ag.ny.gov/press-release/2026/attorney-general-james-calls-congress-protect-americans-unchecked-ai-development
+  - https://www.fingerlakes1.com/2026/09/24/james-leads-attorneys-general-in-call-for-federal-ai-safety-rules/
+  added: '2026-11-05'
+- id: ca-openai-cybersecurity-investigation-subpoena
+  title: California AG investigates OpenAI over AI-agent cybersecurity incidents and serves subpoena
+  announced: '2026-10-01'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - CA
+  lead: CA
+  developers:
+  - OpenAI
+  why: Investigative subpoena over cyber incidents and risks involving OpenAI's models, including the
+    Hugging Face intrusion, under state consumer-protection law.
+  sources:
+  - https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena
+  - https://www.independent.com/2026/10/02/as-part-of-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena-on-openai/
+  - https://thehill.com/policy/technology/6124245-openai-subpoena-rob-bonta-california/
+  - https://www.insurancejournal.com/news/west/2026/10/02/887757.htm
+  added: '2026-11-05'
+- id: multistate-character-ai-bankruptcy-notice
+  title: 40 AGs seek child-safety and privacy conditions on any sale in Character.AI Chapter 11
+  announced: '2026-10-14'
+  kind: amicus
+  category: child-safety
+  states:
+  - NY
+  - AK
+  - AR
+  - CA
+  - CO
+  - CT
+  - DC
+  - DE
+  - GA
+  - HI
+  - ID
+  - IL
+  - IN
+  - KS
+  - KY
+  - LA
+  - MA
+  - ME
+  - MI
+  - MN
+  - MS
+  - NV
+  - NJ
+  - NC
+  - ND
+  - NH
+  - OH
+  - OK
+  - OR
+  - PA
+  - RI
+  - SC
+  - SD
+  - TN
+  - UT
+  - VA
+  - VT
+  - WA
+  - WI
+  - WV
+  lead: NY
+  developers:
+  - Character Technologies (Character.AI)
+  court: U.S. Bankruptcy Court, D. Del.
+  docket_number: 26-11603-BLS (Doc. 33)
+  why: Notice in Character Technologies' bankruptcy asking that enforceable child-safety and data-privacy
+    obligations attach to any asset sale and that a privacy ombudsman be appointed.
+  sources:
+  - https://ag.ny.gov/sites/default/files/court-filings/alaska-et-al-v-characters-technologies-inc-notice-of-interest-2026.pdf
+  - https://ag.ny.gov/press-release/2026/attorney-general-james-urges-court-protect-children-and-consumers-characterai
+  - https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-seeks-consumer-protections-characterai-bankruptcy
+  - https://news.delaware.gov/2026/10/15/ag-jennings-seeks-consumer-protections-in-character-ai-bankruptcy/
+  - https://www.ag.state.mn.us/Office/Communications/2026/10/15_CharacterAI.asp
+  added: '2026-11-05'
+- id: tx-v-openai-altman
+  title: Texas AG sues OpenAI and Sam Altman under the DTPA and SCOPE Act
+  announced: '2026-10-23'
+  kind: suit
+  category: child-safety
+  states:
+  - TX
+  lead: TX
+  developers:
+  - OpenAI
+  court: District Court, Collin County, Texas
+  docket_number: null
+  why: Petition alleging ChatGPT's safety claims misled consumers and its age-verification, parental-control
+    and minor-privacy practices violate the SCOPE Act; seeks court-approved review before new model releases.
+  sources:
+  - https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sues-openai-and-ceo-sam-altman-lying-users-and-harming-texans
+  - https://www.texasattorneygeneral.gov/sites/default/files/images/press/OpenAI%20Final.pdf
+  - https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/
+  - https://kbtx.com/2026/10/23/texas-attorney-general-ken-paxton-sues-chatgpt-maker-openai/
+  added: '2026-11-05'
 
 data_centers: []

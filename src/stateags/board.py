@@ -81,7 +81,9 @@ class StateAgActionRow(_Strict):
     )
     rungs: dict[str, int] = Field(description="The tier this action reaches for each office.")
     in_window: bool = Field(description="Whether the action counts toward tiers on the day.")
-    developers: list[str] = Field(min_length=1)
+    developers: list[str] = Field(
+        description="The AI developers the action is aimed at; empty only for advocacy."
+    )
     court: str | None = None
     docket_number: str | None = None
     watchlist_case: str | None = Field(

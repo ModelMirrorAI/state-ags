@@ -12,9 +12,9 @@ State AGs act against AI developers mostly in state court, through
 investigations and settlements that never reach a court, and in multistate
 letters and amicus briefs. No docket feed carries that, so the registry is
 hand-curated. Each action cites the AG office's own announcement; a filed one
-names its court and docket number. An action in a federal case that
-fedcourtsai's AI watchlist (`config/ai-watchlist.yaml` there) follows names
-that case, and the build checks the name against the watchlist.
+names its court, and its docket number once a source gives one. An action in a
+federal case that fedcourtsai's AI watchlist (`config/ai-watchlist.yaml` there)
+follows names that case, and the build checks the name against the watchlist.
 
 ## The rule
 
@@ -75,9 +75,10 @@ on or before the day). The rungs:
 
 "Own" means the office acted alone or is the action's `lead`; a multistate
 investigation, settlement or suit always names its lead, and a filed action
-(`amicus`, `suit`, `defense`) always names its court and docket number. A tier is an
-ordinal ranking: tier 4 is more than tier 3, by no stated amount. Counts by
-kind are published beside every tier so a reader can see what it rests on.
+(`amicus`, `suit`, `defense`) always names its court, and its docket number
+once a source gives one. A tier is an ordinal ranking: tier 4 is more than tier
+3, by no stated amount. Counts by kind are published beside every tier so a
+reader can see what it rests on.
 
 **Reading rule.** The tier measures what an office has done in public, as its
 own announcements record it. It does not measure merit, outcome or intent, and

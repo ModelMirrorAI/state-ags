@@ -305,8 +305,10 @@ class Action(BaseModel):
     category: str
     states: list[str] = Field(min_length=1)
     lead: str | None = None
-    developers: list[str] = Field(min_length=1)
-    #: The court and docket number, for a suit, amicus or defense that was filed.
+    #: Every AI developer the action is aimed at; advocacy, aimed at none, may list none.
+    developers: list[str] = Field(default_factory=list)
+    #: The court, for a suit, amicus or defense that was filed, and its docket number once a
+    #: source gives one (a petition filed in state court can carry a blank cause number).
     court: str | None = None
     docket_number: str | None = None
     #: The watchlist case's name, when the action is in a case the watchlist follows.
@@ -333,10 +335,12 @@ class Action(BaseModel):
             raise ValueError(f"{self.id}: lead {self.lead!r} is not among the states")
         if len(self.states) == 1 and self.lead not in (None, self.states[0]):
             raise ValueError(f"{self.id}: a single-state action is led by that state")
-        if (self.court is None) != (self.docket_number is None):
-            raise ValueError(f"{self.id}: court and docket_number come together")
+        if not self.developers and self.kind is not Kind.advocacy:
+            raise ValueError(f"{self.id}: a {self.kind.value} names the developers it is aimed at")
+        if self.docket_number is not None and self.court is None:
+            raise ValueError(f"{self.id}: a docket_number needs its court")
         if self.kind in _FILED and self.court is None:
-            raise ValueError(f"{self.id}: a {self.kind.value} names its court and docket number")
+            raise ValueError(f"{self.id}: a {self.kind.value} names its court")
         if self.multistate and self.kind in _LED and self.lead is None:
             raise ValueError(f"{self.id}: a multistate {self.kind.value} names its lead state")
         if self.added < self.announced:
