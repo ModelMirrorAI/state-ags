@@ -62,6 +62,13 @@ offices:
     start: '2017-02-10'
     sources:
     - https://www.alabamaag.gov/about/
+  - name: Katherine Robertson
+    party: R
+    status: successor
+    start: '2027-01-18'
+    sources:
+    - https://wtop.com/national/2026/11/republican-katherine-robertson-wins-election-for-attorney-general-in-alabama
+    - https://law.counselstack.com/constitution/al/V/116
 - state: AR
   selection: elected
   holders:
@@ -99,6 +106,13 @@ offices:
     start: '2019-01-08'
     sources:
     - https://coag.gov/resources/recursos-en-espanol/2941-2/
+  - name: Jena Griswold
+    party: D
+    status: successor
+    start: '2027-01-12'
+    sources:
+    - https://www.cbsnews.com/colorado/news/jena-griswold-colorado-attorney-general-election-michael-allen/
+    - https://codes.findlaw.com/co/colorado-constitution-of-1876/co-const-art-iv-sect-1/
 - state: CT
   selection: elected
   holders:
@@ -144,6 +158,13 @@ offices:
     start: '2016-11-01'
     sources:
     - https://law.georgia.gov/press-releases/2016-11-01/carr-officially-sworn-54th-attorney-general-georgia
+  - name: Tanya Miller
+    party: D
+    status: successor
+    start: '2027-01-11'
+    sources:
+    - https://www.11alive.com/article/news/politics/elections/tanya-miller-projected-to-beat-brian-strickland-georgia-attorney-general-race/85-dd08df96-6af6-490d-8159-9cbe4f5735a9
+    - https://sos.ga.gov/federal-and-state-offices-appearing-ballot-2026
 - state: HI
   selection: governor
   holders:
@@ -162,6 +183,13 @@ offices:
     start: '2023-01-03'
     sources:
     - https://www.iowaattorneygeneral.gov/newsroom/brenna-bird-formally-sworn-in-as-iowa-attorney-general
+  - name: Nate Willems
+    party: D
+    status: successor
+    start: '2027-01-02'
+    sources:
+    - https://www.weareiowa.com/article/news/politics/elections/iowa-attorney-general-race-brenna-bird-nate-willems-results-updates/524-36fb8f22-ef82-4328-967d-070515ae0679
+    - https://www.legis.iowa.gov/docs/code/2025/39.8.rtf
 - state: ID
   selection: elected
   holders:
@@ -199,6 +227,11 @@ offices:
     sources:
     - https://ag.ny.gov/sites/default/files/court-filings/alaska-et-al-v-characters-technologies-inc-notice-of-interest-2026.pdf
     - https://republicanags.com/attorneys-general/
+  - status: uncalled
+    start: '2027-01-11'
+    sources:
+    - https://www.kctv5.com/2026/11/05/chris-mann-declares-victory-kansas-ag-race-race-remains-uncalled/
+    - https://kansasreflector.com/2026/11/04/too-close-to-call-kansas-secretary-of-state-attorney-general-candidates-wait-for-final-tallies/
 - state: KY
   selection: elected
   holders:
@@ -253,6 +286,13 @@ offices:
     start: '2019-01-01'
     sources:
     - https://www.michigan.gov/ag/team-listing-page/attorney-general-dana-nessel
+  - name: Eli Savit
+    party: D
+    status: successor
+    start: '2027-01-01'
+    sources:
+    - https://www.michiganpublic.org/politics-government/2026-11-04/who-won-michigan-attorney-general-race
+    - https://www.legislature.mi.gov/documents/mcl/pdf/mcl-168-79.pdf
 - state: MN
   selection: elected
   holders:
@@ -353,6 +393,13 @@ offices:
     start: '2019-01-07'
     sources:
     - https://ag.nv.gov/News/PR/2019/Attorney_General_Ford_Sworn_in_as_Nevada%E2%80%99s_34th_Attorney_General/
+  - name: Nicole Cannizzaro
+    party: D
+    status: successor
+    start: '2027-01-04'
+    sources:
+    - https://thenevadaindependent.com/article/live-updates-nevadas-2026-election-results
+    - https://www.clarkcountynv.gov/government/departments/elections/all_elected_officials/state
 - state: NY
   selection: elected
   holders:
@@ -377,6 +424,13 @@ offices:
     start: '2026-06-08'
     sources:
     - https://www.ohioattorneygeneral.gov/Media/News-Releases/June-2026/Andy-Wilson-Begins-Tenure-as-Ohio-Attorney-General
+  - name: John Kulewicz
+    party: D
+    status: successor
+    start: '2027-01-11'
+    sources:
+    - https://ohiocapitaljournal.com/2026/11/04/kulewicz-holds-narrow-lead-over-faber-in-ohio-attorney-general-race/
+    - https://www.wkbn.com/news/elections/kulewicz-announced-winner-in-ohio-attorney-general-race/
 - state: OK
   selection: elected
   holders:
@@ -386,6 +440,13 @@ offices:
     start: '2023-01-09'
     sources:
     - https://oklahoma.gov/oag/news/newsroom/2023/january/new-attorney-general-gentner-drummond-outlines-priorities-upon-t.html
+  - name: Jon Echols
+    party: R
+    status: successor
+    start: '2027-01-11'
+    sources:
+    - https://www.newson6.com/oklahoma-politics/oklahoma-attorney-general-election-results
+    - https://www.oklahoma.gov/content/dam/ok/en/elections/terms-of-office/2025-terms-of-office.pdf
 - state: OR
   selection: elected
   holders:
@@ -419,6 +480,13 @@ offices:
     start: '2019-01-01'
     sources:
     - https://riag.ri.gov/about-our-office/attorney-general-peter-f-neronha
+  - name: Kimberly Ahern
+    party: D
+    status: successor
+    start: '2027-01-05'
+    sources:
+    - https://electionresults.ri.gov/results/public/RhodeIsland/elections/2026StatewideGeneralElection
+    - https://law.justia.com/codes/rhode-island/title-17/chapter-17-2/section-17-2-1/
 - state: SC
   selection: elected
   holders:
@@ -428,6 +496,12 @@ offices:
     start: '2011-01-12'
     sources:
     - https://www.scag.gov/about-the-office/meet-the-attorney-general/
+  - name: David Stumbo
+    party: R
+    status: successor
+    start: '2027-01-13'
+    sources:
+    - https://www.wistv.com/2026/11/04/david-stumbo-wins-will-become-scs-next-attorney-general/
 - state: SD
   selection: elected
   holders:
@@ -437,6 +511,13 @@ offices:
     start: '2023-01-07'
     sources:
     - https://atg.sd.gov/OurOffice/Media/pressreleasesdetail.aspx?id=2354
+  - name: Lance Russell
+    party: R
+    status: successor
+    start: '2027-01-09'
+    sources:
+    - https://southdakotasearchlight.com/2026/11/03/attorney-general-of-south-dakota-wins-election-to-us-house/
+    - https://law.counselstack.com/statute/sd/3-1-2
 - state: TN
   selection: court
   holders:
@@ -455,6 +536,13 @@ offices:
     start: '2015-01-05'
     sources:
     - https://www.texasattorneygeneral.gov/about-office
+  - name: Nathan Johnson
+    party: D
+    status: successor
+    start: '2027-01-01'
+    sources:
+    - https://www.houstonpublicmedia.org/articles/news/2026/11/04/566148/democrat-nathan-johnson-triumphs-in-texas-ag-race-to-replace-paxton/
+    - "https://texas.public.law/statutes/tex._gov't_code_section_601.003"
 - state: UT
   selection: elected
   holders:
@@ -1395,4 +1483,344 @@ actions:
   - https://kbtx.com/2026/10/23/texas-attorney-general-ken-paxton-sues-chatgpt-maker-openai/
   added: '2026-11-05'
 
-data_centers: []
+data_centers:
+- id: openai-project-camellia
+  name: "OpenAI Project Camellia"
+  state: GA
+  locality: "Effingham County (Savannah Gateway Industrial Hub)"
+  developers:
+  - "OpenAI"
+  capacity_mw: 3200
+  status: announced
+  announced: '2026-07-22'
+  sources:
+  - https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/
+  - https://w.media/openai-plans-to-build-its-own-3-2-gw-data-center-campus-in-georgia/
+  - https://www.wabe.org/20-billion-openai-data-center-to-open-in-effingham-county/
+  added: '2026-11-05'
+- id: meta-lebanon-indiana
+  name: "Meta Lebanon, Indiana campus"
+  state: IN
+  locality: "Lebanon, Boone County"
+  developers:
+  - "Meta"
+  capacity_mw: 1000
+  status: under-construction
+  announced: '2026-02-11'
+  sources:
+  - https://www.datacenterdynamics.com/en/news/meta-announces-1gw-data-center-campus-in-indiana
+  - https://bloomberg.com/news/articles/2026-02-11/meta-to-spend-more-than-10-billion-on-indiana-based-data-center
+  - https://www.publicpower.org/periodical/article/meta-breaks-ground-1-gw-data-center-campus-indiana
+  added: '2026-11-05'
+- id: paducah-ai-campus
+  name: "Paducah AI campus (DOE Paducah site)"
+  state: KY
+  locality: "Paducah, McCracken County"
+  developers:
+  - "Brookfield"
+  capacity_mw: 1200
+  status: announced
+  announced: '2026-07-29'
+  sources:
+  - https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site
+  - https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/
+  added: '2026-11-05'
+- id: terawulf-muskie
+  name: "TeraWulf Muskie Data Campus"
+  state: KY
+  locality: "Eastern Kentucky"
+  developers:
+  - "TeraWulf"
+  capacity_mw: 1000
+  status: announced
+  announced: '2026-05-26'
+  sources:
+  - https://investors.terawulf.com/news-events/press-releases/detail/141
+  - https://datacenterdynamics.com/en/news/terawulfs-kentucky-campus-to-reach-1gw-in-2029
+  added: '2026-11-05'
+- id: hut8-river-bend
+  name: "Hut 8 River Bend campus"
+  state: LA
+  locality: "St. Francisville area, West Feliciana Parish"
+  developers:
+  - "Hut 8"
+  capacity_mw: 1330
+  status: under-construction
+  announced: '2025-12-17'
+  sources:
+  - https://www.datacenterdynamics.com/en/news/hut-8-signs-245mw-capacity-deal-with-fluidstack-as-part-of-multi-gigawatt-partnership-with-anthropic
+  - https://www.datacenterdynamics.com/en/news/hut-8-selling-325bn-in-bonds-to-finance-google-and-anthropic-backed-river-bend-ai-data-center-campus/
+  added: '2026-11-05'
+- id: meta-hyperion
+  name: "Meta Hyperion"
+  state: LA
+  locality: "Holly Ridge, Richland Parish"
+  developers:
+  - "Meta"
+  capacity_mw: 5000
+  status: under-construction
+  announced: '2024-12-04'
+  sources:
+  - https://www.datacenterdynamics.com/en/news/meta-expands-data-center-campus-in-richland-parish-louisiana-to-5gw-will-invest-50bn/
+  - https://www.tomshardware.com/tech-industry/data-centers/meta-expands-colossal-hyperion-ai-supercluster-plans-to-5gw-pushes-louisiana-investment-past-usd50-billion-as-ai-race-accelerates-says-it-plans-to-invest-over-usd1-billion-in-local-infrastructure-improvements
+  added: '2026-11-05'
+- id: stargate-saline-township
+  name: "Stargate Michigan ('The Barn')"
+  state: MI
+  locality: "Saline Township, Washtenaw County"
+  developers:
+  - "Related Digital"
+  capacity_mw: 1000
+  status: under-construction
+  announced: '2025-10-30'
+  sources:
+  - https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site
+  - https://www.datacenterdynamics.com/en/news/related-digitals-michigan-1gw-data-center-project-to-serve-openai-oracle/
+  added: '2026-11-05'
+- id: applied-digital-polaris-forge-2
+  name: "Applied Digital Polaris Forge 2"
+  state: ND
+  locality: "Harwood, Cass County"
+  developers:
+  - "Applied Digital"
+  capacity_mw: 1000
+  status: under-construction
+  announced: '2025-08-18'
+  sources:
+  - https://ir.applieddigital.com/news-events/press-releases/detail/127/applied-digital-to-break-ground-on-3-billion-polaris-forge
+  - https://datacenterdynamics.com/en/news/applied-digital-secures-5bn-15-year-lease-with-hyperscaler-at-north-dakota-data-center-campus/
+  added: '2026-11-05'
+- id: project-jupiter
+  name: "Project Jupiter (Stargate Do\u00f1a Ana County)"
+  state: NM
+  locality: "Santa Teresa area, Do\u00f1a Ana County"
+  developers:
+  - "BorderPlex Digital Assets"
+  - "STACK Infrastructure"
+  capacity_mw: 2450
+  status: under-construction
+  announced: '2025-09-23'
+  sources:
+  - https://cleanview.co/reports/behind-the-meter-data-centers/full-report/stargate-jupiter
+  - https://www.abqjournal.com/business/doa-na-countys-project-jupiter-joins-500-billion-stargate-initiative-led-by-openai-oracle/493927
+  - https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand
+  added: '2026-11-05'
+- id: meta-prometheus
+  name: "Meta Prometheus"
+  state: OH
+  locality: "New Albany, Licking County"
+  developers:
+  - "Meta"
+  capacity_mw: 1000
+  status: operating
+  announced: '2025-07-14'
+  sources:
+  - https://www.itpro.com/infrastructure/data-centres/meta-working-on-a-5gw-data-center-to-supercharge-ai-infrastructure-and-mark-zuckerberg-says-one-cluster-alone-covers-a-significant-part-of-the-footprint-of-manhattan
+  - https://epoch.ai/data/ai-data-centers/directory/meta-prometheus
+  - https://cryptobriefing.com/meta-prometheus-supercluster-ohio-ai-training/
+  added: '2026-11-05'
+- id: sb-energy-ports-piketon
+  name: "PORTS Technology Campus (SB Energy, Piketon)"
+  state: OH
+  locality: "Piketon, Pike County"
+  developers:
+  - "SB Energy"
+  capacity_mw: 10000
+  status: under-construction
+  announced: '2026-03-20'
+  sources:
+  - https://www.13abc.com/2026/03/20/trump-officials-announce-10-gigawatt-data-center-gas-plants-former-ohio-uranium-site/
+  - https://www.theregister.com/2026/03/23/softbank_to_put_mega_server
+  - https://news.constructconnect.com/megaproject-watch-u.s.-to-turn-ex-uranium-plant-into-self-powered-10-gigawatt-data-center
+  added: '2026-11-05'
+- id: iren-oklahoma
+  name: "IREN Oklahoma campus"
+  state: OK
+  locality: "Oklahoma"
+  developers:
+  - "IREN"
+  capacity_mw: 1600
+  status: announced
+  announced: '2026-02-05'
+  sources:
+  - https://iren.com/resources/news/iren-oklahoma-1-6gw-data-center-campus
+  - https://www.iren.com/data-centers/oklahoma
+  added: '2026-11-05'
+- id: nebius-schuylkill
+  name: "Nebius Pennsylvania AI factory"
+  state: PA
+  locality: "Butler Township, Schuylkill County (Highridge Business Park)"
+  developers:
+  - "Nebius"
+  capacity_mw: 1200
+  status: announced
+  announced: '2026-05-13'
+  sources:
+  - https://nebius.com/newsroom/nebius-reports-first-quarter-2026-financial-results
+  - https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/
+  added: '2026-11-05'
+- id: tecfusions-keystone-connect
+  name: "TECfusions Keystone Connect"
+  state: PA
+  locality: "Upper Burrell, Westmoreland County"
+  developers:
+  - "TECfusions"
+  capacity_mw: 3000
+  status: announced
+  announced: '2025-01-14'
+  sources:
+  - https://prnewswire.com/news-releases/tecfusions-unveils-massive-1400-acre-data-center-project-in-pennsylvania-revitalizing-former-industrial-plant-302350041.html
+  - https://datacenterdynamics.com/en/news/tecfusions-acquires-former-manufacturing-site-outside-pittsburgh-pennsylvania-for-3gw-data-center-site
+  added: '2026-11-05'
+- id: savannah-river-ai-campus
+  name: "Savannah River Site AI data center"
+  state: SC
+  locality: "Savannah River Site, Aiken and Barnwell counties"
+  developers:
+  - "Amentum"
+  - "DC Blox"
+  capacity_mw: 1000
+  status: announced
+  announced: '2026-07-20'
+  sources:
+  - https://www.energy.gov/node/4859533
+  - https://www.datacenterdynamics.com/en/news/doe-selects-amentum-dc-blox-to-develop-behind-the-meter-ai-data-center-at-savannah-river-site-in-south-carolina/
+  added: '2026-11-05'
+- id: cipher-colchis
+  name: "Cipher Colchis"
+  state: TX
+  locality: "West Texas"
+  developers:
+  - "Cipher Mining"
+  capacity_mw: 1000
+  status: announced
+  announced: '2025-11-03'
+  sources:
+  - https://blockspace.media/insight/cipher-mining-adds-amazon-web-services-as-data-center-client-announces-1-gw-data-center-jv
+  - https://baxtel.com/data-center/cipher-colchis-west-texas
+  added: '2026-11-05'
+- id: cloudburst-san-marcos
+  name: "CloudBurst San Marcos campus"
+  state: TX
+  locality: "San Marcos / New Braunfels area"
+  developers:
+  - "CloudBurst Data Centers"
+  capacity_mw: 1200
+  status: under-construction
+  announced: '2025-02-07'
+  sources:
+  - https://www.businesswire.com/news/home/20250207943457/en
+  - https://www.datacenterdynamics.com/en/news/cloudburst-breaks-ground-on-gigawatt-scale-data-center-campus-in-texas/
+  - https://w.media/cloudburst-breaks-ground-on-1-2-gw-ai-data-center-in-texas/
+  added: '2026-11-05'
+- id: meta-el-paso
+  name: "Meta El Paso data center"
+  state: TX
+  locality: "El Paso"
+  developers:
+  - "Meta"
+  capacity_mw: 1000
+  status: under-construction
+  announced: '2025-10-15'
+  sources:
+  - https://www.bloomberg.com/news/articles/2025-10-15/meta-building-new-gigawatt-sized-data-center-in-texas
+  - https://news.constructconnect.com/meta-announces-plans-for-1.5b-texas-data-center-in-el-paso
+  - https://www.datacenterdynamics.com/en/news/meta-files-to-expand-campus-in-el-paso-texas-with-12-new-buildings/
+  added: '2026-11-05'
+- id: pacifico-gw-ranch
+  name: "Pacifico GW Ranch"
+  state: TX
+  locality: "Pecos County"
+  developers:
+  - "Pacifico Energy"
+  capacity_mw: 7650
+  status: announced
+  announced: '2025-08-20'
+  sources:
+  - https://www.businesswire.com/news/home/20250820331187/en/Pacifico-Energy-Announces-GW-Ranch-Project-Bringing-5-Gigawatts-of-Reliable-Off-Grid-Power-for-AI-Innovation
+  - https://www.businesswire.com/news/home/20260126236053/en/Pacifico-Energy-Secures-7.65-GW-Power-Generation-Permit-for-GW-Ranch-Project
+  - https://www.datacenterdynamics.com/en/news/pacifico-secures-765gw-air-permit-for-gw-ranch-project-in-west-texas/
+  added: '2026-11-05'
+- id: poolside-project-horizon
+  name: "Poolside Project Horizon"
+  state: TX
+  locality: "Pecos County (near Fort Stockton)"
+  developers:
+  - "Poolside"
+  capacity_mw: 2000
+  status: announced
+  announced: '2025-10-15'
+  sources:
+  - https://poolside.ai/blog/announcing-project-horizon
+  - https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/
+  added: '2026-11-05'
+- id: stargate-abilene
+  name: "Stargate Abilene (Lancium Clean Campus)"
+  state: TX
+  locality: "Abilene, Taylor County"
+  developers:
+  - "Crusoe"
+  - "Lancium"
+  capacity_mw: 1200
+  status: operating
+  announced: '2025-01-21'
+  sources:
+  - https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand
+  - https://datacenterdynamics.com/en/news/crusoe-tops-out-final-building-at-openai-stargate-data-center-campus-in-abilene-texas
+  - https://benzinga.com/z/45705941
+  added: '2026-11-05'
+- id: stargate-milam-county
+  name: "Stargate Milam County (SB Energy)"
+  state: TX
+  locality: "Milam County"
+  developers:
+  - "SB Energy"
+  capacity_mw: 1200
+  status: under-construction
+  announced: '2025-09-23'
+  sources:
+  - https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/
+  - https://www.datacenterdynamics.com/en/news/softbanks-sb-energy-to-build-and-operate-openais-12gw-stargate-data-center-in-milam-county-texas/
+  added: '2026-11-05'
+- id: stargate-shackelford-frontier
+  name: "Vantage Frontier (Stargate Shackelford County)"
+  state: TX
+  locality: "Shackelford County"
+  developers:
+  - "Vantage Data Centers"
+  capacity_mw: 1400
+  status: under-construction
+  announced: '2025-08-19'
+  sources:
+  - https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand
+  - https://www.datacenterdynamics.com/en/news/vantage-plots-14gw-data-center-campus-in-texas/
+  - https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand
+  added: '2026-11-05'
+- id: tract-caldwell-valley
+  name: "Tract Caldwell Valley Technology Park"
+  state: TX
+  locality: "Lockhart / Uhland, Caldwell County"
+  developers:
+  - "Tract"
+  capacity_mw: 4000
+  status: announced
+  announced: '2025-05-07'
+  sources:
+  - https://datacenterdynamics.com/en/news/tract-looks-to-develop-2000-acre-data-center-park-outside-austin-texas
+  - https://www.datacenterdynamics.com/en/news/tract-expands-austin-data-center-park-to-3000-acres/
+  - https://cleanview.co/data-centers/texas/707/tract-caldwell-valley
+  added: '2026-11-05'
+- id: stack-stafford-technology-campus
+  name: "STACK Stafford Technology Campus"
+  state: VA
+  locality: "Stafford County"
+  developers:
+  - "STACK Infrastructure"
+  capacity_mw: 1100
+  status: under-construction
+  announced: '2025-01-16'
+  sources:
+  - https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-announces-landmark-1gw-stafford-technology-campus-in-northern-virginia/
+  - https://www.stackinfra.com/locations/americas/northern-virginia/stc/
+  - https://datacenterdynamics.com/en/news/stack-tops-out-first-building-at-1gw-data-center-campus-in-stafford-county-virginia/
+  added: '2026-11-05'
