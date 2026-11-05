@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# The built board is published to the board branch, never committed to main.
+/board.json
