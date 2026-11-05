@@ -53,6 +53,11 @@ offices:
     start: '2026-05-14'
     sources:
     - https://law.alaska.gov/department/about.html
+  solicitor_general:
+    title: "State Solicitor General"
+    holder: "Jenna Lorence"
+    sources:
+    - https://law.alaska.gov/press/releases/2025/102724-Lorence.html
 - state: AL
   selection: elected
   holders:
@@ -69,6 +74,11 @@ offices:
     sources:
     - https://wtop.com/national/2026/11/republican-katherine-robertson-wins-election-for-attorney-general-in-alabama
     - https://law.counselstack.com/constitution/al/V/116
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "A. Barrett Bowdre"
+    sources:
+    - https://www.alabamaag.gov/attorney-general-steve-marshall-appoints-barrett-bowdre-as-alabama-solicitor-general/
 - state: AR
   selection: elected
   holders:
@@ -78,6 +88,11 @@ offices:
     start: '2023-01-10'
     sources:
     - https://arkansasag.gov/meet-tim/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Autumn Hamit Patterson"
+    sources:
+    - https://arkansasag.gov/news-release/attorney-general-griffin-announces-hiring-of-autumn-hamit-patterson-as-new-arkansas-solicitor-general/
 - state: AZ
   selection: elected
   holders:
@@ -88,6 +103,11 @@ offices:
     sources:
     - https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf
     - https://www.azag.gov/press-release/attorney-general-mayes-announces-lawsuit-against-openai-deceiving-arizonans-about
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Joshua Bendor"
+    sources:
+    - https://roselawgroupreporter.com/2026/05/mayes-joins-aclu-challenge-to-arizona-law-limiting-abortion-providers/
 - state: CA
   selection: elected
   holders:
@@ -97,6 +117,11 @@ offices:
     start: '2021-04-23'
     sources:
     - https://oag.ca.gov/about
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Samuel Harbourt"
+    sources:
+    - https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-appointment-samuel-harbourt-california
 - state: CO
   selection: elected
   holders:
@@ -113,6 +138,11 @@ offices:
     sources:
     - https://www.cbsnews.com/colorado/news/jena-griswold-colorado-attorney-general-election-michael-allen/
     - https://codes.findlaw.com/co/colorado-constitution-of-1876/co-const-art-iv-sect-1/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Shannon Stevenson"
+    sources:
+    - https://coag.gov/about-us/colorado-attorney-general-senior-staff/
 - state: CT
   selection: elected
   holders:
@@ -122,6 +152,11 @@ offices:
     start: '2019-01-09'
     sources:
     - https://portal.ct.gov/-/media/DCF/GTF-CJA/pdf/2019/Connectiut-Childrens-Justice-Act-Application-Final-May-17-2019.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Michael K. Skold"
+    sources:
+    - https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-files-supreme-court-brief-defending-ct-post-sandy-hook-ar-15-ban
 - state: DC
   selection: elected
   holders:
@@ -131,6 +166,11 @@ offices:
     start: '2023-01-02'
     sources:
     - https://oag.dc.gov/release/brian-l-schwalb-sworn-attorney-general-district
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Caroline Van Zile"
+    sources:
+    - https://oag.dc.gov/sites/default/files/2025-03/February-2025-Org-Chart-.pdf
 - state: DE
   selection: elected
   holders:
@@ -140,6 +180,10 @@ offices:
     start: '2019-01-01'
     sources:
     - https://attorneygeneral.delaware.gov/executive/biography/
+  solicitor_general:
+    title: "State Solicitor"
+    sources:
+    - https://news.delaware.gov/2023/02/07/ag-jennings-announces-leadership-changes-at-the-doj/
 - state: FL
   selection: elected
   holders:
@@ -149,6 +193,11 @@ offices:
     start: '2025-02-17'
     sources:
     - https://www.myfloridalegal.com/ag-bio
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Jeffrey Paul DeSousa (Acting)"
+    sources:
+    - https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-announces-major-victory-juvenile-parole-challenge
 - state: GA
   selection: elected
   holders:
@@ -165,6 +214,11 @@ offices:
     sources:
     - https://www.11alive.com/article/news/politics/elections/tanya-miller-projected-to-beat-brian-strickland-georgia-attorney-general-race/85-dd08df96-6af6-490d-8159-9cbe4f5735a9
     - https://sos.ga.gov/federal-and-state-offices-appearing-ballot-2026
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "John Henry Thompson"
+    sources:
+    - https://law.georgia.gov/press-releases/2026-01-22/carr-appoints-john-henry-thompson-states-new-solicitor-general
 - state: HI
   selection: governor
   holders:
@@ -174,6 +228,11 @@ offices:
     start: '2022-12-05'
     sources:
     - https://ag.hawaii.gov/wp-content/uploads/2023/08/HI-Attorney-General-Anne-E.-Lopez.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Kalikoʻonālani Fernandes"
+    sources:
+    - https://ag.hawaii.gov/wp-content/uploads/2023/05/News-Release-2023-21.pdf
 - state: IA
   selection: elected
   holders:
@@ -190,6 +249,11 @@ offices:
     sources:
     - https://www.weareiowa.com/article/news/politics/elections/iowa-attorney-general-race-brenna-bird-nate-willems-results-updates/524-36fb8f22-ef82-4328-967d-070515ae0679
     - https://www.legis.iowa.gov/docs/code/2025/39.8.rtf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Eric Wessan"
+    sources:
+    - https://www.iowaattorneygeneral.gov/newsroom/iowa-attorney-general-elect-bird-announces-additional-senior-staff-positions
 - state: ID
   selection: elected
   holders:
@@ -199,6 +263,11 @@ offices:
     start: '2023-01-02'
     sources:
     - https://www.ag.idaho.gov/about/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Michael Zarian"
+    sources:
+    - https://www.ag.idaho.gov/newsroom/attorney-general-labrador-announces-new-solicitor-general-for-idaho/
 - state: IL
   selection: elected
   holders:
@@ -208,6 +277,11 @@ offices:
     start: '2019-01-14'
     sources:
     - https://illinoisattorneygeneral.gov/dA/f76fc6b7a4/201901-14%20SWORN%20IN%20AS%20ILLINOIS%2042ND%20ATTORNEY%20GENERAL.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Jane Elinor Notz"
+    sources:
+    - https://www.acslaw.org/event/a-conversation-with-illinois-solicitor-general-jane-notz-and-deputy-solicitor-general-alex-hemmer/
 - state: IN
   selection: elected
   holders:
@@ -217,6 +291,11 @@ offices:
     start: '2021-01-11'
     sources:
     - https://events.in.gov/event/ag_todd_rokita_sworn_in
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "James A. Barta"
+    sources:
+    - https://secure.in.gov/attorneygeneral/about-the-office/solicitor-general/
 - state: KS
   selection: elected
   holders:
@@ -232,6 +311,10 @@ offices:
     sources:
     - https://www.kctv5.com/2026/11/05/chris-mann-declares-victory-kansas-ag-race-race-remains-uncalled/
     - https://kansasreflector.com/2026/11/04/too-close-to-call-kansas-secretary-of-state-attorney-general-candidates-wait-for-final-tallies/
+  solicitor_general:
+    title: "Solicitor General"
+    sources:
+    - https://ksd.uscourts.gov/node/869
 - state: KY
   selection: elected
   holders:
@@ -241,6 +324,11 @@ offices:
     start: '2024-01-01'
     sources:
     - https://www.ag.ky.gov/about/Pages/Attorney-General.aspx
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Matthew F. Kuhn"
+    sources:
+    - https://www.ag.ky.gov/Documents/2026-05-06%20COK%20Brief.pdf
 - state: LA
   selection: elected
   holders:
@@ -250,6 +338,11 @@ offices:
     start: '2024-01-08'
     sources:
     - https://www.ag.state.la.us/About
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "J. Benjamin Aguiñaga"
+    sources:
+    - https://www.ag.state.la.us/SolicitorGeneral
 - state: MA
   selection: elected
   holders:
@@ -259,6 +352,11 @@ offices:
     start: '2023-01-18'
     sources:
     - https://www.mass.gov/person/andrea-joy-campbell-attorney-general
+  solicitor_general:
+    title: "State Solicitor"
+    holder: "David C. Kravitz"
+    sources:
+    - https://www.mass.gov/doc/nih-10-first-circuit-decision/download
 - state: MD
   selection: elected
   holders:
@@ -268,6 +366,11 @@ offices:
     start: '2023-01-03'
     sources:
     - https://oag.maryland.gov/our-office/Pages/about-the-attorney-general.aspx
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Julia Doyle"
+    sources:
+    - https://www.marylandattorneygeneral.gov/press/2024/110424.pdf
 - state: ME
   selection: legislature
   holders:
@@ -293,6 +396,11 @@ offices:
     sources:
     - https://www.michiganpublic.org/politics-government/2026-11-04/who-won-michigan-attorney-general-race
     - https://www.legislature.mi.gov/documents/mcl/pdf/mcl-168-79.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Ann M. Sherman"
+    sources:
+    - https://www.michigan.gov/ag/news/press-releases/2022/12/07/ag-nessel-announces-second-term-executive-team-changes
 - state: MN
   selection: elected
   holders:
@@ -302,6 +410,11 @@ offices:
     start: '2019-01-07'
     sources:
     - https://www.ag.state.mn.us/Office/AGBio.asp
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Peter Farrell (Acting)"
+    sources:
+    - https://www.ag.state.mn.us/Office/Communications/2026/07/23_Kramer.asp
 - state: MO
   selection: elected
   holders:
@@ -311,6 +424,11 @@ offices:
     start: '2025-09-08'
     sources:
     - https://ago.mo.gov/about-us/about-ag-hanaway/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Louis J. Capozzi III"
+    sources:
+    - https://ago.mo.gov/wp-content/uploads/Hoskins-v.-von-Glahn-Application-for-Stay-FINAL.pdf
 - state: MS
   selection: elected
   holders:
@@ -320,6 +438,11 @@ offices:
     start: '2020-01-09'
     sources:
     - https://attorneygenerallynnfitch.com/wp-content/uploads/2025/05/AGFitch-Bio.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Scott G. Stewart"
+    sources:
+    - https://attorneygenerallynnfitch.com/divisions/solicitor-general/
 - state: MT
   selection: elected
   holders:
@@ -329,6 +452,11 @@ offices:
     start: '2021-01-04'
     sources:
     - https://dojmt.gov/?p=64442
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Christian B. Corrigan"
+    sources:
+    - https://helenair.com/news/state-regional/crime-courts/article_011c3f68-e97f-4d27-9b6a-706d0285994a.html
 - state: NC
   selection: elected
   holders:
@@ -338,6 +466,11 @@ offices:
     start: '2025-01-01'
     sources:
     - https://ncdoj.gov/attorney-general-jeff-jackson-is-sworn-in-as-north-carolinas-attorney-general/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Nicholas (Nick) Brod"
+    sources:
+    - https://ncdoj.gov/attorney-general-jeff-jackson-announces-new-solicitor-general/
 - state: ND
   selection: elected
   holders:
@@ -347,6 +480,10 @@ offices:
     start: '2022-02-09'
     sources:
     - https://attorneygeneral.nd.gov/attorney-general-drew-h-wrigley
+  solicitor_general:
+    title: "Solicitor General"
+    sources:
+    - https://www.ndcourts.gov/news/north-dakota/legal-news/general-news/job-announcement-solicitor-general-nd-attorney-general-s-office
 - state: NE
   selection: elected
   holders:
@@ -356,6 +493,11 @@ offices:
     start: '2023-01-05'
     sources:
     - https://ago.nebraska.gov/node/2032
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Cody Barnett"
+    sources:
+    - https://ago.nebraska.gov/news/ag-hilgers-announces-cody-barnett-next-solicitor-general
 - state: NH
   selection: governor
   holders:
@@ -366,6 +508,11 @@ offices:
     sources:
     - https://republicanags.com/attorneys-general/
     - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Anthony J. Galdieri"
+    sources:
+    - https://www.doj.nh.gov/bureaus/office-solicitor-general
 - state: NJ
   selection: governor
   holders:
@@ -375,6 +522,11 @@ offices:
     start: '2026-01-20'
     sources:
     - https://www.njoag.gov/about/meet-attorney-general-davenport/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Sundeep Iyer"
+    sources:
+    - https://www.njoag.gov/about/leadership/
 - state: NM
   selection: elected
   holders:
@@ -384,6 +536,11 @@ offices:
     start: '2023-01-01'
     sources:
     - https://nmdoj.gov/?p=71
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Aletheia V.P. Allen"
+    sources:
+    - https://nmdoj.gov/wp-content/uploads/AG-Letter-to-Senator-Brantley-re-Ortega-Guidance_Jan-13-2026.pdf
 - state: NV
   selection: elected
   holders:
@@ -400,6 +557,11 @@ offices:
     sources:
     - https://thenevadaindependent.com/article/live-updates-nevadas-2026-election-results
     - https://www.clarkcountynv.gov/government/departments/elections/all_elected_officials/state
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Heidi Parry Stern"
+    sources:
+    - https://ag.nv.gov/uploadedFiles/agnvgov/Content/Jobs/Bureau%20Chief%20-%20Complex%20Litigation%20-%20%2007.01.26.pdf
 - state: NY
   selection: elected
   holders:
@@ -409,6 +571,11 @@ offices:
     start: '2019-01-01'
     sources:
     - https://ag.ny.gov/press-release/2019/letitia-james-sworn-new-york-state-attorney-general
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Barbara D. Underwood"
+    sources:
+    - https://ag.ny.gov/sites/default/files/court-filings/new-york-et-al-v-united-states-environmental-protection-agency-lee-zeldin-petition-for-review-2026.pdf
 - state: OH
   selection: elected
   holders:
@@ -431,6 +598,11 @@ offices:
     sources:
     - https://ohiocapitaljournal.com/2026/11/04/kulewicz-holds-narrow-lead-over-faber-in-ohio-attorney-general-race/
     - https://www.wkbn.com/news/elections/kulewicz-announced-winner-in-ohio-attorney-general-race/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Mathura J. Sridharan"
+    sources:
+    - https://www.ohioattorneygeneral.gov/Media/News-Releases/July-2025/AG-Yost-Names-Ohio-s-New-Solicitor-General
 - state: OK
   selection: elected
   holders:
@@ -447,6 +619,11 @@ offices:
     sources:
     - https://www.newson6.com/oklahoma-politics/oklahoma-attorney-general-election-results
     - https://www.oklahoma.gov/content/dam/ok/en/elections/terms-of-office/2025-terms-of-office.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Garry M. Gaskins II"
+    sources:
+    - https://oag.ok.gov/solicitor-general1
 - state: OR
   selection: elected
   holders:
@@ -456,6 +633,11 @@ offices:
     start: '2024-12-31'
     sources:
     - https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Paul L. Smith"
+    sources:
+    - https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-announces-key-appointments-at-oregon-department-of-justice/
 - state: PA
   selection: elected
   holders:
@@ -487,6 +669,11 @@ offices:
     sources:
     - https://electionresults.ri.gov/results/public/RhodeIsland/elections/2026StatewideGeneralElection
     - https://law.justia.com/codes/rhode-island/title-17/chapter-17-2/section-17-2-1/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Katherine Connolly Sadeck"
+    sources:
+    - https://riag.ri.gov/press-releases/attorney-general-neronha-announces-promotions-and-new-hires-within-civil-and
 - state: SC
   selection: elected
   holders:
@@ -502,6 +689,11 @@ offices:
     start: '2027-01-13'
     sources:
     - https://www.wistv.com/2026/11/04/david-stumbo-wins-will-become-scs-next-attorney-general/
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Thomas T. Hydrick"
+    sources:
+    - https://www.scag.gov/about-the-office/news/attorney-general-alan-wilson-restructures-legal-team-appoints-thomas-hydrick-as-solicitor-general
 - state: SD
   selection: elected
   holders:
@@ -518,6 +710,11 @@ offices:
     sources:
     - https://southdakotasearchlight.com/2026/11/03/attorney-general-of-south-dakota-wins-election-to-us-house/
     - https://law.counselstack.com/statute/sd/3-1-2
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Paul S. Swedlund"
+    sources:
+    - https://atg.sd.gov/docs/March%2031%202025%20NCAA%20SD%20Motion.pdf
 - state: TN
   selection: court
   holders:
@@ -527,6 +724,11 @@ offices:
     start: '2022-09-01'
     sources:
     - https://www.tn.gov/attorneygeneral/news/2022/9/1/pr22-32.html
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Madeline Clark"
+    sources:
+    - https://www.tn.gov/attorneygeneral/news/2026/5/18/pr26-20.html
 - state: TX
   selection: elected
   holders:
@@ -543,6 +745,11 @@ offices:
     sources:
     - https://www.houstonpublicmedia.org/articles/news/2026/11/04/566148/democrat-nathan-johnson-triumphs-in-texas-ag-race-to-replace-paxton/
     - "https://texas.public.law/statutes/tex._gov't_code_section_601.003"
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "William R. Peterson"
+    sources:
+    - https://www.texasattorneygeneral.gov/sites/default/files/images/press/Motion_2.pdf
 - state: UT
   selection: elected
   holders:
@@ -553,6 +760,11 @@ offices:
     sources:
     - https://republicanags.com/attorneys-general/
     - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Stanford E. Purser"
+    sources:
+    - https://attorneygeneral.utah.gov/wp-content/uploads/2026/07/Memo-Emergency-Procurement-of-Outside-Counsel-WAC-v.-UVU-2.11.26-002.pdf
 - state: VA
   selection: elected
   holders:
@@ -562,6 +774,11 @@ offices:
     start: '2026-01-17'
     sources:
     - https://www.oag.state.va.us/our-office/about-the-attorney-general
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Tillman J. Breckenridge"
+    sources:
+    - https://www.oag.state.va.us/our-office/senior-leadership
 - state: VT
   selection: elected
   holders:
@@ -571,6 +788,11 @@ offices:
     start: '2023-01-05'
     sources:
     - https://ago.vermont.gov/about-attorney-generals-office
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Jonathan T. Rose"
+    sources:
+    - https://ago.vermont.gov/sites/ago/files/2025-03/2025-02-28%20NLRB%20Amicus%20Brief.pdf
 - state: WA
   selection: elected
   holders:
@@ -580,6 +802,11 @@ offices:
     start: '2025-01-15'
     sources:
     - https://www.atg.wa.gov/news/news-releases/puppyland-pay-375-million-result-consumer-protection-lawsuit
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Noah G. Purcell"
+    sources:
+    - https://www.atg.wa.gov/news/news-releases/ninth-circuit-argument-washington-defends-gender-affirming-care-against
 - state: WI
   selection: elected
   holders:
@@ -598,6 +825,11 @@ offices:
     start: '2025-01-13'
     sources:
     - https://ago.wv.gov/article/attorney-general-jb-mccuskey-takes-office-announces-leadership-team
+  solicitor_general:
+    title: "Solicitor General"
+    holder: "Michael R. Williams"
+    sources:
+    - https://ago.wv.gov/solicitor-general-division
 - state: WY
   selection: governor
   holders:

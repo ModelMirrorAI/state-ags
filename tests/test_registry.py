@@ -546,3 +546,28 @@ def test_board_pivot_is_the_action_that_lowers_most_tiers() -> None:
 def test_board_without_actions_has_no_pivot() -> None:
     registry = StateAgRegistry.model_validate(_registry(offices=_all_offices()))
     assert build_board(registry, date(2026, 11, 5), frozenset()).pivot is None
+
+
+def test_solicitor_general_post_reaches_the_board() -> None:
+    offices = _all_offices()
+    states = [o["state"] for o in offices]
+    offices[states.index("TX")] = {
+        **_office("TX"),
+        "solicitor_general": {
+            "title": "Solicitor General",
+            "holder": "A. Advocate",
+            "sources": ["https://ag.example.gov/sg"],
+        },
+    }
+    registry = StateAgRegistry.model_validate(_registry(offices=offices))
+    rows = {row.state: row for row in build_board(registry, date(2026, 11, 5), frozenset()).offices}
+
+    assert rows["TX"].solicitor_general is not None
+    assert rows["TX"].solicitor_general.title == "Solicitor General"
+    assert rows["CA"].solicitor_general is None
+
+
+def test_solicitor_general_post_needs_a_source() -> None:
+    office = {**_office("TX"), "solicitor_general": {"title": "Solicitor General", "sources": []}}
+    with pytest.raises(ValidationError, match="at least 1"):
+        StateAgRegistry.model_validate(_registry(offices=[*_all_offices()[:-1], office]))

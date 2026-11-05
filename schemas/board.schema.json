@@ -447,6 +447,17 @@
           "title": "Selection",
           "type": "string"
         },
+        "solicitor_general": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StateAgSolicitorGeneralRow"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The office's dedicated solicitor general post; none when the registry records none. Context beside the tier, never part of it."
+        },
         "state": {
           "description": "The two-letter postal code (DC for the District).",
           "title": "State",
@@ -507,7 +518,8 @@
         "tier_small_group",
         "window_counts",
         "action_ids",
-        "data_center_ids"
+        "data_center_ids",
+        "solicitor_general"
       ],
       "title": "StateAgOfficeRow",
       "type": "object"
@@ -589,6 +601,45 @@
       ],
       "title": "StateAgPivot",
       "type": "object"
+    },
+    "StateAgSolicitorGeneralRow": {
+      "additionalProperties": false,
+      "description": "An office's dedicated solicitor general post, as the registry records it.",
+      "properties": {
+        "holder": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Who holds it, where a source names them.",
+          "title": "Holder"
+        },
+        "sources": {
+          "description": "Where the post is evidenced.",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        },
+        "title": {
+          "description": "The post's title in the office (Solicitor General, ...).",
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "holder",
+        "sources"
+      ],
+      "title": "StateAgSolicitorGeneralRow",
+      "type": "object"
     }
   },
   "additionalProperties": false,
@@ -663,8 +714,8 @@
       "description": "The in-window action whose removal lowers the most offices' tiers; none when no action alone sets any office's tier."
     },
     "schema_version": {
-      "const": "1.1",
-      "default": "1.1",
+      "const": "1.2",
+      "default": "1.2",
       "title": "Schema Version",
       "type": "string"
     },

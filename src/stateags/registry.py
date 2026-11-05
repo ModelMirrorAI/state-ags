@@ -43,6 +43,7 @@ from stateags.board import (
     StateAgPair,
     StateAgPivot,
     StateAgsBoard,
+    StateAgSolicitorGeneralRow,
 )
 
 #: The registered name of the ambition measure the registry feeds.
@@ -248,6 +249,21 @@ class Holder(BaseModel):
         return self
 
 
+class SolicitorGeneral(BaseModel):
+    """An office's dedicated solicitor general post: context beside the tier, never part of it.
+
+    The post counts when the office names a position titled Solicitor General or
+    State Solicitor (General) that leads its appellate and constitutional
+    litigation; an appeals division under another title does not.
+    """
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    title: str
+    holder: str | None = None
+    sources: list[str] = Field(min_length=1)
+
+
 class Office(BaseModel):
     """One state's attorney general's office and its holders, in the order they serve."""
 
@@ -256,6 +272,7 @@ class Office(BaseModel):
     state: str
     selection: Selection
     holders: list[Holder] = Field(min_length=1)
+    solicitor_general: SolicitorGeneral | None = None
 
     @field_validator("state")
     @classmethod
@@ -589,6 +606,7 @@ def build_board(
                 window_counts={k.value: sum(1 for a in window if a.kind is k) for k in Kind},
                 action_ids=[a.id for a in mine],
                 data_center_ids=[c.id for c in centers if c.state == state and c.marked],
+                solicitor_general=_solicitor_general(office.solicitor_general),
             )
         )
     actions = [
@@ -643,6 +661,12 @@ def build_board(
         large_coalition_offices=LARGE_COALITION_OFFICES,
         pivot=_pivot(registry, sorted(offices), as_of),
     )
+
+
+def _solicitor_general(post: SolicitorGeneral | None) -> StateAgSolicitorGeneralRow | None:
+    if post is None:
+        return None
+    return StateAgSolicitorGeneralRow(title=post.title, holder=post.holder, sources=post.sources)
 
 
 def _large(action: Action) -> bool:
