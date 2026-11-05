@@ -77,6 +77,11 @@
           "title": "Kind",
           "type": "string"
         },
+        "large_coalition": {
+          "description": "Whether at least large_coalition_offices offices took part.",
+          "title": "Large Coalition",
+          "type": "boolean"
+        },
         "lead": {
           "anyOf": [
             {
@@ -158,6 +163,7 @@
         "holders",
         "rungs",
         "in_window",
+        "large_coalition",
         "developers",
         "why",
         "sources"
@@ -458,6 +464,13 @@
           "title": "Tier Label",
           "type": "string"
         },
+        "tier_small_group": {
+          "description": "The tier counting only actions short of a large coalition: what the office reached alone or with a small group.",
+          "maximum": 4,
+          "minimum": 0,
+          "title": "Tier Small Group",
+          "type": "integer"
+        },
         "transition": {
           "anyOf": [
             {
@@ -491,6 +504,7 @@
         "transition_overdue",
         "tier",
         "tier_label",
+        "tier_small_group",
         "window_counts",
         "action_ids",
         "data_center_ids"
@@ -539,6 +553,42 @@
       ],
       "title": "StateAgPair",
       "type": "object"
+    },
+    "StateAgPivot": {
+      "additionalProperties": false,
+      "description": "The in-window action that alone sets the most offices' tiers, and the tiers without it.",
+      "properties": {
+        "action_id": {
+          "title": "Action Id",
+          "type": "string"
+        },
+        "dropped": {
+          "description": "How many offices' tiers rest on this action alone.",
+          "minimum": 1,
+          "title": "Dropped",
+          "type": "integer"
+        },
+        "offices": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Each office whose tier would fall without this action, and that lower tier.",
+          "title": "Offices",
+          "type": "object"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action_id",
+        "title",
+        "offices",
+        "dropped"
+      ],
+      "title": "StateAgPivot",
+      "type": "object"
     }
   },
   "additionalProperties": false,
@@ -581,6 +631,12 @@
       "title": "Defense And Context",
       "type": "integer"
     },
+    "large_coalition_offices": {
+      "description": "The fewest offices an action needs to count as a large coalition.",
+      "exclusiveMinimum": 1,
+      "title": "Large Coalition Offices",
+      "type": "integer"
+    },
     "method": {
       "const": "ag-ai-ambition-v1",
       "description": "The ambition measure's name.",
@@ -595,9 +651,20 @@
       "title": "Offices",
       "type": "array"
     },
+    "pivot": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/StateAgPivot"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "The in-window action whose removal lowers the most offices' tiers; none when no action alone sets any office's tier."
+    },
     "schema_version": {
-      "const": "1.0",
-      "default": "1.0",
+      "const": "1.1",
+      "default": "1.1",
       "title": "Schema Version",
       "type": "string"
     },
@@ -617,7 +684,9 @@
     "defense_and_context",
     "data_center_threshold_mw",
     "data_centers",
-    "coalition"
+    "coalition",
+    "large_coalition_offices",
+    "pivot"
   ],
   "title": "StateAgsBoard",
   "type": "object"

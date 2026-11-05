@@ -13,7 +13,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 #: The board's format version; a change to a field's meaning bumps it.
-SCHEMA_VERSION: Literal["1.0"] = "1.0"
+SCHEMA_VERSION: Literal["1.1"] = "1.1"
 
 
 class _Strict(BaseModel):
@@ -50,6 +50,12 @@ class StateAgOfficeRow(_Strict):
     )
     tier: int = Field(ge=0, le=4, description="The office's ag-ai-ambition-v1 tier on the day.")
     tier_label: str = Field(description="The tier's label (None recorded … Sues).")
+    tier_small_group: int = Field(
+        ge=0,
+        le=4,
+        description="The tier counting only actions short of a large coalition: what the "
+        "office reached alone or with a small group.",
+    )
     window_counts: dict[str, int] = Field(
         description="Actions in the window the office took part in, by kind, every kind present."
     )
@@ -81,6 +87,9 @@ class StateAgActionRow(_Strict):
     )
     rungs: dict[str, int] = Field(description="The tier this action reaches for each office.")
     in_window: bool = Field(description="Whether the action counts toward tiers on the day.")
+    large_coalition: bool = Field(
+        description="Whether at least large_coalition_offices offices took part."
+    )
     developers: list[str] = Field(
         description="The AI developers the action is aimed at; empty only for advocacy."
     )
@@ -150,6 +159,17 @@ class StateAgCoalition(_Strict):
     )
 
 
+class StateAgPivot(_Strict):
+    """The in-window action that alone sets the most offices' tiers, and the tiers without it."""
+
+    action_id: str
+    title: str
+    offices: dict[str, int] = Field(
+        description="Each office whose tier would fall without this action, and that lower tier."
+    )
+    dropped: int = Field(ge=1, description="How many offices' tiers rest on this action alone.")
+
+
 class StateAgsBoard(_Strict):
     """``board.json``: the state-AGs dashboard's tiers, actions, data centers and coalitions.
 
@@ -157,7 +177,7 @@ class StateAgsBoard(_Strict):
     method is ``docs/method.md``. The site renders it and computes nothing.
     """
 
-    schema_version: Literal["1.0"] = SCHEMA_VERSION
+    schema_version: Literal["1.1"] = SCHEMA_VERSION
     method: Literal["ag-ai-ambition-v1"] = Field(description="The ambition measure's name.")
     as_of: date = Field(description="The day the tiers and transitions are read on.")
     window_days: int = Field(gt=0, description="The trailing window an action counts in.")
@@ -173,3 +193,10 @@ class StateAgsBoard(_Strict):
         description="Every listed project, by state, then largest first, then id."
     )
     coalition: StateAgCoalition
+    large_coalition_offices: int = Field(
+        gt=1, description="The fewest offices an action needs to count as a large coalition."
+    )
+    pivot: StateAgPivot | None = Field(
+        description="The in-window action whose removal lowers the most offices' tiers; none "
+        "when no action alone sets any office's tier."
+    )

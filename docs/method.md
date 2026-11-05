@@ -89,6 +89,19 @@ The 730-day window and the rung ladder together define `ag-ai-ambition-v1`. A
 change to either is a new method version with a new name, never an edit to
 this one, so a published tier always says which definition produced it.
 
+## Reading aids beside the tier
+
+Two figures sit beside the tier to show how much of it rests on broad
+coalitions. Neither changes the tier or the method.
+
+- A **large coalition** is an action at least 30 offices took part in. Each
+  office's **small-group tier** is its tier counting only the actions that are
+  not large coalitions, so an office whose step comes only from a filing most
+  states signed shows a lower small-group tier.
+- The **pivot** is the in-window action whose removal lowers the most offices'
+  tiers, the newest on a tie. The board names it and gives each lowered
+  office's tier without it; it is absent when no single action lowers any tier.
+
 ## The coalition figures
 
 The coalition figures read only **multistate** actions, those two or more
@@ -129,9 +142,9 @@ change to the rule, made in its own PR.
 ## What the site reads
 
 `python -m stateags build` writes `board.json`, carrying each office's tier,
-counts by kind in the window, transition and data-center projects, every action
+counts by kind in the window, small-group tier, transition and data-center projects, every action
 with each participating office's holder on its date (none before the first
-holder on record) and the rung it reaches for them, and the coalition figures,
+holder on record) and the rung it reaches for them and whether it is a large coalition, the pivot, and the coalition figures,
 all computed here; the site renders it and computes nothing. Its shape is
 `schemas/board.schema.json`, exported from `src/stateags/board.py`. A pending
 holder whose start day has passed is flagged overdue, so a roster that has
