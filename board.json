@@ -30631,7 +30631,423 @@
     }
   },
   "data_center_threshold_mw": 1000,
-  "data_centers": [],
+  "data_centers": [
+    {
+      "announced": "2026-07-22",
+      "capacity_mw": 3200,
+      "developers": [
+        "OpenAI"
+      ],
+      "id": "openai-project-camellia",
+      "locality": "Effingham County (Savannah Gateway Industrial Hub)",
+      "name": "OpenAI Project Camellia",
+      "sources": [
+        "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "https://w.media/openai-plans-to-build-its-own-3-2-gw-data-center-campus-in-georgia/",
+        "https://www.wabe.org/20-billion-openai-data-center-to-open-in-effingham-county/"
+      ],
+      "state": "GA",
+      "status": "announced"
+    },
+    {
+      "announced": "2026-02-11",
+      "capacity_mw": 1000,
+      "developers": [
+        "Meta"
+      ],
+      "id": "meta-lebanon-indiana",
+      "locality": "Lebanon, Boone County",
+      "name": "Meta Lebanon, Indiana campus",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/meta-announces-1gw-data-center-campus-in-indiana",
+        "https://bloomberg.com/news/articles/2026-02-11/meta-to-spend-more-than-10-billion-on-indiana-based-data-center",
+        "https://www.publicpower.org/periodical/article/meta-breaks-ground-1-gw-data-center-campus-indiana"
+      ],
+      "state": "IN",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2026-07-29",
+      "capacity_mw": 1200,
+      "developers": [
+        "Brookfield"
+      ],
+      "id": "paducah-ai-campus",
+      "locality": "Paducah, McCracken County",
+      "name": "Paducah AI campus (DOE Paducah site)",
+      "sources": [
+        "https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site",
+        "https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/"
+      ],
+      "state": "KY",
+      "status": "announced"
+    },
+    {
+      "announced": "2026-05-26",
+      "capacity_mw": 1000,
+      "developers": [
+        "TeraWulf"
+      ],
+      "id": "terawulf-muskie",
+      "locality": "Eastern Kentucky",
+      "name": "TeraWulf Muskie Data Campus",
+      "sources": [
+        "https://investors.terawulf.com/news-events/press-releases/detail/141",
+        "https://datacenterdynamics.com/en/news/terawulfs-kentucky-campus-to-reach-1gw-in-2029"
+      ],
+      "state": "KY",
+      "status": "announced"
+    },
+    {
+      "announced": "2024-12-04",
+      "capacity_mw": 5000,
+      "developers": [
+        "Meta"
+      ],
+      "id": "meta-hyperion",
+      "locality": "Holly Ridge, Richland Parish",
+      "name": "Meta Hyperion",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/meta-expands-data-center-campus-in-richland-parish-louisiana-to-5gw-will-invest-50bn/",
+        "https://www.tomshardware.com/tech-industry/data-centers/meta-expands-colossal-hyperion-ai-supercluster-plans-to-5gw-pushes-louisiana-investment-past-usd50-billion-as-ai-race-accelerates-says-it-plans-to-invest-over-usd1-billion-in-local-infrastructure-improvements"
+      ],
+      "state": "LA",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-12-17",
+      "capacity_mw": 1330,
+      "developers": [
+        "Hut 8"
+      ],
+      "id": "hut8-river-bend",
+      "locality": "St. Francisville area, West Feliciana Parish",
+      "name": "Hut 8 River Bend campus",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/hut-8-signs-245mw-capacity-deal-with-fluidstack-as-part-of-multi-gigawatt-partnership-with-anthropic",
+        "https://www.datacenterdynamics.com/en/news/hut-8-selling-325bn-in-bonds-to-finance-google-and-anthropic-backed-river-bend-ai-data-center-campus/"
+      ],
+      "state": "LA",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-10-30",
+      "capacity_mw": 1000,
+      "developers": [
+        "Related Digital"
+      ],
+      "id": "stargate-saline-township",
+      "locality": "Saline Township, Washtenaw County",
+      "name": "Stargate Michigan ('The Barn')",
+      "sources": [
+        "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site",
+        "https://www.datacenterdynamics.com/en/news/related-digitals-michigan-1gw-data-center-project-to-serve-openai-oracle/"
+      ],
+      "state": "MI",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-08-18",
+      "capacity_mw": 1000,
+      "developers": [
+        "Applied Digital"
+      ],
+      "id": "applied-digital-polaris-forge-2",
+      "locality": "Harwood, Cass County",
+      "name": "Applied Digital Polaris Forge 2",
+      "sources": [
+        "https://ir.applieddigital.com/news-events/press-releases/detail/127/applied-digital-to-break-ground-on-3-billion-polaris-forge",
+        "https://datacenterdynamics.com/en/news/applied-digital-secures-5bn-15-year-lease-with-hyperscaler-at-north-dakota-data-center-campus/"
+      ],
+      "state": "ND",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-09-23",
+      "capacity_mw": 2450,
+      "developers": [
+        "BorderPlex Digital Assets",
+        "STACK Infrastructure"
+      ],
+      "id": "project-jupiter",
+      "locality": "Santa Teresa area, Do\u00f1a Ana County",
+      "name": "Project Jupiter (Stargate Do\u00f1a Ana County)",
+      "sources": [
+        "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/stargate-jupiter",
+        "https://www.abqjournal.com/business/doa-na-countys-project-jupiter-joins-500-billion-stargate-initiative-led-by-openai-oracle/493927",
+        "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+      ],
+      "state": "NM",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2026-03-20",
+      "capacity_mw": 10000,
+      "developers": [
+        "SB Energy"
+      ],
+      "id": "sb-energy-ports-piketon",
+      "locality": "Piketon, Pike County",
+      "name": "PORTS Technology Campus (SB Energy, Piketon)",
+      "sources": [
+        "https://www.13abc.com/2026/03/20/trump-officials-announce-10-gigawatt-data-center-gas-plants-former-ohio-uranium-site/",
+        "https://www.theregister.com/2026/03/23/softbank_to_put_mega_server",
+        "https://news.constructconnect.com/megaproject-watch-u.s.-to-turn-ex-uranium-plant-into-self-powered-10-gigawatt-data-center"
+      ],
+      "state": "OH",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-07-14",
+      "capacity_mw": 1000,
+      "developers": [
+        "Meta"
+      ],
+      "id": "meta-prometheus",
+      "locality": "New Albany, Licking County",
+      "name": "Meta Prometheus",
+      "sources": [
+        "https://www.itpro.com/infrastructure/data-centres/meta-working-on-a-5gw-data-center-to-supercharge-ai-infrastructure-and-mark-zuckerberg-says-one-cluster-alone-covers-a-significant-part-of-the-footprint-of-manhattan",
+        "https://epoch.ai/data/ai-data-centers/directory/meta-prometheus",
+        "https://cryptobriefing.com/meta-prometheus-supercluster-ohio-ai-training/"
+      ],
+      "state": "OH",
+      "status": "operating"
+    },
+    {
+      "announced": "2026-02-05",
+      "capacity_mw": 1600,
+      "developers": [
+        "IREN"
+      ],
+      "id": "iren-oklahoma",
+      "locality": "Oklahoma",
+      "name": "IREN Oklahoma campus",
+      "sources": [
+        "https://iren.com/resources/news/iren-oklahoma-1-6gw-data-center-campus",
+        "https://www.iren.com/data-centers/oklahoma"
+      ],
+      "state": "OK",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-01-14",
+      "capacity_mw": 3000,
+      "developers": [
+        "TECfusions"
+      ],
+      "id": "tecfusions-keystone-connect",
+      "locality": "Upper Burrell, Westmoreland County",
+      "name": "TECfusions Keystone Connect",
+      "sources": [
+        "https://prnewswire.com/news-releases/tecfusions-unveils-massive-1400-acre-data-center-project-in-pennsylvania-revitalizing-former-industrial-plant-302350041.html",
+        "https://datacenterdynamics.com/en/news/tecfusions-acquires-former-manufacturing-site-outside-pittsburgh-pennsylvania-for-3gw-data-center-site"
+      ],
+      "state": "PA",
+      "status": "announced"
+    },
+    {
+      "announced": "2026-05-13",
+      "capacity_mw": 1200,
+      "developers": [
+        "Nebius"
+      ],
+      "id": "nebius-schuylkill",
+      "locality": "Butler Township, Schuylkill County (Highridge Business Park)",
+      "name": "Nebius Pennsylvania AI factory",
+      "sources": [
+        "https://nebius.com/newsroom/nebius-reports-first-quarter-2026-financial-results",
+        "https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/"
+      ],
+      "state": "PA",
+      "status": "announced"
+    },
+    {
+      "announced": "2026-07-20",
+      "capacity_mw": 1000,
+      "developers": [
+        "Amentum",
+        "DC Blox"
+      ],
+      "id": "savannah-river-ai-campus",
+      "locality": "Savannah River Site, Aiken and Barnwell counties",
+      "name": "Savannah River Site AI data center",
+      "sources": [
+        "https://www.energy.gov/node/4859533",
+        "https://www.datacenterdynamics.com/en/news/doe-selects-amentum-dc-blox-to-develop-behind-the-meter-ai-data-center-at-savannah-river-site-in-south-carolina/"
+      ],
+      "state": "SC",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-08-20",
+      "capacity_mw": 7650,
+      "developers": [
+        "Pacifico Energy"
+      ],
+      "id": "pacifico-gw-ranch",
+      "locality": "Pecos County",
+      "name": "Pacifico GW Ranch",
+      "sources": [
+        "https://www.businesswire.com/news/home/20250820331187/en/Pacifico-Energy-Announces-GW-Ranch-Project-Bringing-5-Gigawatts-of-Reliable-Off-Grid-Power-for-AI-Innovation",
+        "https://www.businesswire.com/news/home/20260126236053/en/Pacifico-Energy-Secures-7.65-GW-Power-Generation-Permit-for-GW-Ranch-Project",
+        "https://www.datacenterdynamics.com/en/news/pacifico-secures-765gw-air-permit-for-gw-ranch-project-in-west-texas/"
+      ],
+      "state": "TX",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-05-07",
+      "capacity_mw": 4000,
+      "developers": [
+        "Tract"
+      ],
+      "id": "tract-caldwell-valley",
+      "locality": "Lockhart / Uhland, Caldwell County",
+      "name": "Tract Caldwell Valley Technology Park",
+      "sources": [
+        "https://datacenterdynamics.com/en/news/tract-looks-to-develop-2000-acre-data-center-park-outside-austin-texas",
+        "https://www.datacenterdynamics.com/en/news/tract-expands-austin-data-center-park-to-3000-acres/",
+        "https://cleanview.co/data-centers/texas/707/tract-caldwell-valley"
+      ],
+      "state": "TX",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-10-15",
+      "capacity_mw": 2000,
+      "developers": [
+        "Poolside"
+      ],
+      "id": "poolside-project-horizon",
+      "locality": "Pecos County (near Fort Stockton)",
+      "name": "Poolside Project Horizon",
+      "sources": [
+        "https://poolside.ai/blog/announcing-project-horizon",
+        "https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/"
+      ],
+      "state": "TX",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-08-19",
+      "capacity_mw": 1400,
+      "developers": [
+        "Vantage Data Centers"
+      ],
+      "id": "stargate-shackelford-frontier",
+      "locality": "Shackelford County",
+      "name": "Vantage Frontier (Stargate Shackelford County)",
+      "sources": [
+        "https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand",
+        "https://www.datacenterdynamics.com/en/news/vantage-plots-14gw-data-center-campus-in-texas/",
+        "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+      ],
+      "state": "TX",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-02-07",
+      "capacity_mw": 1200,
+      "developers": [
+        "CloudBurst Data Centers"
+      ],
+      "id": "cloudburst-san-marcos",
+      "locality": "San Marcos / New Braunfels area",
+      "name": "CloudBurst San Marcos campus",
+      "sources": [
+        "https://www.businesswire.com/news/home/20250207943457/en",
+        "https://www.datacenterdynamics.com/en/news/cloudburst-breaks-ground-on-gigawatt-scale-data-center-campus-in-texas/",
+        "https://w.media/cloudburst-breaks-ground-on-1-2-gw-ai-data-center-in-texas/"
+      ],
+      "state": "TX",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-01-21",
+      "capacity_mw": 1200,
+      "developers": [
+        "Crusoe",
+        "Lancium"
+      ],
+      "id": "stargate-abilene",
+      "locality": "Abilene, Taylor County",
+      "name": "Stargate Abilene (Lancium Clean Campus)",
+      "sources": [
+        "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+        "https://datacenterdynamics.com/en/news/crusoe-tops-out-final-building-at-openai-stargate-data-center-campus-in-abilene-texas",
+        "https://benzinga.com/z/45705941"
+      ],
+      "state": "TX",
+      "status": "operating"
+    },
+    {
+      "announced": "2025-09-23",
+      "capacity_mw": 1200,
+      "developers": [
+        "SB Energy"
+      ],
+      "id": "stargate-milam-county",
+      "locality": "Milam County",
+      "name": "Stargate Milam County (SB Energy)",
+      "sources": [
+        "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/",
+        "https://www.datacenterdynamics.com/en/news/softbanks-sb-energy-to-build-and-operate-openais-12gw-stargate-data-center-in-milam-county-texas/"
+      ],
+      "state": "TX",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-11-03",
+      "capacity_mw": 1000,
+      "developers": [
+        "Cipher Mining"
+      ],
+      "id": "cipher-colchis",
+      "locality": "West Texas",
+      "name": "Cipher Colchis",
+      "sources": [
+        "https://blockspace.media/insight/cipher-mining-adds-amazon-web-services-as-data-center-client-announces-1-gw-data-center-jv",
+        "https://baxtel.com/data-center/cipher-colchis-west-texas"
+      ],
+      "state": "TX",
+      "status": "announced"
+    },
+    {
+      "announced": "2025-10-15",
+      "capacity_mw": 1000,
+      "developers": [
+        "Meta"
+      ],
+      "id": "meta-el-paso",
+      "locality": "El Paso",
+      "name": "Meta El Paso data center",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2025-10-15/meta-building-new-gigawatt-sized-data-center-in-texas",
+        "https://news.constructconnect.com/meta-announces-plans-for-1.5b-texas-data-center-in-el-paso",
+        "https://www.datacenterdynamics.com/en/news/meta-files-to-expand-campus-in-el-paso-texas-with-12-new-buildings/"
+      ],
+      "state": "TX",
+      "status": "under-construction"
+    },
+    {
+      "announced": "2025-01-16",
+      "capacity_mw": 1100,
+      "developers": [
+        "STACK Infrastructure"
+      ],
+      "id": "stack-stafford-technology-campus",
+      "locality": "Stafford County",
+      "name": "STACK Stafford Technology Campus",
+      "sources": [
+        "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-announces-landmark-1gw-stafford-technology-campus-in-northern-virginia/",
+        "https://www.stackinfra.com/locations/americas/northern-virginia/stc/",
+        "https://datacenterdynamics.com/en/news/stack-tops-out-first-building-at-1gw-data-center-campus-in-stafford-county-virginia/"
+      ],
+      "state": "VA",
+      "status": "under-construction"
+    }
+  ],
   "defense_and_context": 6,
   "method": "ag-ai-ambition-v1",
   "offices": [
@@ -30692,7 +31108,16 @@
       "state": "AL",
       "tier": 3,
       "tier_label": "Investigates",
-      "transition": null,
+      "transition": {
+        "name": "Katherine Robertson",
+        "party": "R",
+        "sources": [
+          "https://wtop.com/national/2026/11/republican-katherine-robertson-wins-election-for-attorney-general-in-alabama",
+          "https://law.counselstack.com/constitution/al/V/116"
+        ],
+        "start": "2027-01-18",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 1,
@@ -30843,7 +31268,16 @@
       "state": "CO",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Jena Griswold",
+        "party": "D",
+        "sources": [
+          "https://www.cbsnews.com/colorado/news/jena-griswold-colorado-attorney-general-election-michael-allen/",
+          "https://codes.findlaw.com/co/colorado-constitution-of-1876/co-const-art-iv-sect-1/"
+        ],
+        "start": "2027-01-12",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 2,
@@ -31010,7 +31444,9 @@
         "al-meta-ai-role-play-letter",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "openai-project-camellia"
+      ],
       "holder": {
         "name": "Chris Carr",
         "party": "R",
@@ -31024,7 +31460,16 @@
       "state": "GA",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Tanya Miller",
+        "party": "D",
+        "sources": [
+          "https://www.11alive.com/article/news/politics/elections/tanya-miller-projected-to-beat-brian-strickland-georgia-attorney-general-race/85-dd08df96-6af6-490d-8159-9cbe4f5735a9",
+          "https://sos.ga.gov/federal-and-state-offices-appearing-ballot-2026"
+        ],
+        "start": "2027-01-11",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 1,
@@ -31096,7 +31541,16 @@
       "state": "IA",
       "tier": 1,
       "tier_label": "Signals",
-      "transition": null,
+      "transition": {
+        "name": "Nate Willems",
+        "party": "D",
+        "sources": [
+          "https://www.weareiowa.com/article/news/politics/elections/iowa-attorney-general-race-brenna-bird-nate-willems-results-updates/524-36fb8f22-ef82-4328-967d-070515ae0679",
+          "https://www.legis.iowa.gov/docs/code/2025/39.8.rtf"
+        ],
+        "start": "2027-01-02",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 1,
@@ -31191,7 +31645,9 @@
         "al-meta-ai-role-play-letter",
         "multistate-ai-moratorium-letter-may-2025"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "meta-lebanon-indiana"
+      ],
       "holder": {
         "name": "Todd Rokita",
         "party": "R",
@@ -31241,7 +31697,16 @@
       "state": "KS",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": null,
+        "party": null,
+        "sources": [
+          "https://www.kctv5.com/2026/11/05/chris-mann-declares-victory-kansas-ag-race-race-remains-uncalled/",
+          "https://kansasreflector.com/2026/11/04/too-close-to-call-kansas-secretary-of-state-attorney-general-candidates-wait-for-final-tallies/"
+        ],
+        "start": "2027-01-11",
+        "status": "uncalled"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 2,
@@ -31264,7 +31729,10 @@
         "al-meta-ai-role-play-letter",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "paducah-ai-campus",
+        "terawulf-muskie"
+      ],
       "holder": {
         "name": "Russell Coleman",
         "party": "R",
@@ -31301,7 +31769,10 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "meta-hyperion",
+        "hut8-river-bend"
+      ],
       "holder": {
         "name": "Liz Murrill",
         "party": "R",
@@ -31444,7 +31915,9 @@
         "multistate-deepfake-ncii-letters-aug-2025",
         "multistate-ai-moratorium-letter-may-2025"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "stargate-saline-township"
+      ],
       "holder": {
         "name": "Dana Nessel",
         "party": "D",
@@ -31458,7 +31931,16 @@
       "state": "MI",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Eli Savit",
+        "party": "D",
+        "sources": [
+          "https://www.michiganpublic.org/politics-government/2026-11-04/who-won-michigan-attorney-general-race",
+          "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-168-79.pdf"
+        ],
+        "start": "2027-01-01",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -31660,7 +32142,9 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "applied-digital-polaris-forge-2"
+      ],
       "holder": {
         "name": "Drew H. Wrigley",
         "party": "R",
@@ -31806,7 +32290,9 @@
         "multistate-ai-child-safety-letter-aug-2025",
         "multistate-ai-moratorium-letter-may-2025"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "project-jupiter"
+      ],
       "holder": {
         "name": "Ra\u00fal Torrez",
         "party": "D",
@@ -31857,7 +32343,16 @@
       "state": "NV",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Nicole Cannizzaro",
+        "party": "D",
+        "sources": [
+          "https://thenevadaindependent.com/article/live-updates-nevadas-2026-election-results",
+          "https://www.clarkcountynv.gov/government/departments/elections/all_elected_officials/state"
+        ],
+        "start": "2027-01-04",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -31917,7 +32412,10 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "sb-energy-ports-piketon",
+        "meta-prometheus"
+      ],
       "holder": {
         "name": "Andy Wilson",
         "party": "R",
@@ -31931,7 +32429,16 @@
       "state": "OH",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "John Kulewicz",
+        "party": "D",
+        "sources": [
+          "https://ohiocapitaljournal.com/2026/11/04/kulewicz-holds-narrow-lead-over-faber-in-ohio-attorney-general-race/",
+          "https://www.wkbn.com/news/elections/kulewicz-announced-winner-in-ohio-attorney-general-race/"
+        ],
+        "start": "2027-01-11",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -31956,7 +32463,9 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "iren-oklahoma"
+      ],
       "holder": {
         "name": "Gentner Drummond",
         "party": "R",
@@ -31970,7 +32479,16 @@
       "state": "OK",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Jon Echols",
+        "party": "R",
+        "sources": [
+          "https://www.newson6.com/oklahoma-politics/oklahoma-attorney-general-election-results",
+          "https://www.oklahoma.gov/content/dam/ok/en/elections/terms-of-office/2025-terms-of-office.pdf"
+        ],
+        "start": "2027-01-11",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -32030,7 +32548,10 @@
         "al-meta-ai-role-play-letter",
         "multistate-ai-moratorium-letter-may-2025"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "tecfusions-keystone-connect",
+        "nebius-schuylkill"
+      ],
       "holder": {
         "name": "David W. Sunday",
         "party": "R",
@@ -32081,7 +32602,16 @@
       "state": "RI",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Kimberly Ahern",
+        "party": "D",
+        "sources": [
+          "https://electionresults.ri.gov/results/public/RhodeIsland/elections/2026StatewideGeneralElection",
+          "https://law.justia.com/codes/rhode-island/title-17/chapter-17-2/section-17-2-1/"
+        ],
+        "start": "2027-01-05",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -32105,7 +32635,9 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "savannah-river-ai-campus"
+      ],
       "holder": {
         "name": "Alan Wilson",
         "party": "R",
@@ -32119,7 +32651,15 @@
       "state": "SC",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "David Stumbo",
+        "party": "R",
+        "sources": [
+          "https://www.wistv.com/2026/11/04/david-stumbo-wins-will-become-scs-next-attorney-general/"
+        ],
+        "start": "2027-01-13",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 3,
@@ -32155,7 +32695,16 @@
       "state": "SD",
       "tier": 2,
       "tier_label": "Joins",
-      "transition": null,
+      "transition": {
+        "name": "Lance Russell",
+        "party": "R",
+        "sources": [
+          "https://southdakotasearchlight.com/2026/11/03/attorney-general-of-south-dakota-wins-election-to-us-house/",
+          "https://law.counselstack.com/statute/sd/3-1-2"
+        ],
+        "start": "2027-01-09",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 2,
@@ -32213,7 +32762,17 @@
         "tx-deepseek-investigation",
         "tx-character-ai-scope-act-investigation"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "pacifico-gw-ranch",
+        "tract-caldwell-valley",
+        "poolside-project-horizon",
+        "stargate-shackelford-frontier",
+        "cloudburst-san-marcos",
+        "stargate-abilene",
+        "stargate-milam-county",
+        "cipher-colchis",
+        "meta-el-paso"
+      ],
       "holder": {
         "name": "Ken Paxton",
         "party": "R",
@@ -32227,7 +32786,16 @@
       "state": "TX",
       "tier": 4,
       "tier_label": "Sues",
-      "transition": null,
+      "transition": {
+        "name": "Nathan Johnson",
+        "party": "D",
+        "sources": [
+          "https://www.houstonpublicmedia.org/articles/news/2026/11/04/566148/democrat-nathan-johnson-triumphs-in-texas-ag-race-to-replace-paxton/",
+          "https://texas.public.law/statutes/tex._gov't_code_section_601.003"
+        ],
+        "start": "2027-01-01",
+        "status": "successor"
+      },
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 1,
@@ -32291,7 +32859,9 @@
         "multistate-ai-moratorium-letter-may-2025",
         "multistate-deepseek-government-devices-letter"
       ],
-      "data_center_ids": [],
+      "data_center_ids": [
+        "stack-stafford-technology-campus"
+      ],
       "holder": {
         "name": "Jay Jones",
         "party": "D",
