@@ -14,7 +14,9 @@ repository publishes; it computes nothing itself.
   (0 None recorded to 4 Sues, the highest rung in a trailing 730 days), the
   coalition figures, and the data-center layer.
 - **Board:** `python -m stateags build` writes `board.json`; its shape is
-  [`schemas/board.schema.json`](schemas/board.schema.json).
+  [`schemas/board.schema.json`](schemas/board.schema.json). The `board`
+  workflow rebuilds it every day and on each merge, and publishes it as the
+  only file on the `board` branch, which the site fetches.
 
 ## Quick start
 
