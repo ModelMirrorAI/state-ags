@@ -3,6 +3,8 @@
 # edit because the 730-day window slides and a successor takes office on a set
 # day, so it is rebuilt on a schedule as well as on each push to main. The build
 # job runs read-only; only the publish job can push, and only to `board`.
+# When the publish job pushes a changed board, the `site` job asks the
+# modelmirror.ai rebuild workflow to redeploy the page with that board.
 name: board
 
 on:
@@ -50,6 +52,8 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: write
+    outputs:
+      board_sha: ${{ steps.push.outputs.board_sha }}
     steps:
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
@@ -58,6 +62,7 @@ jobs:
       # The branch holds one file and one commit per change. A board that is
       # byte-identical to the published one is not pushed.
       - name: Publish to the board branch
+        id: push
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
@@ -82,3 +87,30 @@ jobs:
           fi
           git commit -q -m "board: rebuild from ${SOURCE_SHA}"
           git push -q "$url" board
+          echo "board_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  # Dispatches the site's rebuild workflow, which waits until the raw file host
+  # serves this board and then redeploys. The token is a secret of the
+  # `site-dispatch` environment, which accepts only `main`; it is scoped to
+  # running Actions on modelmirror.ai and reaches nothing in this repository.
+  site:
+    needs: publish
+    if: needs.publish.outputs.board_sha != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: site-dispatch
+    steps:
+      - name: Dispatch the site rebuild
+        env:
+          TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+          BOARD_SHA: ${{ needs.publish.outputs.board_sha }}
+        run: |
+          set -euo pipefail
+          test -n "$TOKEN" || { echo "SITE_DISPATCH_TOKEN secret is not set"; exit 1; }
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/ModelMirrorAI/modelmirror.ai/actions/workflows/rebuild.yml/dispatches \
+            -d "{\"ref\":\"main\",\"inputs\":{\"board_sha\":\"$BOARD_SHA\"}}"
+          echo "Asked modelmirror.ai to rebuild with board $BOARD_SHA."
