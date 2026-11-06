@@ -43,6 +43,7 @@ from stateags.board import (
     StateAgPair,
     StateAgPivot,
     StateAgsBoard,
+    StateAgTechUnitRow,
 )
 
 #: The registered name of the ambition measure the registry feeds.
@@ -248,6 +249,22 @@ class Holder(BaseModel):
         return self
 
 
+class TechUnit(BaseModel):
+    """An office's standing civil technology or privacy enforcement unit.
+
+    Context beside the tier, never part of it. The unit counts when the office
+    names a unit, section, bureau or team whose remit is privacy, data or
+    technology enforcement; a general consumer protection division, a single
+    designated attorney, or a criminal cybercrime unit does not.
+    """
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    name: str
+    established: int | None = Field(default=None, ge=1900, le=2100)
+    sources: list[str] = Field(min_length=1)
+
+
 class Office(BaseModel):
     """One state's attorney general's office and its holders, in the order they serve."""
 
@@ -256,6 +273,7 @@ class Office(BaseModel):
     state: str
     selection: Selection
     holders: list[Holder] = Field(min_length=1)
+    tech_unit: TechUnit | None = None
 
     @field_validator("state")
     @classmethod
@@ -589,6 +607,7 @@ def build_board(
                 window_counts={k.value: sum(1 for a in window if a.kind is k) for k in Kind},
                 action_ids=[a.id for a in mine],
                 data_center_ids=[c.id for c in centers if c.state == state and c.marked],
+                tech_unit=_tech_unit(office.tech_unit),
             )
         )
     actions = [
@@ -643,6 +662,12 @@ def build_board(
         large_coalition_offices=LARGE_COALITION_OFFICES,
         pivot=_pivot(registry, sorted(offices), as_of),
     )
+
+
+def _tech_unit(unit: TechUnit | None) -> StateAgTechUnitRow | None:
+    if unit is None:
+        return None
+    return StateAgTechUnitRow(name=unit.name, established=unit.established, sources=unit.sources)
 
 
 def _large(action: Action) -> bool:
