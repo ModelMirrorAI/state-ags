@@ -23,7 +23,7 @@ The coalition figures read only the actions two or more offices took part in;
 from __future__ import annotations
 
 import re
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from datetime import date, timedelta
 from enum import IntEnum, StrEnum
 from itertools import combinations
@@ -41,6 +41,7 @@ from stateags.board import (
     StateAgJoin,
     StateAgOfficeRow,
     StateAgPair,
+    StateAgPivot,
     StateAgsBoard,
 )
 
@@ -362,6 +363,10 @@ class Action(BaseModel):
 
 #: The smallest project, in megawatts, the data-center layer lists.
 DATA_CENTER_THRESHOLD_MW = 1000
+#: The fewest offices that make an action a large coalition. Reading aid only:
+#: the tier counts every action; ``tier_small_group`` and the pivot say how much
+#: of it rests on actions nearly every state joined.
+LARGE_COALITION_OFFICES = 30
 
 
 class DataCenterStatus(StrEnum):
@@ -453,11 +458,19 @@ class StateAgRegistry(BaseModel):
                 return office
         raise KeyError(state)
 
-    def tier(self, state: str, as_of: date) -> Rung:
-        """The office's ``ag-ai-ambition-v1`` tier on ``as_of``: the highest rung in the window."""
+    def tier(
+        self, state: str, as_of: date, keep: Callable[[Action], bool] = lambda _: True
+    ) -> Rung:
+        """The office's ``ag-ai-ambition-v1`` tier on ``as_of``: the highest rung in the window.
+
+        ``keep`` limits the actions counted, for the reading aids beside the tier; the
+        tier itself counts every action.
+        """
         since = as_of - timedelta(days=AMBITION_WINDOW_DAYS)
         reached = [
-            action.rung_for(state) for action in self.actions if since < action.announced <= as_of
+            action.rung_for(state)
+            for action in self.actions
+            if since < action.announced <= as_of and keep(action)
         ]
         return max(reached, default=Rung.none)
 
@@ -572,6 +585,7 @@ def build_board(
                 transition_overdue=pending is not None and pending.start <= as_of,
                 tier=int(tier),
                 tier_label=TIER_LABELS[tier],
+                tier_small_group=int(registry.tier(state, as_of, lambda a: not _large(a))),
                 window_counts={k.value: sum(1 for a in window if a.kind is k) for k in Kind},
                 action_ids=[a.id for a in mine],
                 data_center_ids=[c.id for c in centers if c.state == state and c.marked],
@@ -593,6 +607,7 @@ def build_board(
             },
             rungs={s: int(a.rung_for(s)) for s in a.states},
             in_window=since < a.announced <= as_of,
+            large_coalition=_large(a),
             developers=list(a.developers),
             court=a.court,
             docket_number=a.docket_number,
@@ -625,4 +640,41 @@ def build_board(
         ],
         defense_and_context=sum(1 for a in newest if track(a.kind) is not Track.enforcement),
         coalition=_coalition(registry, sorted(JURISDICTIONS), as_of),
+        large_coalition_offices=LARGE_COALITION_OFFICES,
+        pivot=_pivot(registry, sorted(offices), as_of),
+    )
+
+
+def _large(action: Action) -> bool:
+    return len(action.states) >= LARGE_COALITION_OFFICES
+
+
+def _pivot(registry: StateAgRegistry, states: list[str], as_of: date) -> StateAgPivot | None:
+    """The in-window action whose removal lowers the most offices' tiers (newest on a tie)."""
+    since = as_of - timedelta(days=AMBITION_WINDOW_DAYS)
+    window = sorted(
+        (a for a in registry.actions if since < a.announced <= as_of),
+        key=lambda a: (a.announced, a.id),
+        reverse=True,
+    )
+    best: tuple[Action, dict[str, int]] | None = None
+    for action in window:
+        lowered: dict[str, int] = {}
+
+        def keep(a: Action, x: Action = action) -> bool:
+            return a is not x
+
+        for state in states:
+            if state not in action.states:
+                continue
+            without = registry.tier(state, as_of, keep)
+            if without < registry.tier(state, as_of):
+                lowered[state] = int(without)
+        if lowered and (best is None or len(lowered) > len(best[1])):
+            best = (action, lowered)
+    if best is None:
+        return None
+    action, lowered = best
+    return StateAgPivot(
+        action_id=action.id, title=action.title, offices=lowered, dropped=len(lowered)
     )

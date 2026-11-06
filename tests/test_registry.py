@@ -482,3 +482,67 @@ def test_only_advocacy_may_name_no_developer() -> None:
 
     with pytest.raises(ValidationError, match="names the developers"):
         StateAgRegistry.model_validate(_registry(_action(developers=[])))
+
+
+_JOINERS = [s for s in sorted(JURISDICTIONS) if s not in {"TX", "CA"}][:31]
+
+
+def _coalition_registry() -> StateAgRegistry:
+    joiners = _JOINERS
+    return StateAgRegistry.model_validate(
+        _registry(
+            _action(),
+            _action(
+                id="big-amicus",
+                kind="amicus",
+                title="In re Model Co. (amicus)",
+                states=["CA", *joiners],
+                lead="CA",
+                announced="2026-07-01",
+            ),
+            _action(
+                id="small-letter",
+                kind="letter",
+                states=[joiners[0], joiners[1]],
+                lead=joiners[0],
+                court=None,
+                docket_number=None,
+                announced="2026-08-01",
+            ),
+            offices=_all_offices(),
+        )
+    )
+
+
+def test_board_splits_large_coalitions_out_of_the_tier() -> None:
+    board = build_board(_coalition_registry(), date(2026, 11, 5), frozenset())
+    rows = {row.state: row for row in board.offices}
+    flags = {a.id: a.large_coalition for a in board.actions}
+
+    assert board.large_coalition_offices == 30
+    assert flags == {"big-amicus": True, "small-letter": False, "tx-v-model-co": False}
+    joiners = _JOINERS
+    # Leading a large amicus is step 2 on the tier, and nothing without it.
+    assert rows["CA"].tier == 2 and rows["CA"].tier_small_group == 0
+    assert rows["TX"].tier == 4 and rows["TX"].tier_small_group == 4
+    assert rows[joiners[0]].tier == 2 and rows[joiners[0]].tier_small_group == 1
+    assert rows[joiners[5]].tier == 2 and rows[joiners[5]].tier_small_group == 0
+
+
+def test_board_pivot_is_the_action_that_lowers_most_tiers() -> None:
+    board = build_board(_coalition_registry(), date(2026, 11, 5), frozenset())
+
+    assert board.pivot is not None
+    assert board.pivot.action_id == "big-amicus"
+    assert board.pivot.dropped == 32
+    # The letter's two offices fall back to step 1; the others to none; CA's lead goes.
+    joiners = _JOINERS
+    assert board.pivot.offices[joiners[0]] == 1
+    assert board.pivot.offices[joiners[5]] == 0
+    assert board.pivot.offices["CA"] == 0
+    assert "TX" not in board.pivot.offices
+
+
+def test_board_without_actions_has_no_pivot() -> None:
+    registry = StateAgRegistry.model_validate(_registry(offices=_all_offices()))
+    assert build_board(registry, date(2026, 11, 5), frozenset()).pivot is None
