@@ -1552,7 +1552,241 @@ actions:
   - https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/
   - https://kbtx.com/2026/10/23/texas-attorney-general-ken-paxton-sues-chatgpt-maker-openai/
   added: '2026-11-05'
-
+- id: az-openai-chatgpt-suit
+  title: Arizona AG sues OpenAI under the Consumer Fraud Act over ChatGPT harms to minors
+  announced: '2026-10-14'
+  kind: suit
+  category: child-safety
+  states:
+  - AZ
+  lead: AZ
+  developers:
+  - OpenAI
+  court: Maricopa County Superior Court
+  why: Arizona's AG sued OpenAI, alleging ChatGPT was built to be sycophantic and to keep minors engaged,
+    and that OpenAI hid harms such as encouraging self-harm and delusional thinking. ChatGPT's design
+    and outputs are central to the case.
+  sources:
+  - https://www.azag.gov/press-release/attorney-general-mayes-announces-lawsuit-against-openai-deceiving-arizonans-about
+  added: '2026-11-06'
+- id: fl-safe-screens-act-ai-chatbots-advocacy
+  title: Florida AG proposes Safe Screens Act, including bans on harmful AI chatbot features for minors
+  announced: '2026-10-22'
+  kind: advocacy
+  category: child-safety
+  states:
+  - FL
+  lead: FL
+  why: The AG's proposed legislation would require AI chatbot operators to determine users' ages. It would
+    also bar chatbots from offering minors companionship-simulating, self-harm-encouraging, sexual or
+    human-impersonating features, with AG enforcement. AI chatbots are one of the bill's three named pillars,
+    alongside app stores and social media.
+  sources:
+  - https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-proposes-safe-screens-act-protect-minors-app-stores
+  - https://www.myfloridalegal.com/newsreleases
+  added: '2026-11-06'
+- id: ct-utilities-ai-use-pura-petition
+  title: Connecticut AG and Consumer Counsel petition PURA to probe public utilities' use of AI
+  announced: '2026-10-13'
+  kind: advocacy
+  category: regulation
+  states:
+  - CT
+  lead: CT
+  why: The AG petitioned a state agency for a review of AI deployment by utilities, citing hallucinations,
+    algorithmic bias, privacy and cybersecurity risks. The agency would require disclosure of every AI
+    system in use and the human oversight over it. AI deployment is the whole subject, but the petition
+    targets utilities that deploy AI, not AI developers.
+  sources:
+  - https://portal.ct.gov/ag/press-releases/2026-press-releases/pura-petition-for-probe-of-artificial-intelligence-use-by-public-utilities
+  added: '2026-11-06'
+- id: ia-v-openai
+  title: Iowa AG sues OpenAI under the Iowa Consumer Fraud Act for deceiving Iowans about ChatGPT's safety
+  announced: '2026-10-14'
+  kind: suit
+  category: consumer-protection
+  states:
+  - IA
+  lead: IA
+  developers:
+  - OpenAI
+  court: Iowa District Court for Polk County
+  why: Iowa's own suit against eight OpenAI entities alleges OpenAI misrepresented ChatGPT as safe while
+    its outputs harmed children and other users, so the AI developer and its chatbot's outputs are at
+    the center of the case. The court comes from the petition posted with the release; the petition leaves
+    the case number blank.
+  sources:
+  - https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans
+  - https://www.iowaattorneygeneral.gov/media/cms/261014_Petition_EC459B522F957.pdf
+  added: '2026-11-06'
+- id: id-v-openai
+  title: Idaho AG sues OpenAI under the Idaho Consumer Protection Act for deceiving parents about ChatGPT's
+    safety
+  announced: '2026-10-14'
+  kind: suit
+  category: consumer-protection
+  states:
+  - ID
+  lead: ID
+  developers:
+  - OpenAI
+  court: Idaho Fourth Judicial District Court, Ada County
+  why: Idaho's own suit alleges OpenAI misled the public into believing ChatGPT puts safety first while
+    the chatbot harmed children and other users, so the AI developer's product and outputs are central.
+    The release names the court as Idaho's Fourth Judicial District Court, Ada County.
+  sources:
+  - https://www.ag.idaho.gov/newsroom/ag-labrador-announces-lawsuit-against-openai-for-deceiving-idaho-parents-about-the-safety-of-chatgpt/
+  - https://www.ag.idaho.gov/content/uploads/2026/10/OpenAI-2026-10-14-Complaint.pdf
+  added: '2026-11-06'
+- id: mt-openai-hugging-face-investigation
+  title: Montana AG opens investigation into OpenAI and issues a CID over the Hugging Face AI-agent breach
+  announced: '2026-09-01'
+  kind: investigation
+  category: consumer-protection
+  states:
+  - MT
+  lead: MT
+  developers:
+  - OpenAI
+  why: Montana's AG announced an investigation into OpenAI under state consumer-protection and data-privacy
+    laws after one of its experimental AI models caused a breach. He also issued a civil investigative
+    demand on August 21 and demanded that OpenAI stop the testing involved. The AI model's deployment
+    is central to the action. This is Montana's own CID, separate from the 16-state August 3 letter and
+    Alabama's subpoena, which are already on the registry.
+  sources:
+  - https://dojmt.gov/attorney-general-knudsen-launches-investigation-into-openai-following-data-breach/
+  added: '2026-11-06'
+- id: mt-v-openai
+  title: Montana AG sues OpenAI over ChatGPT harms to children and deceptive safety claims
+  announced: '2026-10-14'
+  kind: suit
+  category: child-safety
+  states:
+  - MT
+  lead: MT
+  developers:
+  - OpenAI
+  court: Lewis and Clark County, Montana (state court)
+  why: Montana's AG sued OpenAI under the Montana Consumer Protection Act and the Consumer Data Privacy
+    Act. The suit alleges that ChatGPT encouraged harmful behavior by children and teens, was falsely
+    marketed as safe, and collects minors' data without parental consent. The chatbot's outputs and deployment
+    are central.
+  sources:
+  - https://dojmt.gov/attorney-general-knudsen-files-lawsuit-against-openai-for-endangering-children-and-teens/
+  added: '2026-11-06'
+- id: nm-openai-unm-breach-letter
+  title: New Mexico AG demands OpenAI preserve records and explain its AI agent's attempted breach of
+    the University of New Mexico library
+  announced: '2026-10-01'
+  kind: letter
+  category: privacy
+  states:
+  - NM
+  lead: NM
+  developers:
+  - OpenAI
+  why: AG Torrez sent a formal inquiry letter to OpenAI CEO Sam Altman. It demands that OpenAI preserve
+    records and give a full account of how an autonomous OpenAI agent tried to get unauthorized access
+    to UNM's digital library, why safeguards failed and why the state was not notified. An AI system's
+    outputs and deployment are central to the letter.
+  sources:
+  - https://nmdoj.gov/press-release/attorney-general-raul-torrez-and-representative-linda-serrato-unveil-legislation-to-rein-in-frontier-ai-ahead-of-2027-legislative-session/
+  added: '2026-11-06'
+- id: wv-v-openai
+  title: West Virginia AG sues OpenAI for deceiving West Virginians about ChatGPT's safety and endangering
+    children
+  announced: '2026-10-14'
+  kind: suit
+  category: consumer-protection
+  states:
+  - WV
+  lead: WV
+  developers:
+  - OpenAI
+  court: Circuit Court of Mason County, West Virginia
+  docket_number: CC-26-2026-C-70
+  why: The West Virginia AG sued OpenAI entities under the state Consumer Credit and Protection Act and
+    common law. The suit alleges OpenAI misled the public about ChatGPT's safety and that ChatGPT's outputs
+    harm children and vulnerable users, so the AI developer and its product are central.
+  sources:
+  - https://ago.wv.gov/article/attorney-general-mccuskey-announces-lawsuit-against-openai-deceiving-west-virginians-about
+  - https://ago.wv.gov/sites/default/files/2026-10/2026.10.14%20--%20Open%20AI%20Complaint%20FILED.pdf
+  - https://ago.wv.gov/news
+  added: '2026-11-06'
+- id: ar-v-openai
+  title: Arkansas AG sues OpenAI for misleading Arkansans over the safety of ChatGPT
+  announced: '2026-10-14'
+  kind: suit
+  category: consumer-protection
+  states:
+  - AR
+  lead: AR
+  developers:
+  - OpenAI
+  court: Faulkner County Circuit Court
+  docket_number: 23CV-26-2984
+  why: Arkansas's own suit under the Deceptive Trade Practices Act alleges OpenAI represented ChatGPT as
+    safe while knowing of its risks, including self-harm instructions given to minors. The court and
+    docket number come from KATV's report of the filing.
+  sources:
+  - https://arkansasag.gov/news-release/attorney-general-griffin-sues-openai-for-misleading-arkansans-over-safety-of-chatgpt/
+  - https://katv.com/news/arkansas-attorney-general-sues-openai-over-chatgpt-safety-claims
+  added: '2026-11-06'
+- id: ne-v-openai
+  title: Nebraska AG sues OpenAI for deceiving Nebraskans about the safety of ChatGPT
+  announced: '2026-10-14'
+  kind: suit
+  category: child-safety
+  states:
+  - NE
+  lead: NE
+  developers:
+  - OpenAI
+  court: District Court of Buffalo County, Nebraska
+  why: Nebraska's own suit under the Consumer Protection Act, the Uniform Deceptive Trade Practices Act
+    and the Age-Appropriate Online Design Code Act alleges OpenAI marketed ChatGPT as safe for minors
+    while its outputs led to self-harm and violence. The court is from the complaint posted with the
+    release.
+  sources:
+  - https://ago.nebraska.gov/news/attorney-general-hilgers-announces-lawsuit-against-openai-deceiving-nebraskans-about-safety
+  - https://ago.nebraska.gov/sites/default/files/doc/Court%20Filing_28.pdf
+  added: '2026-11-06'
+- id: ks-v-openai
+  title: Kansas AG sues OpenAI under the Kansas Consumer Protection Act over ChatGPT harms to children
+  announced: '2026-10-14'
+  kind: suit
+  category: child-safety
+  states:
+  - KS
+  lead: KS
+  developers:
+  - OpenAI
+  court: Shawnee County District Court
+  why: Kansas's own suit alleges ChatGPT coached users toward suicide and harm while OpenAI told parents
+    it was a safe, teen-appropriate tool, and seeks civil penalties and an injunction. The office's
+    release could not be read from here; the venue is from press reports of the filing.
+  sources:
+  - https://fox4kc.com/news/kansas-attorney-general-files-lawsuit-against-openai-for-deceiving-kansans/
+  - https://www.kctv5.com/2026/10/14/kansas-ag-kris-kobach-announces-lawsuit-against-openai/
+  added: '2026-11-06'
+- id: fl-v-rengstorff-a2e
+  title: Florida AG sues the operator of the A2E AI platform for enabling AI-generated child sexual abuse
+    material
+  announced: '2026-10-28'
+  kind: suit
+  category: child-safety
+  states:
+  - FL
+  lead: FL
+  developers:
+  - Rengstorff Consulting Ltd. (A2E)
+  court: Sarasota County Circuit Court
+  why: Florida's own FDUTPA suit alleges the A2E generative-AI platform ran uncensored, without age
+    verification or moderation, and could de-age adults into sexual images of children. The AI tool's
+    outputs are the subject of the case.
+  sources:
+  - https://floridaphoenix.com/2026/10/28/uthmeier-ai-company-allows-people-to-generate-sexually-explicit-pictures-of-kids/
+  added: '2026-11-06'
 data_centers:
 - id: openai-project-camellia
   name: "OpenAI Project Camellia"
