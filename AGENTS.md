@@ -28,6 +28,16 @@ nothing, so any figure the site shows is a field of `board.json`.
   modelmirror.ai PR, linked from both descriptions.
 - **Docs describe the current design**, not its history. Issue numbers belong
   in PR descriptions and commit messages only.
+- **A check that has to wait becomes a scheduled routine, not an open
+  session.** When the only work left is a check due days or weeks out (a
+  deploy or rebuild effect, a close after a quiet period), comment on the
+  issue what will be checked, when, and the result that closes it; schedule a
+  fresh-session routine for that date whose prompt carries the issue, the
+  check and the criteria in full, and which comments the result, closes the
+  issue when the criteria pass, and otherwise @-mentions the maintainer
+  (`modelmirror`); record the routine where the next session looks first (the
+  project memory, in a Claude project session); then end the session. The
+  routine reads and comments only: it pushes and merges nothing.
 - **Identity.** Commits use a no-reply address. No personal or organizational
   email addresses anywhere in the repository.
 
