@@ -155,7 +155,10 @@ advocacy names at least one developer.
 
 Cite the office's own announcement first. Record only what the announcement \
 states; never infer a court, docket number, lead or participating state it does \
-not give, and lower the confidence when you are unsure. If you find nothing new, \
+not give, and lower the confidence when you are unsure. When the announcement of \
+a filed suit omits its court, look for the complaint it links or a news report of \
+the filing, take the court from that and cite it as a further source; a suit with \
+no court is set aside. If you find nothing new, \
 say so and record nothing. Some newsrooms are shared state portals: record only \
 the attorney general's own releases."""
 
@@ -260,8 +263,10 @@ def check(
     """Split drafts into those that would enter the registry cleanly and those that would not.
 
     A draft passes when it validates as an action, names a known category, uses an id
-    neither the registry nor an earlier draft holds, and cites a first source neither the
-    registry nor an earlier draft cites.
+    neither the registry nor an earlier draft holds, and cites a first source the registry
+    does not cite and no earlier draft gives as its own first source. A later source an
+    earlier draft cites in passing does not set a draft aside, so one release naming
+    another state's suit cannot hide that suit.
     """
     taken_ids = {a.id for a in registry.actions}
     cited = {s for a in registry.actions for s in a.sources}
@@ -283,7 +288,7 @@ def check(
         else:
             accepted.append(proposal)
             taken_ids.add(action.id)
-            cited.update(action.sources)
+            cited.add(action.sources[0])
     return accepted, rejected
 
 
