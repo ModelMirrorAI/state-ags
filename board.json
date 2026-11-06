@@ -14,6 +14,7 @@
       "id": "tx-v-openai-altman",
       "in_window": true,
       "kind": "suit",
+      "large_coalition": false,
       "lead": "TX",
       "rungs": {
         "TX": 4
@@ -85,6 +86,7 @@
       "id": "multistate-character-ai-bankruptcy-notice",
       "in_window": true,
       "kind": "amicus",
+      "large_coalition": true,
       "lead": "NY",
       "rungs": {
         "AK": 2,
@@ -196,6 +198,7 @@
       "id": "ca-openai-cybersecurity-investigation-subpoena",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "CA",
       "rungs": {
         "CA": 3
@@ -250,6 +253,7 @@
       "id": "multistate-congress-federal-ai-framework-letter-sep-2026",
       "in_window": true,
       "kind": "advocacy",
+      "large_coalition": false,
       "lead": "NY",
       "rungs": {
         "AZ": 0,
@@ -329,6 +333,7 @@
       "id": "al-openai-hugging-face-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "AL",
       "rungs": {
         "AL": 3
@@ -373,6 +378,7 @@
       "id": "multistate-openai-hugging-face-preservation-letter",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": false,
       "lead": "IA",
       "rungs": {
         "AL": 1,
@@ -432,6 +438,7 @@
       "id": "xai-v-ellison-nudification-ban-defense",
       "in_window": true,
       "kind": "defense",
+      "large_coalition": false,
       "lead": "MN",
       "rungs": {
         "MN": 0
@@ -465,6 +472,7 @@
       "id": "fl-v-openai-altman",
       "in_window": true,
       "kind": "suit",
+      "large_coalition": false,
       "lead": "FL",
       "rungs": {
         "FL": 4
@@ -497,6 +505,7 @@
       "id": "fl-openai-criminal-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "FL",
       "rungs": {
         "FL": 3
@@ -529,6 +538,7 @@
       "id": "xai-v-weiser-colorado-ai-act-defense",
       "in_window": true,
       "kind": "defense",
+      "large_coalition": false,
       "lead": "CO",
       "rungs": {
         "CO": 0
@@ -591,6 +601,7 @@
       "id": "multistate-xai-grok-ncii-letter",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": true,
       "lead": "NC",
       "rungs": {
         "AZ": 1,
@@ -686,6 +697,7 @@
       "id": "ca-xai-cease-and-desist",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": false,
       "lead": "CA",
       "rungs": {
         "CA": 1
@@ -717,6 +729,7 @@
       "id": "az-xai-grok-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "AZ",
       "rungs": {
         "AZ": 3
@@ -747,6 +760,7 @@
       "id": "ca-xai-grok-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "CA",
       "rungs": {
         "CA": 3
@@ -778,6 +792,7 @@
       "id": "ky-v-character-technologies",
       "in_window": true,
       "kind": "suit",
+      "large_coalition": false,
       "lead": "KY",
       "rungs": {
         "KY": 4
@@ -859,6 +874,7 @@
       "id": "multistate-sycophantic-delusional-outputs-letter",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": true,
       "lead": "PA",
       "rungs": {
         "AK": 1,
@@ -998,6 +1014,7 @@
       "id": "multistate-ai-preemption-letter-nov-2025",
       "in_window": true,
       "kind": "advocacy",
+      "large_coalition": true,
       "lead": "NC",
       "rungs": {
         "AZ": 0,
@@ -1095,6 +1112,7 @@
       "id": "ca-de-openai-recapitalization-commitments",
       "in_window": true,
       "kind": "settlement",
+      "large_coalition": false,
       "lead": "DE",
       "rungs": {
         "CA": 2,
@@ -1128,6 +1146,7 @@
       "id": "ca-de-openai-child-safety-letter",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": false,
       "lead": "CA",
       "rungs": {
         "CA": 1,
@@ -1205,6 +1224,7 @@
       "id": "multistate-deepfake-ncii-letters-aug-2025",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": true,
       "lead": "VT",
       "rungs": {
         "AK": 1,
@@ -1375,6 +1395,7 @@
       "id": "multistate-ai-child-safety-letter-aug-2025",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": true,
       "lead": "TN",
       "rungs": {
         "AK": 1,
@@ -1491,6 +1512,7 @@
       "id": "tx-meta-ai-studio-character-ai-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "TX",
       "rungs": {
         "TX": 3
@@ -1525,6 +1547,7 @@
       "id": "mo-ai-chatbot-trump-bias-letters",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "MO",
       "rungs": {
         "MO": 3
@@ -1582,6 +1605,7 @@
       "id": "al-meta-ai-role-play-letter",
       "in_window": true,
       "kind": "letter",
+      "large_coalition": false,
       "lead": "SC",
       "rungs": {
         "AK": 1,
@@ -1702,6 +1726,7 @@
       "id": "multistate-ai-moratorium-letter-may-2025",
       "in_window": true,
       "kind": "advocacy",
+      "large_coalition": true,
       "lead": "VT",
       "rungs": {
         "AR": 0,
@@ -1828,6 +1853,7 @@
       "id": "multistate-deepseek-government-devices-letter",
       "in_window": true,
       "kind": "advocacy",
+      "large_coalition": false,
       "lead": "MT",
       "rungs": {
         "AK": 0,
@@ -1899,6 +1925,7 @@
       "id": "tx-deepseek-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "TX",
       "rungs": {
         "TX": 3
@@ -1930,6 +1957,7 @@
       "id": "tx-character-ai-scope-act-investigation",
       "in_window": true,
       "kind": "investigation",
+      "large_coalition": false,
       "lead": "TX",
       "rungs": {
         "TX": 3
@@ -31049,6 +31077,7 @@
     }
   ],
   "defense_and_context": 6,
+  "large_coalition_offices": 30,
   "method": "ag-ai-ambition-v1",
   "offices": [
     {
@@ -31074,6 +31103,7 @@
       "state": "AK",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31108,6 +31138,7 @@
       "state": "AL",
       "tier": 3,
       "tier_label": "Investigates",
+      "tier_small_group": 3,
       "transition": {
         "name": "Katherine Robertson",
         "party": "R",
@@ -31154,6 +31185,7 @@
       "state": "AR",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31191,6 +31223,7 @@
       "state": "AZ",
       "tier": 3,
       "tier_label": "Investigates",
+      "tier_small_group": 3,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31231,6 +31264,7 @@
       "state": "CA",
       "tier": 3,
       "tier_label": "Investigates",
+      "tier_small_group": 3,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31268,6 +31302,7 @@
       "state": "CO",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": {
         "name": "Jena Griswold",
         "party": "D",
@@ -31314,6 +31349,7 @@
       "state": "CT",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31349,6 +31385,7 @@
       "state": "DC",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31388,6 +31425,7 @@
       "state": "DE",
       "tier": 3,
       "tier_label": "Investigates",
+      "tier_small_group": 3,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31424,6 +31462,7 @@
       "state": "FL",
       "tier": 4,
       "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31460,6 +31499,7 @@
       "state": "GA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": "Tanya Miller",
         "party": "D",
@@ -31506,6 +31546,7 @@
       "state": "HI",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31541,6 +31582,7 @@
       "state": "IA",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 1,
       "transition": {
         "name": "Nate Willems",
         "party": "D",
@@ -31587,6 +31629,7 @@
       "state": "ID",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31624,6 +31667,7 @@
       "state": "IL",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31661,6 +31705,7 @@
       "state": "IN",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31697,6 +31742,7 @@
       "state": "KS",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": null,
         "party": null,
@@ -31746,6 +31792,7 @@
       "state": "KY",
       "tier": 4,
       "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31786,6 +31833,7 @@
       "state": "LA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31822,6 +31870,7 @@
       "state": "MA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31857,6 +31906,7 @@
       "state": "MD",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31893,6 +31943,7 @@
       "state": "ME",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31931,6 +31982,7 @@
       "state": "MI",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": {
         "name": "Eli Savit",
         "party": "D",
@@ -31978,6 +32030,7 @@
       "state": "MN",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32014,6 +32067,7 @@
       "state": "MO",
       "tier": 3,
       "tier_label": "Investigates",
+      "tier_small_group": 3,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32050,6 +32104,7 @@
       "state": "MS",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32083,6 +32138,7 @@
       "state": "MT",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32119,6 +32175,7 @@
       "state": "NC",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32158,6 +32215,7 @@
       "state": "ND",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32192,6 +32250,7 @@
       "state": "NE",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32231,6 +32290,7 @@
       "state": "NH",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32268,6 +32328,7 @@
       "state": "NJ",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32306,6 +32367,7 @@
       "state": "NM",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32343,6 +32405,7 @@
       "state": "NV",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": {
         "name": "Nicole Cannizzaro",
         "party": "D",
@@ -32389,6 +32452,7 @@
       "state": "NY",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32429,6 +32493,7 @@
       "state": "OH",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": "John Kulewicz",
         "party": "D",
@@ -32479,6 +32544,7 @@
       "state": "OK",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": "Jon Echols",
         "party": "R",
@@ -32524,6 +32590,7 @@
       "state": "OR",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32565,6 +32632,7 @@
       "state": "PA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32602,6 +32670,7 @@
       "state": "RI",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": {
         "name": "Kimberly Ahern",
         "party": "D",
@@ -32651,6 +32720,7 @@
       "state": "SC",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": "David Stumbo",
         "party": "R",
@@ -32695,6 +32765,7 @@
       "state": "SD",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": {
         "name": "Lance Russell",
         "party": "R",
@@ -32740,6 +32811,7 @@
       "state": "TN",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32786,6 +32858,7 @@
       "state": "TX",
       "tier": 4,
       "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": {
         "name": "Nathan Johnson",
         "party": "D",
@@ -32835,6 +32908,7 @@
       "state": "UT",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32875,6 +32949,7 @@
       "state": "VA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32912,6 +32987,7 @@
       "state": "VT",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32949,6 +33025,7 @@
       "state": "WA",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32984,6 +33061,7 @@
       "state": "WI",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 0,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -33018,6 +33096,7 @@
       "state": "WV",
       "tier": 2,
       "tier_label": "Joins",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -33052,6 +33131,7 @@
       "state": "WY",
       "tier": 1,
       "tier_label": "Signals",
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -33065,6 +33145,50 @@
       }
     }
   ],
-  "schema_version": "1.0",
+  "pivot": {
+    "action_id": "multistate-character-ai-bankruptcy-notice",
+    "dropped": 37,
+    "offices": {
+      "AK": 1,
+      "AR": 1,
+      "CO": 1,
+      "CT": 1,
+      "DC": 1,
+      "GA": 1,
+      "HI": 1,
+      "ID": 1,
+      "IL": 1,
+      "IN": 1,
+      "KS": 1,
+      "LA": 1,
+      "MA": 1,
+      "ME": 1,
+      "MI": 1,
+      "MN": 1,
+      "MS": 1,
+      "NC": 1,
+      "ND": 1,
+      "NH": 1,
+      "NJ": 1,
+      "NV": 1,
+      "NY": 1,
+      "OH": 1,
+      "OK": 1,
+      "OR": 1,
+      "PA": 1,
+      "RI": 1,
+      "SC": 1,
+      "SD": 1,
+      "TN": 1,
+      "UT": 1,
+      "VA": 1,
+      "VT": 1,
+      "WA": 1,
+      "WI": 1,
+      "WV": 1
+    },
+    "title": "40 AGs seek child-safety and privacy conditions on any sale in Character.AI Chapter 11"
+  },
+  "schema_version": "1.1",
   "window_days": 730
 }
