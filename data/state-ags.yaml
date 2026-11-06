@@ -88,6 +88,10 @@ offices:
     sources:
     - https://ag.ny.gov/sites/default/files/letters/federal-ai-regulation-letter-2026.pdf
     - https://www.azag.gov/press-release/attorney-general-mayes-announces-lawsuit-against-openai-deceiving-arizonans-about
+  tech_unit:
+    name: "Antitrust and Privacy Unit"
+    sources:
+    - https://www.azag.gov/sites/default/files/publications/2026-06/Arizona%20Attorney%20General's%20Office%20FY25%20Annual%20Report.pdf
 - state: CA
   selection: elected
   holders:
@@ -97,6 +101,11 @@ offices:
     start: '2021-04-23'
     sources:
     - https://oag.ca.gov/about
+  tech_unit:
+    name: "Privacy Unit"
+    established: 2012
+    sources:
+    - https://oag.ca.gov/privacy
 - state: CO
   selection: elected
   holders:
@@ -113,6 +122,10 @@ offices:
     sources:
     - https://www.cbsnews.com/colorado/news/jena-griswold-colorado-attorney-general-election-michael-allen/
     - https://codes.findlaw.com/co/colorado-constitution-of-1876/co-const-art-iv-sect-1/
+  tech_unit:
+    name: "Technology & Privacy Protection Unit"
+    sources:
+    - https://coag.gov/office-sections/consumer-protection/
 - state: CT
   selection: elected
   holders:
@@ -122,6 +135,11 @@ offices:
     start: '2019-01-09'
     sources:
     - https://portal.ct.gov/-/media/DCF/GTF-CJA/pdf/2019/Connectiut-Childrens-Justice-Act-Application-Final-May-17-2019.pdf
+  tech_unit:
+    name: "Privacy and Data Security Section"
+    established: 2015
+    sources:
+    - https://portal.ct.gov/AG/Sections/Privacy/The-Privacy-and-Data-Security-Section
 - state: DC
   selection: elected
   holders:
@@ -208,6 +226,10 @@ offices:
     start: '2019-01-14'
     sources:
     - https://illinoisattorneygeneral.gov/dA/f76fc6b7a4/201901-14%20SWORN%20IN%20AS%20ILLINOIS%2042ND%20ATTORNEY%20GENERAL.pdf
+  tech_unit:
+    name: "Privacy and Data Security Unit"
+    sources:
+    - https://illinoisattorneygeneral.gov/News-Room/Current-News/Labcorp%20-%20AVC%20IL%20-%20LC_countersigned.pdf?language_id=1
 - state: IN
   selection: elected
   holders:
@@ -217,6 +239,10 @@ offices:
     start: '2021-01-11'
     sources:
     - https://events.in.gov/event/ag_todd_rokita_sworn_in
+  tech_unit:
+    name: "Data Privacy & Identity Theft Unit"
+    sources:
+    - https://www.in.gov/attorneygeneral/about-the-office/OAG-Bios-for-Website-compressed.pdf
 - state: KS
   selection: elected
   holders:
@@ -241,6 +267,10 @@ offices:
     start: '2024-01-01'
     sources:
     - https://www.ag.ky.gov/about/Pages/Attorney-General.aspx
+  tech_unit:
+    name: "Office of Data Privacy"
+    sources:
+    - https://ag.ky.gov/about/Office-Divisions/ODP
 - state: LA
   selection: elected
   holders:
@@ -259,6 +289,11 @@ offices:
     start: '2023-01-18'
     sources:
     - https://www.mass.gov/person/andrea-joy-campbell-attorney-general
+  tech_unit:
+    name: "Privacy and Responsible Technology Division"
+    established: 2020
+    sources:
+    - https://www.mass.gov/data-privacy-and-security-division
 - state: MD
   selection: elected
   holders:
@@ -311,6 +346,10 @@ offices:
     start: '2025-09-08'
     sources:
     - https://ago.mo.gov/about-us/about-ag-hanaway/
+  tech_unit:
+    name: "Multistate, Antitrust & Privacy Unit"
+    sources:
+    - https://ago.mo.gov/divisions/consumer/
 - state: MS
   selection: elected
   holders:
@@ -366,6 +405,11 @@ offices:
     sources:
     - https://republicanags.com/attorneys-general/
     - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+  tech_unit:
+    name: "Data Privacy Unit"
+    established: 2024
+    sources:
+    - https://www.doj.nh.gov/data-privacy-enforcement
 - state: NJ
   selection: governor
   holders:
@@ -375,6 +419,11 @@ offices:
     start: '2026-01-20'
     sources:
     - https://www.njoag.gov/about/meet-attorney-general-davenport/
+  tech_unit:
+    name: "Data Privacy & Cybersecurity Section"
+    established: 2018
+    sources:
+    - https://nj.gov/oag/newsreleases18/pr20180507b.html
 - state: NM
   selection: elected
   holders:
@@ -409,6 +458,10 @@ offices:
     start: '2019-01-01'
     sources:
     - https://ag.ny.gov/press-release/2019/letitia-james-sworn-new-york-state-attorney-general
+  tech_unit:
+    name: "Bureau of Internet and Technology"
+    sources:
+    - https://ag.ny.gov/about/about-office/economic-justice-division
 - state: OH
   selection: elected
   holders:
@@ -456,6 +509,10 @@ offices:
     start: '2024-12-31'
     sources:
     - https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/
+  tech_unit:
+    name: "Privacy Unit"
+    sources:
+    - https://www.doj.state.or.us/wp-content/uploads/2025/08/OCPA-One-Year-Enforcement-Report-2025.pdf
 - state: PA
   selection: elected
   holders:
@@ -543,6 +600,11 @@ offices:
     sources:
     - https://www.houstonpublicmedia.org/articles/news/2026/11/04/566148/democrat-nathan-johnson-triumphs-in-texas-ag-race-to-replace-paxton/
     - "https://texas.public.law/statutes/tex._gov't_code_section_601.003"
+  tech_unit:
+    name: "Privacy and Tech Team"
+    established: 2024
+    sources:
+    - https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-launches-data-privacy-and-security-initiative-protect-texans-sensitive
 - state: UT
   selection: elected
   holders:
@@ -553,6 +615,10 @@ offices:
     sources:
     - https://republicanags.com/attorneys-general/
     - https://ag.ny.gov/sites/default/files/letters/multistate-letter-to-xai-letters-2026.pdf
+  tech_unit:
+    name: "Antitrust and Data Privacy Division"
+    sources:
+    - https://attorneygeneral.utah.gov/antitrust/
 - state: VA
   selection: elected
   holders:
@@ -562,6 +628,10 @@ offices:
     start: '2026-01-17'
     sources:
     - https://www.oag.state.va.us/our-office/about-the-attorney-general
+  tech_unit:
+    name: "Consumer Privacy Unit"
+    sources:
+    - https://oag.state.va.us/media-center/news-releases/2832-january-28-2025-attorney-general-miyares-highlights-virginians-consumer-data-rights-on-data-privacy-day
 - state: VT
   selection: elected
   holders:

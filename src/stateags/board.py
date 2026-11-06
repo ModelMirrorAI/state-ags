@@ -13,7 +13,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 #: The board's format version; a change to a field's meaning bumps it.
-SCHEMA_VERSION: Literal["1.1"] = "1.1"
+SCHEMA_VERSION: Literal["1.2"] = "1.2"
 
 
 class _Strict(BaseModel):
@@ -30,6 +30,14 @@ class StateAgHolderRow(_Strict):
     )
     start: date = Field(description="The day the holder took, or takes, the office.")
     sources: list[str] = Field(min_length=1, description="Where the roster's facts come from.")
+
+
+class StateAgTechUnitRow(_Strict):
+    """An office's standing technology or privacy enforcement unit, as the registry records it."""
+
+    name: str = Field(description="The unit's name in the office.")
+    established: int | None = Field(description="The year it was created, where a source says.")
+    sources: list[str] = Field(min_length=1, description="Where the unit is evidenced.")
 
 
 class StateAgOfficeRow(_Strict):
@@ -66,6 +74,10 @@ class StateAgOfficeRow(_Strict):
     data_center_ids: list[str] = Field(
         description="The state's large AI data center projects that mark it (every status but "
         "cancelled), largest first. Context beside the tier, never part of it."
+    )
+    tech_unit: StateAgTechUnitRow | None = Field(
+        description="The office's standing technology or privacy enforcement unit; none when "
+        "the registry records none. Context beside the tier, never part of it."
     )
 
 
@@ -177,7 +189,7 @@ class StateAgsBoard(_Strict):
     method is ``docs/method.md``. The site renders it and computes nothing.
     """
 
-    schema_version: Literal["1.1"] = SCHEMA_VERSION
+    schema_version: Literal["1.2"] = SCHEMA_VERSION
     method: Literal["ag-ai-ambition-v1"] = Field(description="The ambition measure's name.")
     as_of: date = Field(description="The day the tiers and transitions are read on.")
     window_days: int = Field(gt=0, description="The trailing window an action counts in.")
