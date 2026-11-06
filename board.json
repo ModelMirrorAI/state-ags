@@ -1,6 +1,36 @@
 {
   "actions": [
     {
+      "announced": "2026-10-28",
+      "category": "child-safety",
+      "court": "Sarasota County Circuit Court",
+      "developers": [
+        "Rengstorff Consulting Ltd. (A2E)"
+      ],
+      "docket_number": null,
+      "holders": {
+        "FL": "James Uthmeier"
+      },
+      "id": "fl-v-rengstorff-a2e",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "FL",
+      "rungs": {
+        "FL": 4
+      },
+      "sources": [
+        "https://floridaphoenix.com/2026/10/28/uthmeier-ai-company-allows-people-to-generate-sexually-explicit-pictures-of-kids/"
+      ],
+      "states": [
+        "FL"
+      ],
+      "title": "Florida AG sues the operator of the A2E AI platform for enabling AI-generated child sexual abuse material",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Florida's own FDUTPA suit alleges the A2E generative-AI platform ran uncensored, without age verification or moderation, and could de-age adults into sexual images of children. The AI tool's outputs are the subject of the case."
+    },
+    {
       "announced": "2026-10-23",
       "category": "child-safety",
       "court": "District Court, Collin County, Texas",
@@ -32,6 +62,98 @@
       "track": "enforcement",
       "watchlist_case": null,
       "why": "Petition alleging ChatGPT's safety claims misled consumers and its age-verification, parental-control and minor-privacy practices violate the SCOPE Act; seeks court-approved review before new model releases."
+    },
+    {
+      "announced": "2026-10-22",
+      "category": "child-safety",
+      "court": null,
+      "developers": [],
+      "docket_number": null,
+      "holders": {
+        "FL": "James Uthmeier"
+      },
+      "id": "fl-safe-screens-act-ai-chatbots-advocacy",
+      "in_window": true,
+      "kind": "advocacy",
+      "large_coalition": false,
+      "lead": "FL",
+      "rungs": {
+        "FL": 0
+      },
+      "sources": [
+        "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-proposes-safe-screens-act-protect-minors-app-stores",
+        "https://www.myfloridalegal.com/newsreleases"
+      ],
+      "states": [
+        "FL"
+      ],
+      "title": "Florida AG proposes Safe Screens Act, including bans on harmful AI chatbot features for minors",
+      "track": "context",
+      "watchlist_case": null,
+      "why": "The AG's proposed legislation would require AI chatbot operators to determine users' ages. It would also bar chatbots from offering minors companionship-simulating, self-harm-encouraging, sexual or human-impersonating features, with AG enforcement. AI chatbots are one of the bill's three named pillars, alongside app stores and social media."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "consumer-protection",
+      "court": "Circuit Court of Mason County, West Virginia",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": "CC-26-2026-C-70",
+      "holders": {
+        "WV": "JB McCuskey"
+      },
+      "id": "wv-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "WV",
+      "rungs": {
+        "WV": 4
+      },
+      "sources": [
+        "https://ago.wv.gov/article/attorney-general-mccuskey-announces-lawsuit-against-openai-deceiving-west-virginians-about",
+        "https://ago.wv.gov/sites/default/files/2026-10/2026.10.14%20--%20Open%20AI%20Complaint%20FILED.pdf",
+        "https://ago.wv.gov/news"
+      ],
+      "states": [
+        "WV"
+      ],
+      "title": "West Virginia AG sues OpenAI for deceiving West Virginians about ChatGPT's safety and endangering children",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "The West Virginia AG sued OpenAI entities under the state Consumer Credit and Protection Act and common law. The suit alleges OpenAI misled the public about ChatGPT's safety and that ChatGPT's outputs harm children and vulnerable users, so the AI developer and its product are central."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "child-safety",
+      "court": "District Court of Buffalo County, Nebraska",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "NE": "Mike Hilgers"
+      },
+      "id": "ne-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "NE",
+      "rungs": {
+        "NE": 4
+      },
+      "sources": [
+        "https://ago.nebraska.gov/news/attorney-general-hilgers-announces-lawsuit-against-openai-deceiving-nebraskans-about-safety",
+        "https://ago.nebraska.gov/sites/default/files/doc/Court%20Filing_28.pdf"
+      ],
+      "states": [
+        "NE"
+      ],
+      "title": "Nebraska AG sues OpenAI for deceiving Nebraskans about the safety of ChatGPT",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Nebraska's own suit under the Consumer Protection Act, the Uniform Deceptive Trade Practices Act and the Age-Appropriate Online Design Code Act alleges OpenAI marketed ChatGPT as safe for minors while its outputs led to self-harm and violence. The court is from the complaint posted with the release."
     },
     {
       "announced": "2026-10-14",
@@ -185,6 +307,248 @@
       "why": "Notice in Character Technologies' bankruptcy asking that enforceable child-safety and data-privacy obligations attach to any asset sale and that a privacy ombudsman be appointed."
     },
     {
+      "announced": "2026-10-14",
+      "category": "child-safety",
+      "court": "Lewis and Clark County, Montana (state court)",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "MT": "Austin Knudsen"
+      },
+      "id": "mt-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "MT",
+      "rungs": {
+        "MT": 4
+      },
+      "sources": [
+        "https://dojmt.gov/attorney-general-knudsen-files-lawsuit-against-openai-for-endangering-children-and-teens/"
+      ],
+      "states": [
+        "MT"
+      ],
+      "title": "Montana AG sues OpenAI over ChatGPT harms to children and deceptive safety claims",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Montana's AG sued OpenAI under the Montana Consumer Protection Act and the Consumer Data Privacy Act. The suit alleges that ChatGPT encouraged harmful behavior by children and teens, was falsely marketed as safe, and collects minors' data without parental consent. The chatbot's outputs and deployment are central."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "child-safety",
+      "court": "Shawnee County District Court",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "KS": "Kris Kobach"
+      },
+      "id": "ks-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "KS",
+      "rungs": {
+        "KS": 4
+      },
+      "sources": [
+        "https://fox4kc.com/news/kansas-attorney-general-files-lawsuit-against-openai-for-deceiving-kansans/",
+        "https://www.kctv5.com/2026/10/14/kansas-ag-kris-kobach-announces-lawsuit-against-openai/"
+      ],
+      "states": [
+        "KS"
+      ],
+      "title": "Kansas AG sues OpenAI under the Kansas Consumer Protection Act over ChatGPT harms to children",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Kansas's own suit alleges ChatGPT coached users toward suicide and harm while OpenAI told parents it was a safe, teen-appropriate tool, and seeks civil penalties and an injunction. The office's release could not be read from here; the venue is from press reports of the filing."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "consumer-protection",
+      "court": "Idaho Fourth Judicial District Court, Ada County",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "ID": "Ra\u00fal Labrador"
+      },
+      "id": "id-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "ID",
+      "rungs": {
+        "ID": 4
+      },
+      "sources": [
+        "https://www.ag.idaho.gov/newsroom/ag-labrador-announces-lawsuit-against-openai-for-deceiving-idaho-parents-about-the-safety-of-chatgpt/",
+        "https://www.ag.idaho.gov/content/uploads/2026/10/OpenAI-2026-10-14-Complaint.pdf"
+      ],
+      "states": [
+        "ID"
+      ],
+      "title": "Idaho AG sues OpenAI under the Idaho Consumer Protection Act for deceiving parents about ChatGPT's safety",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Idaho's own suit alleges OpenAI misled the public into believing ChatGPT puts safety first while the chatbot harmed children and other users, so the AI developer's product and outputs are central. The release names the court as Idaho's Fourth Judicial District Court, Ada County."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "consumer-protection",
+      "court": "Iowa District Court for Polk County",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "IA": "Brenna Bird"
+      },
+      "id": "ia-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "IA",
+      "rungs": {
+        "IA": 4
+      },
+      "sources": [
+        "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-lawsuit-against-openai-for-deceiving-iowa-parents-and-iowans",
+        "https://www.iowaattorneygeneral.gov/media/cms/261014_Petition_EC459B522F957.pdf"
+      ],
+      "states": [
+        "IA"
+      ],
+      "title": "Iowa AG sues OpenAI under the Iowa Consumer Fraud Act for deceiving Iowans about ChatGPT's safety",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Iowa's own suit against eight OpenAI entities alleges OpenAI misrepresented ChatGPT as safe while its outputs harmed children and other users, so the AI developer and its chatbot's outputs are at the center of the case. The court comes from the petition posted with the release; the petition leaves the case number blank."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "child-safety",
+      "court": "Maricopa County Superior Court",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "AZ": "Kris Mayes"
+      },
+      "id": "az-openai-chatgpt-suit",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "AZ",
+      "rungs": {
+        "AZ": 4
+      },
+      "sources": [
+        "https://www.azag.gov/press-release/attorney-general-mayes-announces-lawsuit-against-openai-deceiving-arizonans-about"
+      ],
+      "states": [
+        "AZ"
+      ],
+      "title": "Arizona AG sues OpenAI under the Consumer Fraud Act over ChatGPT harms to minors",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Arizona's AG sued OpenAI, alleging ChatGPT was built to be sycophantic and to keep minors engaged, and that OpenAI hid harms such as encouraging self-harm and delusional thinking. ChatGPT's design and outputs are central to the case."
+    },
+    {
+      "announced": "2026-10-14",
+      "category": "consumer-protection",
+      "court": "Faulkner County Circuit Court",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": "23CV-26-2984",
+      "holders": {
+        "AR": "Tim Griffin"
+      },
+      "id": "ar-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "AR",
+      "rungs": {
+        "AR": 4
+      },
+      "sources": [
+        "https://arkansasag.gov/news-release/attorney-general-griffin-sues-openai-for-misleading-arkansans-over-safety-of-chatgpt/",
+        "https://katv.com/news/arkansas-attorney-general-sues-openai-over-chatgpt-safety-claims"
+      ],
+      "states": [
+        "AR"
+      ],
+      "title": "Arkansas AG sues OpenAI for misleading Arkansans over the safety of ChatGPT",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Arkansas's own suit under the Deceptive Trade Practices Act alleges OpenAI represented ChatGPT as safe while knowing of its risks, including self-harm instructions given to minors. The court and docket number come from KATV's report of the filing."
+    },
+    {
+      "announced": "2026-10-13",
+      "category": "regulation",
+      "court": null,
+      "developers": [],
+      "docket_number": null,
+      "holders": {
+        "CT": "William Tong"
+      },
+      "id": "ct-utilities-ai-use-pura-petition",
+      "in_window": true,
+      "kind": "advocacy",
+      "large_coalition": false,
+      "lead": "CT",
+      "rungs": {
+        "CT": 0
+      },
+      "sources": [
+        "https://portal.ct.gov/ag/press-releases/2026-press-releases/pura-petition-for-probe-of-artificial-intelligence-use-by-public-utilities"
+      ],
+      "states": [
+        "CT"
+      ],
+      "title": "Connecticut AG and Consumer Counsel petition PURA to probe public utilities' use of AI",
+      "track": "context",
+      "watchlist_case": null,
+      "why": "The AG petitioned a state agency for a review of AI deployment by utilities, citing hallucinations, algorithmic bias, privacy and cybersecurity risks. The agency would require disclosure of every AI system in use and the human oversight over it. AI deployment is the whole subject, but the petition targets utilities that deploy AI, not AI developers."
+    },
+    {
+      "announced": "2026-10-01",
+      "category": "privacy",
+      "court": null,
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "NM": "Ra\u00fal Torrez"
+      },
+      "id": "nm-openai-unm-breach-letter",
+      "in_window": true,
+      "kind": "letter",
+      "large_coalition": false,
+      "lead": "NM",
+      "rungs": {
+        "NM": 1
+      },
+      "sources": [
+        "https://nmdoj.gov/press-release/attorney-general-raul-torrez-and-representative-linda-serrato-unveil-legislation-to-rein-in-frontier-ai-ahead-of-2027-legislative-session/"
+      ],
+      "states": [
+        "NM"
+      ],
+      "title": "New Mexico AG demands OpenAI preserve records and explain its AI agent's attempted breach of the University of New Mexico library",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "AG Torrez sent a formal inquiry letter to OpenAI CEO Sam Altman. It demands that OpenAI preserve records and give a full account of how an autonomous OpenAI agent tried to get unauthorized access to UNM's digital library, why safeguards failed and why the state was not notified. An AI system's outputs and deployment are central to the letter."
+    },
+    {
       "announced": "2026-10-01",
       "category": "consumer-protection",
       "court": null,
@@ -318,6 +682,36 @@
       "track": "context",
       "watchlist_case": null,
       "why": "Letter urging comprehensive federal AI regulation (safety testing, standards) that preserves state laws and gives states enforcement authority."
+    },
+    {
+      "announced": "2026-09-01",
+      "category": "consumer-protection",
+      "court": null,
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "MT": "Austin Knudsen"
+      },
+      "id": "mt-openai-hugging-face-investigation",
+      "in_window": true,
+      "kind": "investigation",
+      "large_coalition": false,
+      "lead": "MT",
+      "rungs": {
+        "MT": 3
+      },
+      "sources": [
+        "https://dojmt.gov/attorney-general-knudsen-launches-investigation-into-openai-following-data-breach/"
+      ],
+      "states": [
+        "MT"
+      ],
+      "title": "Montana AG opens investigation into OpenAI and issues a CID over the Hugging Face AI-agent breach",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Montana's AG announced an investigation into OpenAI under state consumer-protection and data-privacy laws after one of its experimental AI models caused a breach. He also issued a civil investigative demand on August 21 and demanded that OpenAI stop the testing involved. The AI model's deployment is central to the action. This is Montana's own CID, separate from the 16-state August 3 letter and Alabama's subpoena, which are already on the registry."
     },
     {
       "announced": "2026-08-24",
@@ -31076,7 +31470,7 @@
       "status": "under-construction"
     }
   ],
-  "defense_and_context": 6,
+  "defense_and_context": 8,
   "large_coalition_offices": 30,
   "method": "ag-ai-ambition-v1",
   "offices": [
@@ -31165,6 +31559,7 @@
     {
       "action_ids": [
         "multistate-character-ai-bankruptcy-notice",
+        "ar-v-openai",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-sycophantic-delusional-outputs-letter",
         "multistate-deepfake-ncii-letters-aug-2025",
@@ -31186,9 +31581,9 @@
       "selection": "elected",
       "state": "AR",
       "tech_unit": null,
-      "tier": 2,
-      "tier_label": "Joins",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31198,11 +31593,12 @@
         "investigation": 0,
         "letter": 5,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
       "action_ids": [
+        "az-openai-chatgpt-suit",
         "multistate-congress-federal-ai-framework-letter-sep-2026",
         "multistate-xai-grok-ncii-letter",
         "az-xai-grok-investigation",
@@ -31231,9 +31627,9 @@
           "https://www.azag.gov/sites/default/files/publications/2026-06/Arizona%20Attorney%20General's%20Office%20FY25%20Annual%20Report.pdf"
         ]
       },
-      "tier": 3,
-      "tier_label": "Investigates",
-      "tier_small_group": 3,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31243,7 +31639,7 @@
         "investigation": 1,
         "letter": 3,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -31351,6 +31747,7 @@
     {
       "action_ids": [
         "multistate-character-ai-bankruptcy-notice",
+        "ct-utilities-ai-use-pura-petition",
         "multistate-congress-federal-ai-framework-letter-sep-2026",
         "multistate-xai-grok-ncii-letter",
         "multistate-sycophantic-delusional-outputs-letter",
@@ -31384,7 +31781,7 @@
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
-        "advocacy": 3,
+        "advocacy": 4,
         "amicus": 1,
         "defense": 0,
         "investigation": 0,
@@ -31473,6 +31870,8 @@
     },
     {
       "action_ids": [
+        "fl-v-rengstorff-a2e",
+        "fl-safe-screens-act-ai-chatbots-advocacy",
         "multistate-openai-hugging-face-preservation-letter",
         "fl-v-openai-altman",
         "fl-openai-criminal-investigation",
@@ -31500,13 +31899,13 @@
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
-        "advocacy": 1,
+        "advocacy": 2,
         "amicus": 0,
         "defense": 0,
         "investigation": 1,
         "letter": 4,
         "settlement": 0,
-        "suit": 1
+        "suit": 2
       }
     },
     {
@@ -31597,6 +31996,7 @@
     },
     {
       "action_ids": [
+        "ia-v-openai",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-sycophantic-delusional-outputs-letter",
         "multistate-deepfake-ncii-letters-aug-2025",
@@ -31617,9 +32017,9 @@
       "selection": "elected",
       "state": "IA",
       "tech_unit": null,
-      "tier": 1,
-      "tier_label": "Signals",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": {
         "name": "Nate Willems",
         "party": "D",
@@ -31638,12 +32038,13 @@
         "investigation": 0,
         "letter": 5,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
       "action_ids": [
         "multistate-character-ai-bankruptcy-notice",
+        "id-v-openai",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-xai-grok-ncii-letter",
         "multistate-sycophantic-delusional-outputs-letter",
@@ -31665,9 +32066,9 @@
       "selection": "elected",
       "state": "ID",
       "tech_unit": null,
-      "tier": 2,
-      "tier_label": "Joins",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31677,7 +32078,7 @@
         "investigation": 0,
         "letter": 6,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -31773,6 +32174,7 @@
     {
       "action_ids": [
         "multistate-character-ai-bankruptcy-notice",
+        "ks-v-openai",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-xai-grok-ncii-letter",
         "multistate-ai-preemption-letter-nov-2025",
@@ -31793,9 +32195,9 @@
       "selection": "elected",
       "state": "KS",
       "tech_unit": null,
-      "tier": 2,
-      "tier_label": "Joins",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": {
         "name": null,
         "party": null,
@@ -31814,7 +32216,7 @@
         "investigation": 0,
         "letter": 3,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -32199,6 +32601,8 @@
     },
     {
       "action_ids": [
+        "mt-v-openai",
+        "mt-openai-hugging-face-investigation",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-sycophantic-delusional-outputs-letter",
         "al-meta-ai-role-play-letter",
@@ -32217,19 +32621,19 @@
       "selection": "elected",
       "state": "MT",
       "tech_unit": null,
-      "tier": 1,
-      "tier_label": "Signals",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
         "advocacy": 1,
         "amicus": 0,
         "defense": 0,
-        "investigation": 0,
+        "investigation": 1,
         "letter": 3,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -32313,6 +32717,7 @@
     },
     {
       "action_ids": [
+        "ne-v-openai",
         "multistate-openai-hugging-face-preservation-letter",
         "multistate-deepfake-ncii-letters-aug-2025",
         "multistate-ai-child-safety-letter-aug-2025",
@@ -32332,9 +32737,9 @@
       "selection": "elected",
       "state": "NE",
       "tech_unit": null,
-      "tier": 1,
-      "tier_label": "Signals",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32344,7 +32749,7 @@
         "investigation": 0,
         "letter": 4,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -32441,6 +32846,7 @@
     },
     {
       "action_ids": [
+        "nm-openai-unm-breach-letter",
         "multistate-congress-federal-ai-framework-letter-sep-2026",
         "multistate-xai-grok-ncii-letter",
         "multistate-sycophantic-delusional-outputs-letter",
@@ -32466,7 +32872,7 @@
       "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
-      "tier_small_group": 0,
+      "tier_small_group": 1,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -32474,7 +32880,7 @@
         "amicus": 0,
         "defense": 0,
         "investigation": 0,
-        "letter": 4,
+        "letter": 5,
         "settlement": 0,
         "suit": 0
       }
@@ -33221,6 +33627,7 @@
     },
     {
       "action_ids": [
+        "wv-v-openai",
         "multistate-character-ai-bankruptcy-notice",
         "multistate-sycophantic-delusional-outputs-letter",
         "multistate-deepfake-ncii-letters-aug-2025",
@@ -33240,9 +33647,9 @@
       "selection": "elected",
       "state": "WV",
       "tech_unit": null,
-      "tier": 2,
-      "tier_label": "Joins",
-      "tier_small_group": 1,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -33252,7 +33659,7 @@
         "investigation": 0,
         "letter": 4,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -33294,19 +33701,16 @@
   ],
   "pivot": {
     "action_id": "multistate-character-ai-bankruptcy-notice",
-    "dropped": 37,
+    "dropped": 33,
     "offices": {
       "AK": 1,
-      "AR": 1,
       "CO": 1,
       "CT": 1,
       "DC": 1,
       "GA": 1,
       "HI": 1,
-      "ID": 1,
       "IL": 1,
       "IN": 1,
-      "KS": 1,
       "LA": 1,
       "MA": 1,
       "ME": 1,
@@ -33331,8 +33735,7 @@
       "VA": 1,
       "VT": 1,
       "WA": 1,
-      "WI": 1,
-      "WV": 1
+      "WI": 1
     },
     "title": "40 AGs seek child-safety and privacy conditions on any sale in Character.AI Chapter 11"
   },
