@@ -31101,6 +31101,7 @@
       },
       "selection": "governor",
       "state": "AK",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31136,6 +31137,7 @@
       },
       "selection": "elected",
       "state": "AL",
+      "tech_unit": null,
       "tier": 3,
       "tier_label": "Investigates",
       "tier_small_group": 3,
@@ -31183,6 +31185,7 @@
       },
       "selection": "elected",
       "state": "AR",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31221,6 +31224,13 @@
       },
       "selection": "elected",
       "state": "AZ",
+      "tech_unit": {
+        "established": null,
+        "name": "Antitrust and Privacy Unit",
+        "sources": [
+          "https://www.azag.gov/sites/default/files/publications/2026-06/Arizona%20Attorney%20General's%20Office%20FY25%20Annual%20Report.pdf"
+        ]
+      },
       "tier": 3,
       "tier_label": "Investigates",
       "tier_small_group": 3,
@@ -31262,6 +31272,13 @@
       },
       "selection": "elected",
       "state": "CA",
+      "tech_unit": {
+        "established": 2012,
+        "name": "Privacy Unit",
+        "sources": [
+          "https://oag.ca.gov/privacy"
+        ]
+      },
       "tier": 3,
       "tier_label": "Investigates",
       "tier_small_group": 3,
@@ -31300,6 +31317,13 @@
       },
       "selection": "elected",
       "state": "CO",
+      "tech_unit": {
+        "established": null,
+        "name": "Technology & Privacy Protection Unit",
+        "sources": [
+          "https://coag.gov/office-sections/consumer-protection/"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31347,6 +31371,13 @@
       },
       "selection": "elected",
       "state": "CT",
+      "tech_unit": {
+        "established": 2015,
+        "name": "Privacy and Data Security Section",
+        "sources": [
+          "https://portal.ct.gov/AG/Sections/Privacy/The-Privacy-and-Data-Security-Section"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31383,6 +31414,7 @@
       },
       "selection": "elected",
       "state": "DC",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31423,6 +31455,7 @@
       },
       "selection": "elected",
       "state": "DE",
+      "tech_unit": null,
       "tier": 3,
       "tier_label": "Investigates",
       "tier_small_group": 3,
@@ -31460,6 +31493,7 @@
       },
       "selection": "elected",
       "state": "FL",
+      "tech_unit": null,
       "tier": 4,
       "tier_label": "Sues",
       "tier_small_group": 4,
@@ -31497,6 +31531,7 @@
       },
       "selection": "elected",
       "state": "GA",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31544,6 +31579,7 @@
       },
       "selection": "governor",
       "state": "HI",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31580,6 +31616,7 @@
       },
       "selection": "elected",
       "state": "IA",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 1,
@@ -31627,6 +31664,7 @@
       },
       "selection": "elected",
       "state": "ID",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31665,6 +31703,13 @@
       },
       "selection": "elected",
       "state": "IL",
+      "tech_unit": {
+        "established": null,
+        "name": "Privacy and Data Security Unit",
+        "sources": [
+          "https://illinoisattorneygeneral.gov/News-Room/Current-News/Labcorp%20-%20AVC%20IL%20-%20LC_countersigned.pdf?language_id=1"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31703,6 +31748,13 @@
       },
       "selection": "elected",
       "state": "IN",
+      "tech_unit": {
+        "established": null,
+        "name": "Data Privacy & Identity Theft Unit",
+        "sources": [
+          "https://www.in.gov/attorneygeneral/about-the-office/OAG-Bios-for-Website-compressed.pdf"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31740,6 +31792,7 @@
       },
       "selection": "elected",
       "state": "KS",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31790,6 +31843,13 @@
       },
       "selection": "elected",
       "state": "KY",
+      "tech_unit": {
+        "established": null,
+        "name": "Office of Data Privacy",
+        "sources": [
+          "https://ag.ky.gov/about/Office-Divisions/ODP"
+        ]
+      },
       "tier": 4,
       "tier_label": "Sues",
       "tier_small_group": 4,
@@ -31831,6 +31891,7 @@
       },
       "selection": "elected",
       "state": "LA",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -31868,6 +31929,13 @@
       },
       "selection": "elected",
       "state": "MA",
+      "tech_unit": {
+        "established": 2020,
+        "name": "Privacy and Responsible Technology Division",
+        "sources": [
+          "https://www.mass.gov/data-privacy-and-security-division"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31904,6 +31972,7 @@
       },
       "selection": "elected",
       "state": "MD",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 0,
@@ -31941,6 +32010,7 @@
       },
       "selection": "legislature",
       "state": "ME",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -31980,6 +32050,7 @@
       },
       "selection": "elected",
       "state": "MI",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32028,6 +32099,7 @@
       },
       "selection": "elected",
       "state": "MN",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32065,6 +32137,13 @@
       },
       "selection": "elected",
       "state": "MO",
+      "tech_unit": {
+        "established": null,
+        "name": "Multistate, Antitrust & Privacy Unit",
+        "sources": [
+          "https://ago.mo.gov/divisions/consumer/"
+        ]
+      },
       "tier": 3,
       "tier_label": "Investigates",
       "tier_small_group": 3,
@@ -32102,6 +32181,7 @@
       },
       "selection": "elected",
       "state": "MS",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32136,6 +32216,7 @@
       },
       "selection": "elected",
       "state": "MT",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 1,
@@ -32173,6 +32254,7 @@
       },
       "selection": "elected",
       "state": "NC",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32213,6 +32295,7 @@
       },
       "selection": "elected",
       "state": "ND",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32248,6 +32331,7 @@
       },
       "selection": "elected",
       "state": "NE",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 1,
@@ -32288,6 +32372,13 @@
       },
       "selection": "governor",
       "state": "NH",
+      "tech_unit": {
+        "established": 2024,
+        "name": "Data Privacy Unit",
+        "sources": [
+          "https://www.doj.nh.gov/data-privacy-enforcement"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32326,6 +32417,13 @@
       },
       "selection": "governor",
       "state": "NJ",
+      "tech_unit": {
+        "established": 2018,
+        "name": "Data Privacy & Cybersecurity Section",
+        "sources": [
+          "https://nj.gov/oag/newsreleases18/pr20180507b.html"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32365,6 +32463,7 @@
       },
       "selection": "elected",
       "state": "NM",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 0,
@@ -32403,6 +32502,7 @@
       },
       "selection": "elected",
       "state": "NV",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32450,6 +32550,13 @@
       },
       "selection": "elected",
       "state": "NY",
+      "tech_unit": {
+        "established": null,
+        "name": "Bureau of Internet and Technology",
+        "sources": [
+          "https://ag.ny.gov/about/about-office/economic-justice-division"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32491,6 +32598,7 @@
       },
       "selection": "elected",
       "state": "OH",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32542,6 +32650,7 @@
       },
       "selection": "elected",
       "state": "OK",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32588,6 +32697,13 @@
       },
       "selection": "elected",
       "state": "OR",
+      "tech_unit": {
+        "established": null,
+        "name": "Privacy Unit",
+        "sources": [
+          "https://www.doj.state.or.us/wp-content/uploads/2025/08/OCPA-One-Year-Enforcement-Report-2025.pdf"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32630,6 +32746,7 @@
       },
       "selection": "elected",
       "state": "PA",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32668,6 +32785,7 @@
       },
       "selection": "elected",
       "state": "RI",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -32718,6 +32836,7 @@
       },
       "selection": "elected",
       "state": "SC",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32763,6 +32882,7 @@
       },
       "selection": "elected",
       "state": "SD",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32809,6 +32929,7 @@
       },
       "selection": "court",
       "state": "TN",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32856,6 +32977,13 @@
       },
       "selection": "elected",
       "state": "TX",
+      "tech_unit": {
+        "established": 2024,
+        "name": "Privacy and Tech Team",
+        "sources": [
+          "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-launches-data-privacy-and-security-initiative-protect-texans-sensitive"
+        ]
+      },
       "tier": 4,
       "tier_label": "Sues",
       "tier_small_group": 4,
@@ -32906,6 +33034,13 @@
       },
       "selection": "elected",
       "state": "UT",
+      "tech_unit": {
+        "established": null,
+        "name": "Antitrust and Data Privacy Division",
+        "sources": [
+          "https://attorneygeneral.utah.gov/antitrust/"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32947,6 +33082,13 @@
       },
       "selection": "elected",
       "state": "VA",
+      "tech_unit": {
+        "established": null,
+        "name": "Consumer Privacy Unit",
+        "sources": [
+          "https://oag.state.va.us/media-center/news-releases/2832-january-28-2025-attorney-general-miyares-highlights-virginians-consumer-data-rights-on-data-privacy-day"
+        ]
+      },
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -32985,6 +33127,7 @@
       },
       "selection": "elected",
       "state": "VT",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -33023,6 +33166,7 @@
       },
       "selection": "elected",
       "state": "WA",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -33059,6 +33203,7 @@
       },
       "selection": "elected",
       "state": "WI",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 0,
@@ -33094,6 +33239,7 @@
       },
       "selection": "elected",
       "state": "WV",
+      "tech_unit": null,
       "tier": 2,
       "tier_label": "Joins",
       "tier_small_group": 1,
@@ -33129,6 +33275,7 @@
       },
       "selection": "governor",
       "state": "WY",
+      "tech_unit": null,
       "tier": 1,
       "tier_label": "Signals",
       "tier_small_group": 1,
@@ -33189,6 +33336,6 @@
     },
     "title": "40 AGs seek child-safety and privacy conditions on any sale in Character.AI Chapter 11"
   },
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "window_days": 730
 }
