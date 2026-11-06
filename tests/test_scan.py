@@ -126,6 +126,16 @@ def test_check_sets_aside_invalid_duplicate_and_known() -> None:
     assert reasons[3] == "unknown category nope"
 
 
+def test_a_draft_cited_in_passing_is_not_set_aside() -> None:
+    registry = load_state_ags(REGISTRY)
+    first = draft(sources=["https://x/mt", "https://x/ne"])
+    second = draft(id="ca-examplebot-second", sources=["https://x/ne"])
+    drafts = [scan.Proposal.model_validate(d) for d in (first, second)]
+    accepted, rejected = scan.check(drafts, registry, TODAY)
+    assert [p.id for p in accepted] == ["ca-examplebot-investigation", "ca-examplebot-second"]
+    assert rejected == []
+
+
 def test_apply_appends_valid_entries_and_body(tmp_path: Path) -> None:
     registry_path = tmp_path / "state-ags.yaml"
     registry_path.write_text(REGISTRY.read_text())
