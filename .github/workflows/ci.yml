@@ -1,11 +1,13 @@
 # Lint, type-check and test every PR and every push to main. Read-only: nothing
-# here writes to the repository.
+# here writes to the repository. The newsroom scan dispatches it on the branch
+# it opens, since a pull request opened with the workflow token starts no runs.
 name: ci
 
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read

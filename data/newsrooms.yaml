@@ -1,0 +1,114 @@
+# The newsroom domains `python -m stateags scan` searches for each office (one
+# or more hosts per state and DC). A shared state portal (www.in.gov, www.mass.gov,
+# www.michigan.gov, www.maine.gov, www.tn.gov, portal.ct.gov) is searched whole, and
+# the scan's prompt names the attorney general's office so other agencies' releases
+# are passed over. `shared` hosts carry multistate letters and are searched with every batch.
+shared:
+- www.naag.org
+offices:
+  AL:
+  - alabamaag.gov
+  - www.alabamaag.gov
+  AK:
+  - law.alaska.gov
+  AZ:
+  - www.azag.gov
+  AR:
+  - arkansasag.gov
+  CA:
+  - oag.ca.gov
+  CO:
+  - coag.gov
+  CT:
+  - portal.ct.gov
+  DE:
+  - attorneygeneral.delaware.gov
+  - news.delaware.gov
+  DC:
+  - oag.dc.gov
+  FL:
+  - www.myfloridalegal.com
+  GA:
+  - law.georgia.gov
+  HI:
+  - ag.hawaii.gov
+  ID:
+  - www.ag.idaho.gov
+  IL:
+  - illinoisattorneygeneral.gov
+  IN:
+  - www.in.gov
+  IA:
+  - www.iowaattorneygeneral.gov
+  KS:
+  - www.ag.ks.gov
+  KY:
+  - www.ag.ky.gov
+  LA:
+  - www.ag.state.la.us
+  ME:
+  - www.maine.gov
+  MD:
+  - oag.maryland.gov
+  - www.marylandattorneygeneral.gov
+  MA:
+  - www.mass.gov
+  MI:
+  - www.michigan.gov
+  MN:
+  - www.ag.state.mn.us
+  MS:
+  - www.ago.state.ms.us
+  MO:
+  - ago.mo.gov
+  MT:
+  - dojmt.gov
+  NE:
+  - ago.nebraska.gov
+  NV:
+  - ag.nv.gov
+  NH:
+  - www.doj.nh.gov
+  NJ:
+  - www.njoag.gov
+  NM:
+  - nmdoj.gov
+  NY:
+  - ag.ny.gov
+  NC:
+  - ncdoj.gov
+  ND:
+  - attorneygeneral.nd.gov
+  OH:
+  - www.ohioattorneygeneral.gov
+  OK:
+  - oag.ok.gov
+  OR:
+  - www.doj.state.or.us
+  PA:
+  - www.attorneygeneral.gov
+  RI:
+  - riag.ri.gov
+  SC:
+  - www.scag.gov
+  SD:
+  - atg.sd.gov
+  TN:
+  - www.tn.gov
+  TX:
+  - www.texasattorneygeneral.gov
+  UT:
+  - attorneygeneral.utah.gov
+  VT:
+  - ago.vermont.gov
+  VA:
+  - www.oag.state.va.us
+  WA:
+  - www.atg.wa.gov
+  WV:
+  - ago.wv.gov
+  WI:
+  - www.doj.state.wi.us
+  - www.wisdoj.gov
+  WY:
+  - ag.wyo.gov
