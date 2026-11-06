@@ -452,6 +452,17 @@
           "title": "State",
           "type": "string"
         },
+        "tech_unit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StateAgTechUnitRow"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The office's standing technology or privacy enforcement unit; none when the registry records none. Context beside the tier, never part of it."
+        },
         "tier": {
           "description": "The office's ag-ai-ambition-v1 tier on the day.",
           "maximum": 4,
@@ -507,7 +518,8 @@
         "tier_small_group",
         "window_counts",
         "action_ids",
-        "data_center_ids"
+        "data_center_ids",
+        "tech_unit"
       ],
       "title": "StateAgOfficeRow",
       "type": "object"
@@ -589,6 +601,45 @@
       ],
       "title": "StateAgPivot",
       "type": "object"
+    },
+    "StateAgTechUnitRow": {
+      "additionalProperties": false,
+      "description": "An office's standing technology or privacy enforcement unit, as the registry records it.",
+      "properties": {
+        "established": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The year it was created, where a source says.",
+          "title": "Established"
+        },
+        "name": {
+          "description": "The unit's name in the office.",
+          "title": "Name",
+          "type": "string"
+        },
+        "sources": {
+          "description": "Where the unit is evidenced.",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "established",
+        "sources"
+      ],
+      "title": "StateAgTechUnitRow",
+      "type": "object"
     }
   },
   "additionalProperties": false,
@@ -663,8 +714,8 @@
       "description": "The in-window action whose removal lowers the most offices' tiers; none when no action alone sets any office's tier."
     },
     "schema_version": {
-      "const": "1.1",
-      "default": "1.1",
+      "const": "1.2",
+      "default": "1.2",
       "title": "Schema Version",
       "type": "string"
     },
