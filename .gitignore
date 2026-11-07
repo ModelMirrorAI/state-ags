@@ -224,3 +224,6 @@ __marimo__/
 
 # A newsroom scan's candidates and PR body, handed between workflow jobs.
 /scan/
+
+# The map renderer's install.
+/scripts/render/node_modules/

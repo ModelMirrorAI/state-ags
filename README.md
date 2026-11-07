@@ -15,8 +15,18 @@ repository publishes; it computes nothing itself.
   coalition figures, and the data-center layer.
 - **Board:** `python -m stateags build` writes `board.json`; its shape is
   [`schemas/board.schema.json`](schemas/board.schema.json). The `board`
-  workflow rebuilds it every day and on each merge, and publishes it as the
-  only file on the `board` branch, which the site fetches.
+  workflow rebuilds it every day and on each merge, and publishes it on the
+  `board` branch, which the site fetches.
+- **Map images:** the same workflow builds the site with the new board and
+  screenshots its map ([`scripts/render`](scripts/render)), and publishes the
+  PNGs beside `board.json`, so each has a link that does not change:
+  [`map.png`](https://raw.githubusercontent.com/ModelMirrorAI/state-ags/board/map.png)
+  (every office) and one per highlight on the page,
+  [`map-led.png`](https://raw.githubusercontent.com/ModelMirrorAI/state-ags/board/map-led.png),
+  [`map-leverage.png`](https://raw.githubusercontent.com/ModelMirrorAI/state-ags/board/map-leverage.png)
+  and
+  [`map-turnover.png`](https://raw.githubusercontent.com/ModelMirrorAI/state-ags/board/map-turnover.png).
+  Each carries the board's day.
 
 ## Quick start
 
