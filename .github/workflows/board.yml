@@ -3,6 +3,10 @@
 # edit because the 730-day window slides and a successor takes office on a set
 # day, so it is rebuilt on a schedule as well as on each push to main. The build
 # job runs read-only; only the publish job can push, and only to `board`.
+# The render job builds the modelmirror.ai site against the new board and
+# screenshots the page's map as PNGs, which the publish job puts on `board`
+# beside board.json, so each image has a stable link. A failed render never
+# holds the board back: the board publishes and the images stay as they were.
 # When the publish job pushes a changed board, the `site` job asks the
 # modelmirror.ai rebuild workflow to redeploy the page with that board.
 name: board
@@ -45,9 +49,53 @@ jobs:
           path: board/board.json
           if-no-files-found: error
 
-  publish:
+  # Builds the site from modelmirror.ai's main with this run's board in place of
+  # the published one, then screenshots the map (scripts/render). Read-only: it
+  # checks out a public repository and uploads the images as an artifact.
+  render:
     needs: build
-    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ModelMirrorAI/modelmirror.ai
+          ref: main
+          path: site
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: site/.nvmrc
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: board
+          path: ${{ runner.temp }}/board
+      - name: Build the site with this board
+        working-directory: site
+        env:
+          STATE_AGS_BOARD: ${{ runner.temp }}/board/board.json
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+      - name: Install the renderer
+        working-directory: scripts/render
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Render the map
+        run: node scripts/render/render-map.mjs site/dist images
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: images
+          path: images/*.png
+          if-no-files-found: error
+
+  publish:
+    needs: [build, render]
+    if: ${{ !cancelled() && github.ref == 'refs/heads/main' && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -59,8 +107,14 @@ jobs:
         with:
           name: board
           path: out
-      # The branch holds one file and one commit per change. A board that is
-      # byte-identical to the published one is not pushed.
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        if: needs.render.result == 'success'
+        with:
+          name: images
+          path: out/images
+      # The branch holds board.json and the map images, one commit per change.
+      # Files byte-identical to the published ones are not pushed, and the site
+      # is asked to rebuild only when board.json itself changed.
       - name: Publish to the board branch
         id: push
         env:
@@ -81,13 +135,25 @@ jobs:
           fi
           cp ../out/board.json board.json
           git add board.json
+          board_changed=true
           if git diff --cached --quiet; then
-            echo "Board unchanged."
+            board_changed=false
+          fi
+          if [ -d ../out/images ]; then
+            cp ../out/images/*.png .
+            git add -- *.png
+          else
+            echo "The render failed, so the published images stay as they were."
+          fi
+          if git diff --cached --quiet; then
+            echo "Board and images unchanged."
             exit 0
           fi
           git commit -q -m "board: rebuild from ${SOURCE_SHA}"
           git push -q "$url" board
-          echo "board_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          if [ "$board_changed" = true ]; then
+            echo "board_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
 
   # Dispatches the site's rebuild workflow, which waits until the raw file host
   # serves this board and then redeploys. The token is a secret of the
@@ -95,7 +161,7 @@ jobs:
   # running Actions on modelmirror.ai and reaches nothing in this repository.
   site:
     needs: publish
-    if: needs.publish.outputs.board_sha != ''
+    if: ${{ !cancelled() && needs.publish.result == 'success' && needs.publish.outputs.board_sha != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     environment: site-dispatch

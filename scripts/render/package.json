@@ -1,0 +1,9 @@
+{
+  "name": "stateags-render",
+  "private": true,
+  "type": "module",
+  "description": "Renders the modelmirror.ai state-AGs map as PNGs for the board branch.",
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}
