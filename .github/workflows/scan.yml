@@ -38,7 +38,9 @@ jobs:
     permissions:
       contents: read
       # The Claude API sign-in: the OIDC token the federation rule exchanges.
-      # Nothing else in this job accepts it.
+      # Nothing else in this job uses it, but every step after it can request
+      # one, which is why the job runs only pinned actions and locked
+      # dependencies and the model's tools are server-side.
       id-token: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -49,9 +51,9 @@ jobs:
       - name: Scan the newsrooms
         env:
           # The federation identifiers are the environment's variables, not
-          # secrets. While the environment names a rule, the key is withheld,
-          # since a key in the environment would take precedence; with no rule,
-          # the key is the sign-in.
+          # secrets. While the environment names a rule, the scan signs in by
+          # federation and the key stays out of its process env; with no rule,
+          # the key is the sign-in, which is the rollback.
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
           ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
           ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}

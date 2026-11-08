@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 import urllib.parse
 import urllib.request
 from collections.abc import Mapping
@@ -36,6 +37,7 @@ WORKSPACE_ENV = "ANTHROPIC_WORKSPACE_ID"
 REQUEST_URL_ENV = "ACTIONS_ID_TOKEN_REQUEST_URL"
 REQUEST_TOKEN_ENV = "ACTIONS_ID_TOKEN_REQUEST_TOKEN"
 OIDC_TIMEOUT_S = 30
+OIDC_ATTEMPTS = 3
 
 
 class FederationConfigError(RuntimeError):
@@ -64,8 +66,15 @@ def github_identity_token(environ: Mapping[str, str] | None = None) -> str:
     request = urllib.request.Request(
         oidc_request_url(url), headers={"Authorization": f"Bearer {bearer}"}
     )
-    with urllib.request.urlopen(request, timeout=OIDC_TIMEOUT_S) as response:
-        value = json.load(response).get("value")
+    for attempt in range(OIDC_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(request, timeout=OIDC_TIMEOUT_S) as response:
+                value = json.load(response).get("value")
+            break
+        except OSError:
+            if attempt == OIDC_ATTEMPTS - 1:
+                raise
+            time.sleep(2**attempt)
     if not isinstance(value, str) or not value:
         raise FederationConfigError("the GitHub OIDC endpoint returned no token")
     return value

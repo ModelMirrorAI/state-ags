@@ -137,3 +137,18 @@ def test_each_exchange_asks_github_for_a_fresh_token(oidc: FakeOidc) -> None:
     (sent,) = messages
     assert sent.headers["authorization"] == "Bearer sk-ant-oat01-3"
     assert "x-api-key" not in sent.headers
+
+
+def test_a_transient_oidc_failure_is_retried(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls: list[int] = []
+
+    def flaky(request: urllib.request.Request, timeout: float) -> io.BytesIO:
+        calls.append(1)
+        if len(calls) == 1:
+            raise OSError("connection reset")
+        return io.BytesIO(json.dumps({"value": "jwt-ok"}).encode())
+
+    monkeypatch.setattr(urllib.request, "urlopen", flaky)
+    monkeypatch.setattr("stateags.auth.time.sleep", lambda s: None)
+    assert auth.github_identity_token(FEDERATED) == "jwt-ok"
+    assert len(calls) == 2
