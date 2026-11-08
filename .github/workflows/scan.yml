@@ -1,7 +1,10 @@
 # Weekly newsroom scan: a model searches the AG newsrooms for AI actions the
 # registry does not list yet, and drafts each as a registry entry. The `scan`
-# job is the only one holding the Anthropic API key (in the `scan` environment)
-# and can only read this repository; it hands its candidates file to `propose`,
+# job is the only one that can call the Claude API and can only read this
+# repository. It signs in by workload identity federation when the `scan`
+# environment names a federation rule (its GitHub OIDC token, exchanged for a
+# short-lived Anthropic token; `src/stateags/auth.py`), and otherwise with the
+# environment's Anthropic API key. It hands its candidates file to `propose`,
 # which holds no secret, appends the drafts that pass the registry's checks, and
 # opens a pull request for the maintainer. Nothing merges without the maintainer.
 name: scan
@@ -34,6 +37,11 @@ jobs:
     environment: scan
     permissions:
       contents: read
+      # The Claude API sign-in: the OIDC token the federation rule exchanges.
+      # Nothing else in this job uses it, but every step after it can request
+      # one, which is why the job runs only pinned actions and locked
+      # dependencies and the model's tools are server-side.
+      id-token: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -42,7 +50,15 @@ jobs:
       - run: uv sync --locked
       - name: Scan the newsrooms
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # The federation identifiers are the environment's variables, not
+          # secrets. While the environment names a rule, the scan signs in by
+          # federation and the key stays out of its process env; with no rule,
+          # the key is the sign-in, which is the rollback.
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_API_KEY: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID == '' && secrets.ANTHROPIC_API_KEY || '' }}
           SINCE: ${{ inputs.since }}
           STATES: ${{ inputs.states }}
         run: |

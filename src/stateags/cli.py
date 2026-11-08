@@ -86,16 +86,14 @@ def _export_schema(args: argparse.Namespace) -> int:
 
 
 def _scan(args: argparse.Namespace) -> int:
-    from anthropic import Anthropic
-
-    from stateags import scan
+    from stateags import auth, scan
 
     today = datetime.now(UTC).date()
     since = date.fromisoformat(args.since) if args.since else today - timedelta(DEFAULT_SCAN_DAYS)
     registry = load_state_ags(args.registry)
     newsrooms = scan.load_newsrooms(args.newsrooms)
     states = [s.strip().upper() for s in args.states.split(",")] if args.states else None
-    client = Anthropic()
+    client = auth.client()
     result = scan.scan(client.messages.create, registry, newsrooms, since, today, states)
     write_json(args.out, result.to_json())
     print(
