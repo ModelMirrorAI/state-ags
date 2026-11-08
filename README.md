@@ -47,7 +47,8 @@ automatically: the weekly newsroom scan (`.github/workflows/scan.yml`) has a
 model search each office's newsroom (`data/newsrooms.yaml`) and opens a PR with
 the drafts that pass the registry's checks, and the maintainer decides what
 stays. `python -m stateags scan` runs it locally with an Anthropic API key in
-the environment; `python -m stateags apply-scan` appends its drafts. A tier is an ordinal ranking of what an office has announced in
+the environment (the workflow signs in by workload identity federation
+instead once its `scan` environment names a rule; `src/stateags/auth.py`); `python -m stateags apply-scan` appends its drafts. A tier is an ordinal ranking of what an office has announced in
 public, not a measure of merit, outcome or intent.
 
 ## License
