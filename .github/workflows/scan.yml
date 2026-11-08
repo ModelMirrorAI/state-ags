@@ -1,10 +1,10 @@
 # Weekly newsroom scan: a model searches the AG newsrooms for AI actions the
 # registry does not list yet, and drafts each as a registry entry. The `scan`
 # job is the only one that can call the Claude API and can only read this
-# repository. It signs in by workload identity federation when the `scan`
-# environment names a federation rule (its GitHub OIDC token, exchanged for a
-# short-lived Anthropic token; `src/stateags/auth.py`), and otherwise with the
-# environment's Anthropic API key. It hands its candidates file to `propose`,
+# repository. It signs in by workload identity federation, which the `scan`
+# environment's federation rule admits (its GitHub OIDC token, exchanged for a
+# short-lived Anthropic token; `src/stateags/auth.py`), and holds no API key.
+# It hands its candidates file to `propose`,
 # which holds no secret, appends the drafts that pass the registry's checks, and
 # opens a pull request for the maintainer. Nothing merges without the maintainer.
 name: scan
@@ -51,14 +51,12 @@ jobs:
       - name: Scan the newsrooms
         env:
           # The federation identifiers are the environment's variables, not
-          # secrets. While the environment names a rule, the scan signs in by
-          # federation and the key stays out of its process env; with no rule,
-          # the key is the sign-in, which is the rollback.
+          # secrets. The job names no API key: the scan signs in by federation
+          # alone (src/stateags/auth.py).
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
           ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
           ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
-          ANTHROPIC_API_KEY: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID == '' && secrets.ANTHROPIC_API_KEY || '' }}
           SINCE: ${{ inputs.since }}
           STATES: ${{ inputs.states }}
         run: |
