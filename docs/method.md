@@ -1,8 +1,9 @@
 # State attorneys general and AI litigation: the method
 
 The state-AGs dashboard on modelmirror.ai shows how far each state's attorney
-general goes in acting against AI developers, which actions each office is in,
-and which states tend to act together. This document defines what it reads and
+general goes in acting against AI developers and which actions each office is
+in. The board also publishes which states tend to act together; the page does
+not show those figures yet. This document defines what it reads and
 how each figure is made. The registry is `data/state-ags.yaml`, read and
 checked by `src/stateags/registry.py`.
 
@@ -11,7 +12,9 @@ checked by `src/stateags/registry.py`.
 State AGs act against AI developers mostly in state court, through
 investigations and settlements that never reach a court, and in multistate
 letters and amicus briefs. No docket feed carries that, so the registry is
-hand-curated. Each action cites the AG office's own announcement; a filed one
+hand-curated. Each action cites the AG office's own announcement, or, where
+that could not be found or read, press reports of it, and its `why` then says
+so; a filed one
 names its court, and its docket number once a source gives one. An action in a
 federal case that fedcourtsai's AI watchlist (`config/ai-watchlist.yaml` there)
 follows names that case, and the build checks the name against the watchlist.
@@ -122,10 +125,11 @@ For each pair of offices *i* and *j*:
 
 For a chosen lead office *i*, the **join ranking** orders every other office by
 affinity with *i* times its participation rate. It is a ranking from past
-co-signing, not a probability that a state will join, and the page says so.
-Wherever the join ranking or an affinity is shown, the number of multistate
-actions it rests on is shown beside it, because both figures are noisy over a
-handful of actions.
+co-signing, not a probability that a state will join. The board carries the
+number of multistate actions each figure rests on, because both are noisy over
+a handful of actions. The page does not render the coalition figures; a page
+that shows the join ranking or an affinity says it is not a probability and
+shows that count beside it.
 
 A forecast of who signs the next multistate action, pre-registered and scored
 like the project's other forecasts, is a later step once the registry holds

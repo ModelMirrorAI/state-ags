@@ -16,7 +16,8 @@ nothing, so any figure the site shows is a field of `board.json`.
   PR with a conventional-commit title, and say what changed and why. The
   maintainer approves and merges every PR; never submit an approving review.
 - **Registry entries are sourced.** An action cites the AG office's own
-  announcement; a roster change cites an official or major-outlet source; an
+  announcement, or press reports of it where that could not be found or read,
+  with its `why` saying so; a roster change cites an official or major-outlet source; an
   uncalled race stays `uncalled`, never guessed. Each PR that adds entries says
   which rule in `docs/method.md` each one meets.
 - **The method is versioned.** A change to the 730-day window or the rung

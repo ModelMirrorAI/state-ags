@@ -6,7 +6,8 @@
 # training, outputs or deployment, is central to it, and one or more state AG
 # offices took part. Any court, and actions that never reach a court
 # (investigations, settlements, letters), count. Each action cites the AG
-# office's own announcement; a filed one also names its court (and docket
+# office's own announcement, or press reports of it where that could not be
+# found or read, which its `why` then says; a filed one also names its court (and docket
 # number, once a source gives one), and a case fedcourtsai's AI watchlist
 # follows names that case.
 #
@@ -253,11 +254,13 @@ offices:
     sources:
     - https://ag.ny.gov/sites/default/files/court-filings/alaska-et-al-v-characters-technologies-inc-notice-of-interest-2026.pdf
     - https://republicanags.com/attorneys-general/
-  - status: uncalled
+  - name: Chris Mann
+    party: D
+    status: successor
     start: '2027-01-11'
     sources:
-    - https://www.kctv5.com/2026/11/05/chris-mann-declares-victory-kansas-ag-race-race-remains-uncalled/
-    - https://kansasreflector.com/2026/11/04/too-close-to-call-kansas-secretary-of-state-attorney-general-candidates-wait-for-final-tallies/
+    - https://www.kcur.org/politics-elections-and-government/2026-11-06/chris-mann-kansas-attorney-general-race-called-kris-kobach-democrat-blue-wave-election
+    - https://www.ksn.com/news/your-local-election-hq/kansas-attorney-general-election-results-2/
 - state: KY
   selection: elected
   holders:
@@ -1783,7 +1786,8 @@ actions:
   court: Sarasota County Circuit Court
   why: Florida's own FDUTPA suit alleges the A2E generative-AI platform ran uncensored, without age
     verification or moderation, and could de-age adults into sexual images of children. The AI tool's
-    outputs are the subject of the case.
+    outputs are the subject of the case. The office's release was not found; the suit and its venue are
+    from a press report of the filing.
   sources:
   - https://floridaphoenix.com/2026/10/28/uthmeier-ai-company-allows-people-to-generate-sexually-explicit-pictures-of-kids/
   added: '2026-11-06'
