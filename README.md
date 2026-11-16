@@ -1,18 +1,21 @@
 # State AGs and AI
 
-How far each US state attorney general goes in acting against AI developers,
-which actions each office is in, and which states tend to act together. The
+How far each US state attorney general goes in acting against AI developers
+and which actions each office is in. The
 dashboard on [modelmirror.ai](https://modelmirror.ai) renders the board this
 repository publishes; it computes nothing itself.
 
 - **Registry:** `data/state-ags.yaml`, hand-curated. The roster of all 50
   states and DC with their attorneys general, every AI action an office took
   part in (letters, amicus briefs, investigations, settlements, suits, defenses
-  of state AI laws), and AI data center projects of 1 GW or more. Each entry
-  cites its source.
+  of state AI laws, policy advocacy), each office's technology or privacy
+  unit, and AI data center projects of 1 GW or more. Each entry cites its
+  source.
 - **Method:** [`docs/method.md`](docs/method.md). The `ag-ai-ambition-v1` tier
   (0 None recorded to 4 Sues, the highest rung in a trailing 730 days), the
-  coalition figures, and the data-center layer.
+  reading aids (large coalitions and the pivot), the coalition figures, which
+  the board publishes and the page does not yet show, and the data-center and
+  technology-unit layers.
 - **Board:** `python -m stateags build` writes `board.json`; its shape is
   [`schemas/board.schema.json`](schemas/board.schema.json). The `board`
   workflow rebuilds it every day and on each merge, and publishes it on the
@@ -32,7 +35,7 @@ repository publishes; it computes nothing itself.
 
 ```bash
 uv sync
-uv run python -m stateags build --as-of 2026-11-05     # writes board.json
+uv run python -m stateags build     # writes board.json as of today
 uv run pytest -q
 ```
 
@@ -42,7 +45,8 @@ fedcourtsai's `config/ai-watchlist.yaml`, so every case link resolves.
 ## Changing the registry
 
 Every addition is a PR that cites the rule in `docs/method.md` and the AG
-office's own announcement, on a dated `added` line. Nothing merges
+office's own announcement (or press reports of it where that could not be
+found or read), on a dated `added` line. Nothing merges
 automatically: the weekly newsroom scan (`.github/workflows/scan.yml`) has a
 model search each office's newsroom (`data/newsrooms.yaml`) and opens a PR with
 the drafts that pass the registry's checks, and the maintainer decides what
