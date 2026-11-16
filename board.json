@@ -28,7 +28,7 @@
       "title": "Florida AG sues the operator of the A2E AI platform for enabling AI-generated child sexual abuse material",
       "track": "enforcement",
       "watchlist_case": null,
-      "why": "Florida's own FDUTPA suit alleges the A2E generative-AI platform ran uncensored, without age verification or moderation, and could de-age adults into sexual images of children. The AI tool's outputs are the subject of the case."
+      "why": "Florida's own FDUTPA suit alleges the A2E generative-AI platform ran uncensored, without age verification or moderation, and could de-age adults into sexual images of children. The AI tool's outputs are the subject of the case. The office's release was not found; the suit and its venue are from a press report of the filing."
     },
     {
       "announced": "2026-10-23",
@@ -32199,14 +32199,14 @@
       "tier_label": "Sues",
       "tier_small_group": 4,
       "transition": {
-        "name": null,
-        "party": null,
+        "name": "Chris Mann",
+        "party": "D",
         "sources": [
-          "https://www.kctv5.com/2026/11/05/chris-mann-declares-victory-kansas-ag-race-race-remains-uncalled/",
-          "https://kansasreflector.com/2026/11/04/too-close-to-call-kansas-secretary-of-state-attorney-general-candidates-wait-for-final-tallies/"
+          "https://www.kcur.org/politics-elections-and-government/2026-11-06/chris-mann-kansas-attorney-general-race-called-kris-kobach-democrat-blue-wave-election",
+          "https://www.ksn.com/news/your-local-election-hq/kansas-attorney-general-election-results-2/"
         ],
         "start": "2027-01-11",
-        "status": "uncalled"
+        "status": "successor"
       },
       "transition_overdue": false,
       "window_counts": {
