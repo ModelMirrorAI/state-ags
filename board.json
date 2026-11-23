@@ -1,6 +1,68 @@
 {
   "actions": [
     {
+      "announced": "2026-11-17",
+      "category": "child-safety",
+      "court": "Multnomah County Circuit Court",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "OR": "Dan Rayfield"
+      },
+      "id": "or-v-openai",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "OR",
+      "rungs": {
+        "OR": 4
+      },
+      "sources": [
+        "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-files-2b-lawsuit-against-open-ai-launches-keeping-kids-safe-initiative/",
+        "https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/keeping-kids-safe/"
+      ],
+      "states": [
+        "OR"
+      ],
+      "title": "Oregon AG sues OpenAI under the Unlawful Trade Practices Act over ChatGPT harms to children",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "Oregon DOJ filed a $2.035 billion suit against OpenAI alleging ChatGPT's outputs harm children (self-harm, suicide content, emotional dependence) and that OpenAI misled parents about its safety, in violation of the UTPA, plus negligence, unjust enrichment and public nuisance. The release names the Multnomah County Circuit Court."
+    },
+    {
+      "announced": "2026-11-16",
+      "category": "consumer-protection",
+      "court": "San Francisco Superior Court",
+      "developers": [
+        "OpenAI"
+      ],
+      "docket_number": null,
+      "holders": {
+        "CA": "Rob Bonta"
+      },
+      "id": "ca-v-openai-cybersecurity",
+      "in_window": true,
+      "kind": "suit",
+      "large_coalition": false,
+      "lead": "CA",
+      "rungs": {
+        "CA": 4
+      },
+      "sources": [
+        "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+        "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf"
+      ],
+      "states": [
+        "CA"
+      ],
+      "title": "California AG sues OpenAI over AI-model cybersecurity incidents, including the Hugging Face attack",
+      "track": "enforcement",
+      "watchlist_case": null,
+      "why": "California sued OpenAI Foundation and OpenAI Group PBC under the Unfair Competition Law and public-nuisance law. The suit alleges that OpenAI misled and endangered the public by developing and testing advanced AI models without adequate safeguards, which led to at least 80 cyber incidents, including the Hugging Face attack by its AI agents. The development and deployment of the AI models are the core of the case."
+    },
+    {
       "announced": "2026-10-28",
       "category": "child-safety",
       "court": "Sarasota County Circuit Court",
@@ -31644,6 +31706,7 @@
     },
     {
       "action_ids": [
+        "ca-v-openai-cybersecurity",
         "multistate-character-ai-bankruptcy-notice",
         "ca-openai-cybersecurity-investigation-subpoena",
         "multistate-congress-federal-ai-framework-letter-sep-2026",
@@ -31675,9 +31738,9 @@
           "https://oag.ca.gov/privacy"
         ]
       },
-      "tier": 3,
-      "tier_label": "Investigates",
-      "tier_small_group": 3,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -31687,7 +31750,7 @@
         "investigation": 2,
         "letter": 4,
         "settlement": 1,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -33083,6 +33146,7 @@
     },
     {
       "action_ids": [
+        "or-v-openai",
         "multistate-character-ai-bankruptcy-notice",
         "multistate-congress-federal-ai-framework-letter-sep-2026",
         "multistate-xai-grok-ncii-letter",
@@ -33110,9 +33174,9 @@
           "https://www.doj.state.or.us/wp-content/uploads/2025/08/OCPA-One-Year-Enforcement-Report-2025.pdf"
         ]
       },
-      "tier": 2,
-      "tier_label": "Joins",
-      "tier_small_group": 0,
+      "tier": 4,
+      "tier_label": "Sues",
+      "tier_small_group": 4,
       "transition": null,
       "transition_overdue": false,
       "window_counts": {
@@ -33122,7 +33186,7 @@
         "investigation": 0,
         "letter": 3,
         "settlement": 0,
-        "suit": 0
+        "suit": 1
       }
     },
     {
@@ -33701,7 +33765,7 @@
   ],
   "pivot": {
     "action_id": "multistate-character-ai-bankruptcy-notice",
-    "dropped": 33,
+    "dropped": 32,
     "offices": {
       "AK": 1,
       "CO": 1,
@@ -33725,7 +33789,6 @@
       "NY": 1,
       "OH": 1,
       "OK": 1,
-      "OR": 1,
       "PA": 1,
       "RI": 1,
       "SC": 1,
