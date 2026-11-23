@@ -1791,6 +1791,45 @@ actions:
   sources:
   - https://floridaphoenix.com/2026/10/28/uthmeier-ai-company-allows-people-to-generate-sexually-explicit-pictures-of-kids/
   added: '2026-11-06'
+- id: ca-v-openai-cybersecurity
+  title: California AG sues OpenAI over AI-model cybersecurity incidents, including the Hugging Face attack
+  announced: '2026-11-16'
+  kind: suit
+  category: consumer-protection
+  states:
+  - CA
+  lead: CA
+  developers:
+  - OpenAI
+  court: San Francisco Superior Court
+  why: California sued OpenAI Foundation and OpenAI Group PBC under the Unfair Competition Law and public-nuisance
+    law. The suit alleges that OpenAI misled and endangered the public by developing and testing advanced
+    AI models without adequate safeguards, which led to at least 80 cyber incidents, including the Hugging
+    Face attack by its AI agents. The development and deployment of the AI models are the core of the
+    case.
+  sources:
+  - https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over
+  - https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf
+  added: '2026-11-23'
+- id: or-v-openai
+  title: Oregon AG sues OpenAI under the Unlawful Trade Practices Act over ChatGPT harms to children
+  announced: '2026-11-17'
+  kind: suit
+  category: child-safety
+  states:
+  - OR
+  lead: OR
+  developers:
+  - OpenAI
+  court: Multnomah County Circuit Court
+  why: Oregon DOJ filed a $2.035 billion suit against OpenAI alleging ChatGPT's outputs harm children
+    (self-harm, suicide content, emotional dependence) and that OpenAI misled parents about its safety,
+    in violation of the UTPA, plus negligence, unjust enrichment and public nuisance. The release names
+    the Multnomah County Circuit Court.
+  sources:
+  - https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-files-2b-lawsuit-against-open-ai-launches-keeping-kids-safe-initiative/
+  - https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/keeping-kids-safe/
+  added: '2026-11-23'
 data_centers:
 - id: openai-project-camellia
   name: "OpenAI Project Camellia"
